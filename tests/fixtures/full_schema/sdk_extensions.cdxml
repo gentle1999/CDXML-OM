@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDXML xmlns:v="urn:vendor" v:fixture="sdk-extensions">
+  <colortable>
+    <color r="1.0" g="1.0" b="1.0"/>
+    <color r="0.0" g="0.0" b="0.0"/>
+  </colortable>
+  <fonttable>
+    <font id="1" name="Aster Sans"/>
+    <font id="2" name="Aster Symbols"/>
+  </fonttable>
+  <page id="1">
+    <fragment id="2">
+      <n id="3" Element="6" p="0 0" bgcolor="2" v:case="sdk-n"/>
+      <n id="4" Element="6" p="20 0"/>
+      <b id="5" B="3" E="4" Order="1" bgcolor="2" v:case="sdk-b"/>
+      <graphic id="6" GraphicType="Rectangle" bgcolor="2" v:case="sdk-graphic"/>
+    </fragment>
+    <curve id="7" bgcolor="2" ArrowHeadType="Hollow" ArrowHeadHead="HalfLeft"
+      ArrowHeadTail="None" v:case="sdk-curve"/>
+    <embeddedobject id="8" bgcolor="2" v:case="sdk-embeddedobject"/>
+    <table id="9" bgcolor="2" v:case="sdk-table"/>
+    <altgroup id="10" bgcolor="2" v:case="sdk-altgroup">
+      <fragment id="11"/>
+    </altgroup>
+    <spectrum id="12" bgcolor="2" v:case="sdk-spectrum">42 43</spectrum>
+    <tlcplate id="13" bgcolor="2" v:case="sdk-tlcplate"/>
+    <geometry id="14" BasisObjects="3 4" GeometricFeature="PointFromPointPointDistance"
+      BondLength="12.5" LabelFont="2" LabelSize="18" LabelFace="3" LabelColor="3"
+      PointIsDirected="yes" v:case="sdk-geometry"/>
+    <constraint id="15" BasisObjects="3 4" ConstraintType="Distance"
+      ConstraintMin="8.25" ConstraintMax="8.25" BondLength="8.25"
+      LabelFont="1" LabelSize="16" LabelFace="6" LabelColor="2"
+      v:case="sdk-constraint"/>
+    <v:opaque marker="keep">opaque payload</v:opaque>
+  </page>
+</CDXML>

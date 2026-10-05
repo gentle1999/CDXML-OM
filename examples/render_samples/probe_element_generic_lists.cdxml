@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CDXML>
+<CDXML WindowIsZoomed="no" FractionalWidths="yes" LabelFont="3" LabelSize="10.0" LabelFace="96" CaptionFont="4" CaptionSize="12.0" HashSpacing="2.7" MarginWidth="2" LineWidth="1" BoldWidth="4" BondLength="30.0" BondSpacing="12" ChainAngle="120">
+  <colortable>
+<color r="1" g="1" b="1"/>
+<color r="0" g="0" b="0"/>
+<color r="1" g="0" b="0"/>
+<color r="1" g="1" b="0"/>
+<color r="0" g="1" b="0"/>
+<color r="0" g="1" b="1"/>
+<color r="0" g="0" b="1"/>
+<color r="1" g="0" b="1"/>
+</colortable>
+  <fonttable>
+<font id="3" charset="iso-8859-1" name="Arial"/>
+<font id="4" charset="iso-8859-1" name="Times New Roman"/>
+</fonttable>
+  <page id="1" BoundingBox="100.0 190.0 560.0 360.0" WidthPages="1" HeightPages="1">
+    <t p="120.0 220.0" Z="5" id="2">
+      <s font="3" size="16.0" face="1" color="3">ElementList + GenericList probe</s>
+    </t>
+    <fragment id="3">
+      <n Element="6" p="220.0 278.0" id="4" ElementList="NOT 6 8">
+        <t p="217.0 272.0" id="5">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <n Element="8" p="250.0 278.0" id="6" GenericList="alpha beta">
+        <t p="247.0 272.0" id="7">
+          <s font="3" size="10.0" color="3">O</s>
+        </t>
+      </n>
+      <b B="4" E="6" Order="1" id="8"/>
+    </fragment>
+  </page>
+</CDXML>

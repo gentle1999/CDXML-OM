@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CDXML>
+<CDXML WindowIsZoomed="no" FractionalWidths="yes" LabelFont="3" LabelSize="10.0" LabelFace="96" CaptionFont="4" CaptionSize="12.0" HashSpacing="2.7" MarginWidth="2" LineWidth="1" BoldWidth="4" BondLength="30.0" BondSpacing="12" ChainAngle="120">
+  <colortable>
+<color r="1" g="1" b="1"/>
+<color r="0" g="0" b="0"/>
+<color r="1" g="0" b="0"/>
+<color r="1" g="1" b="0"/>
+<color r="0" g="1" b="0"/>
+<color r="0" g="1" b="1"/>
+<color r="0" g="0" b="1"/>
+<color r="1" g="0" b="1"/>
+</colortable>
+  <fonttable>
+<font id="3" charset="iso-8859-1" name="Arial"/>
+<font id="4" charset="iso-8859-1" name="Times New Roman"/>
+</fonttable>
+  <page id="1" BoundingBox="100.0 190.0 560.0 360.0" WidthPages="1" HeightPages="1">
+    <t p="120.0 220.0" Z="5" id="2">
+      <s font="3" size="16.0" face="1" color="3">CurvePoints coordinate-array probe</s>
+    </t>
+    <curve Closed="no" CurvePoints="250.0 306.14 250.0 289.3 250.0 272.46 275.26 250.0 291.16 255.62 299.58 257.48 310.82 262.16 320.18 264.04 329.52 265.9" BoundingBox="250.0 250.0 329.52 306.14" color="3" Z="6" id="3"/>
+  </page>
+</CDXML>

@@ -1,0 +1,308 @@
+version: 1
+dtd_sha256: 5311978e514ffe154108540c3634c314dc66031a4f3c877a681fc6dca8e128c2
+object_models:
+  CDXML: {id: cdxml_root, python_name: CDXMLRoot, category: document_root, id_scope: none}
+  colortable: {id: color_table, python_name: ColorTable, category: resource_table, id_scope: none}
+  color: {id: color, python_name: Color, category: local_resource, id_scope: none}
+  fonttable: {id: font_table, python_name: FontTable, category: resource_table, id_scope: none}
+  font: {id: font, python_name: Font, category: local_resource, id_scope: local}
+  page: {id: page, python_name: Page, category: drawing_space, id_scope: document}
+  group: {id: group, python_name: Group, category: document_object, id_scope: document}
+  fragment: {id: fragment, python_name: Fragment, category: chemical_structure, id_scope: document}
+  t: {id: text, python_name: Text, category: document_object, id_scope: document}
+  s: {id: text_run, python_name: TextRun, category: text_run, id_scope: none}
+  n: {id: node, python_name: Node, category: document_object, id_scope: document}
+  b: {id: bond, python_name: Bond, category: document_object, id_scope: document}
+  graphic: {id: graphic, python_name: Graphic, category: document_object, id_scope: document}
+  arrow: {id: arrow, python_name: Arrow, category: document_object, id_scope: document}
+  curve: {id: curve, python_name: Curve, category: document_object, id_scope: document}
+  altgroup: {id: alt_group, python_name: AltGroup, category: document_object, id_scope: document}
+  step: {id: reaction_step, python_name: ReactionStep, category: document_object, id_scope: document}
+  scheme: {id: reaction_scheme, python_name: ReactionScheme, category: document_object, id_scope: document}
+  geometry: {id: geometry, python_name: Geometry, category: document_object, id_scope: document}
+  constraint: {id: constraint, python_name: Constraint, category: document_object, id_scope: document}
+  templategrid: {id: template_grid, python_name: TemplateGrid, category: document_object, id_scope: document}
+  spectrum: {id: spectrum, python_name: Spectrum, category: document_object, id_scope: document}
+  embeddedobject: {id: embedded_object, python_name: EmbeddedObject, category: document_object, id_scope: document}
+  represent: {id: represent, python_name: Represent, category: property_element, id_scope: none}
+  objecttag: {id: object_tag, python_name: ObjectTag, category: document_object, id_scope: document}
+  sequence: {id: sequence, python_name: Sequence, category: document_object, id_scope: document}
+  crossreference: {id: cross_reference, python_name: CrossReference, category: document_object, id_scope: document}
+  regnum: {id: registry_number, python_name: RegistryNumber, category: document_object, id_scope: document}
+  splitter: {id: splitter, python_name: Splitter, category: document_object, id_scope: document}
+  table: {id: table, python_name: Table, category: document_object, id_scope: document}
+  tlcplate: {id: tlc_plate, python_name: TLCPlate, category: document_object, id_scope: document}
+  tlclane: {id: tlc_lane, python_name: TLCLane, category: document_object, id_scope: document}
+  tlcspot: {id: tlc_spot, python_name: TLCSpot, category: document_object, id_scope: document}
+  gepplate: {id: gep_plate, python_name: GEPPlate, category: document_object, id_scope: document}
+  geplane: {id: gep_lane, python_name: GEPLane, category: document_object, id_scope: document}
+  gepband: {id: gep_band, python_name: GEPBand, category: document_object, id_scope: document}
+  marker: {id: marker, python_name: Marker, category: document_object, id_scope: document}
+  stoichiometrygrid: {id: stoichiometry_grid, python_name: StoichiometryGrid, category: document_object, id_scope: document}
+  sgcomponent: {id: sg_component, python_name: SGComponent, category: document_object, id_scope: document}
+  sgdatum: {id: sg_datum, python_name: SGDatum, category: document_object, id_scope: document}
+  plasmidmap: {id: plasmid_map, python_name: PlasmidMap, category: document_object, id_scope: document}
+  plasmidregion: {id: plasmid_region, python_name: PlasmidRegion, category: document_object, id_scope: document}
+  plasmidmarker: {id: plasmid_marker, python_name: PlasmidMarker, category: document_object, id_scope: document}
+  bracketedgroup: {id: bracketed_group, python_name: BracketedGroup, category: document_object, id_scope: document}
+  bracketattachment: {id: bracket_attachment, python_name: BracketAttachment, category: document_object, id_scope: document}
+  crossingbond: {id: crossing_bond, python_name: CrossingBond, category: document_object, id_scope: document}
+  border: {id: border, python_name: Border, category: document_object, id_scope: document}
+  chemicalproperty: {id: chemical_property, python_name: ChemicalProperty, category: document_object, id_scope: document}
+  bioshape: {id: bio_shape, python_name: BioShape, category: document_object, id_scope: document}
+  annotation: {id: annotation, python_name: Annotation, category: document_object, id_scope: document}
+  rlogicitem: {id: rlogic_item, python_name: RLogicItem, category: document_object, id_scope: document}
+  rlogic: {id: rlogic, python_name: RLogic, category: document_object, id_scope: document}
+  coloredmoleculararea: {id: colored_molecular_area, python_name: ColoredMolecularArea, category: document_object, id_scope: document}
+field_aliases:
+  n@AS: as_value
+  spectrum@Class: class_name
+  tlcspot@Tail: tail_value
+  curve@ArrowheadType: arrowhead_type
+  curve@ArrowheadHead: arrowhead_head
+  curve@ArrowheadTail: arrowhead_tail
+  colortable@id: xml_id
+  fonttable@id: xml_id
+  represent@attribute: attribute_id
+  represent@object: object_reference
+global_field_aliases:
+  p: position
+  Head3D: head_3d
+  Tail3D: tail_3d
+  Center3D: center_3d
+  MajorAxisEnd3D: major_axis_end_3d
+  MinorAxisEnd3D: minor_axis_end_3d
+contextual_value_fields:
+  - objecttag@Value
+  - marker@Value
+  - plasmidmarker@Value
+reference_targets:
+  b@B: node
+  b@E: node
+  crossingbond@BondID: bond
+  crossingbond@InnerAtomID: node
+collections:
+  colortable: color_tables
+  fonttable: font_tables
+  page: pages
+  templategrid: template_grids
+enum_type_names:
+  ArrowheadType: ArrowheadType
+  ArrowheadHead: ArrowheadSide
+  ArrowheadTail: ArrowheadSide
+  FillType: FillType
+  Geometry: NodeGeometry
+  Class: SpectrumClass
+  AS: NodeStereochemistry
+  BS: BondStereochemistry
+  XType: SpectrumXType
+  YType: SpectrumYType
+property_type_families:
+  Center3D:
+    datatype: point_3d
+    codec: point_3d
+    provenance:
+      - {source: sdk_coordinates, locator: "CDXPoint3D CDXML lexical form: x y z; decimal point units"}
+      - {source: sdk_geometry_properties, locator: "Center3D is CDXPoint3D (global property table)"}
+  MajorAxisEnd3D:
+    datatype: point_3d
+    codec: point_3d
+    provenance:
+      - {source: sdk_coordinates, locator: "CDXPoint3D CDXML lexical form: x y z; decimal point units"}
+      - {source: sdk_geometry_properties, locator: "Major axis endpoint is CDXPoint3D; table repeats XML name Center3D"}
+  MinorAxisEnd3D:
+    datatype: point_3d
+    codec: point_3d
+    provenance:
+      - {source: sdk_coordinates, locator: "CDXPoint3D CDXML lexical form: x y z; decimal point units"}
+      - {source: sdk_geometry_properties, locator: "Minor axis endpoint is CDXPoint3D; table repeats XML name Center3D"}
+  Head3D:
+    datatype: point_3d
+    codec: point_3d
+    provenance:
+      - {source: sdk_coordinates, locator: "CDXPoint3D CDXML lexical form: x y z; decimal point units"}
+  Tail3D:
+    datatype: point_3d
+    codec: point_3d
+    provenance:
+      - {source: sdk_coordinates, locator: "CDXPoint3D CDXML lexical form: x y z; decimal point units"}
+sdk_xml_attribute_aliases:
+  - owner_xml_name: curve
+    xml_name: ArrowHeadType
+    canonical_xml_name: ArrowheadType
+    cdx_id: 2607
+    cdx_constant: kCDXProp_Arrowhead_Type
+  - owner_xml_name: curve
+    xml_name: ArrowHeadHead
+    canonical_xml_name: ArrowheadHead
+    cdx_id: 2613
+    cdx_constant: kCDXProp_Arrow_ArrowHead_Head
+  - owner_xml_name: curve
+    xml_name: ArrowHeadTail
+    canonical_xml_name: ArrowheadTail
+    cdx_id: 2614
+    cdx_constant: kCDXProp_Arrow_ArrowHead_Tail
+measurement_fields:
+  "CDXML@LabelSize":
+    datatype: float
+    codec: float
+    rationale: >-
+      This CDATA property is the document's default label font size. It is exposed
+      as an unscaled numeric XML value; CDXString run-size units are not applied.
+    provenance:
+      - {source: sdk_label_style_size, locator: "LabelStyleSize property summary; default font size"}
+      - {source: revvity_dtd, locator: "<!ATTLIST CDXML LabelSize>"}
+  "CDXML@CaptionSize":
+    datatype: float
+    codec: float
+    rationale: >-
+      This CDATA property is the document's default caption font size. It is exposed
+      as an unscaled numeric XML value; CDXString run-size units are not applied.
+    provenance:
+      - {source: sdk_caption_style_size, locator: "CaptionStyleSize property summary; default font size"}
+      - {source: revvity_dtd, locator: "<!ATTLIST CDXML CaptionSize>"}
+  "t@LabelSize":
+    datatype: float
+    codec: float
+    rationale: >-
+      This CDATA property is the text label's default font size. It is exposed as
+      an unscaled numeric XML value; CDXString run-size units are not applied.
+    provenance:
+      - {source: sdk_label_style_size, locator: "LabelStyleSize property summary; default font size"}
+      - {source: revvity_dtd, locator: "<!ATTLIST t LabelSize>"}
+  "t@CaptionSize":
+    datatype: float
+    codec: float
+    rationale: >-
+      This CDATA property is the text caption's default font size. It is exposed as
+      an unscaled numeric XML value; CDXString run-size units are not applied.
+    provenance:
+      - {source: sdk_caption_style_size, locator: "CaptionStyleSize property summary; default font size"}
+      - {source: revvity_dtd, locator: "<!ATTLIST t CaptionSize>"}
+  "embeddedobject@RotationAngle":
+    datatype: float
+    codec: float
+    rationale: >-
+      XML is read and written as the stated angle value without converting the
+      binary fixed-point representation or inferring a binary scale for XML.
+    provenance:
+      - {source: sdk_rotation_angle, locator: "RotationAngle property description: angle measured in degrees"}
+      - {source: revvity_dtd, locator: "<!ATTLIST embeddedobject RotationAngle>"}
+  "t@RotationAngle":
+    datatype: float
+    codec: float
+    rationale: >-
+      XML is read and written as the stated angle value without converting the
+      binary fixed-point representation or inferring a binary scale for XML.
+    provenance:
+      - {source: sdk_rotation_angle, locator: "RotationAngle property description: angle measured in degrees"}
+      - {source: revvity_dtd, locator: "<!ATTLIST t RotationAngle>"}
+measurement_property_families:
+  LabelSize:
+    datatype: float
+    codec: float
+    rationale: >-
+      Expose this XML measurement as a finite numeric value without applying
+      CDXString font-run units or a binary INT16 scale to CDXML.
+    provenance:
+      - {source: sdk_label_style_size, locator: "LabelStyleSize property page: default label font size; binary type does not specify CDXML scale"}
+  CaptionSize:
+    datatype: float
+    codec: float
+    rationale: >-
+      Expose this XML measurement as a finite numeric value without applying
+      CDXString font-run units or a binary INT16 scale to CDXML.
+    provenance:
+      - {source: sdk_caption_style_size, locator: "CaptionStyleSize property page: default caption font size; binary type does not specify CDXML scale"}
+  RotationAngle:
+    datatype: float
+    codec: float
+    rationale: >-
+      Expose the XML angle numerically; do not infer or apply a binary fixed-point
+      scale to the CDXML lexical value.
+    provenance:
+      - {source: sdk_rotation_angle, locator: "RotationAngle property page identifies the value as an angle in degrees"}
+  HeadSize:
+    datatype: float
+    codec: float
+    rationale: >-
+      Expose this size measurement as a finite numeric CDXML value; the SDK's
+      binary INT16 storage type does not define a CDXML scale or integer-only rule.
+    provenance:
+      - {source: sdk_page_graphic, locator: "Graphic property table: HeadSize uses kCDXProp_Arrowhead_Size (0x0A20), binary INT16"}
+      - {source: sdk_arrow, locator: "Arrow object definition: HeadSize uses the same arrowhead-size property"}
+lexical_string_fields:
+  font@charset:
+    rationale: >-
+      CDXML stores a character encoding label such as iso-8859-1. The SDK INT16
+      entry is a binary charset code and does not define the XML lexical type.
+    provenance:
+      - {source: sdk_font_charset_xml, locator: "CDXFontTable datatype page: CDXML charset values are encoding names"}
+      - {source: sdk_page_font, locator: "Font page table row 5: INT16 is the binary storage type"}
+  arrow@ArrowheadWidth:
+    rationale: >-
+      Keep this DTD CDATA field lexical. The SDK's HeadWidth property is a
+      distinct XML name and does not establish a numeric grammar or fractional
+      values for ArrowheadWidth.
+    provenance:
+      - {source: revvity_dtd, locator: "<!ATTLIST arrow ArrowheadWidth>"}
+      - {source: sdk_page_curve, locator: "table[2]/row[44]: SDK XML name HeadWidth, not ArrowheadWidth"}
+  plasmidregion@ArrowheadWidth:
+    rationale: >-
+      Keep this DTD CDATA field lexical. The SDK's HeadWidth property is a
+      distinct XML name and does not establish a numeric grammar or fractional
+      values for ArrowheadWidth.
+    provenance:
+      - {source: revvity_dtd, locator: "<!ATTLIST plasmidregion ArrowheadWidth>"}
+      - {source: sdk_page_curve, locator: "table[2]/row[44]: SDK XML name HeadWidth, not ArrowheadWidth"}
+property_defaults:
+  Value:
+    value: 0
+    provenance:
+      - {source: sdk_object_tag_value, locator: "ObjectTag.Value is zero when the value property is absent"}
+sdk_property_conflicts:
+  - id: curve_spacing_closed_id_conflict
+    cdx_id: 2616
+    pairs:
+      - curve@CurveSpacing
+      - curve@Closed
+    rationale: >-
+      The pinned SDK Curve page assigns 0x0A38 to both Curve_Spacing (UINT16,
+      table row 59) and Closed (CDXBoolean, table row 56), with different names
+      and incompatible types. Retain their typed CDXML fields but omit a CDX
+      numeric mapping until primary-source evidence reconciles the historical conflict.
+    provenance:
+      - {source: sdk_page_curve, locator: "table[2]/row[59]: Curve_Spacing / UINT16 / 0x0A38"}
+      - {source: sdk_page_curve, locator: "table[2]/row[56]: Closed / CDXBoolean / 0x0A38"}
+      - {source: revvity_dtd, locator: "<!ATTLIST curve CurveSpacing> and <!ATTLIST curve Closed>"}
+cdx_property_aliases:
+  - id: document_and_object_tag_name
+    cdx_id: 8
+    property_ids: [dtd.CDXML.name, dtd.objecttag.name]
+    rationale: >-
+      Both SDK pages document CDXString kCDXProp_Name (0x0008), while the DTD
+      makes CDXML@Name optional and objecttag@Name required. Keep owner-specific
+      XML constraints instead of merging the distinct requiredness contracts.
+    provenance:
+      - {source: sdk_document, locator: "table[2]/row[20]: Name / CDXString / 0x0008"}
+      - {source: sdk_page_objecttag, locator: "table[2]/row[5]: Name / CDXString / 0x0008"}
+      - {source: revvity_dtd, locator: "<!ATTLIST CDXML Name> and <!ATTLIST objecttag Name #REQUIRED>"}
+document_extension_identity: >-
+  Declared CDXML object elements with an id attribute use the document identity
+  registry even when the pinned SDK inventory has no binary-object declaration.
+  This is an explicit XML-layer mutation policy; it does not claim a CDX object
+  code or ChemDraw binary identity for those extensions.
+lexical_resource_id_policy: >-
+  Resource-table id attributes and XML-only property-element identifiers remain
+  lexical strings unless a source-backed local-ID rule applies; they never enter
+  the document-wide ID allocator.
+content_model_policy: >-
+  Static child collections record declared DTD child relationships. Sequence,
+  choice, mixed-content ordering, and interleaved cardinality grammar are not
+  claimed as strict validation; the special root/font/color minimums are retained.
+source_anomalies:
+  - id: altgroup_undeclared_bracket_child
+    parent_xml_tag: altgroup
+    child_xml_tag: bracket
+    locator: "<!ELEMENT altgroup> references bracket; no <!ELEMENT bracket> exists in the pinned DTD."
+    behavior: "Do not generate a bracket model; retain the encountered element as UnknownElement."

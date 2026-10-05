@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDXML xmlns:v="urn:vendor" v:root="preserve-root">
+  <!-- preserve this comment and the following sibling order -->
+  <colortable v:case="colortable">
+    <color r="0.125" g="0.25" b="0.875" v:case="color"/>
+  </colortable>
+  <fonttable v:case="fonttable">
+    <font id="1" name="Aster Sans" charset="iso-8859-1" v:case="font"/>
+    <font id="2" name="Aster Symbols" charset="2" v:case="font-alt"/>
+  </fonttable>
+  <page id="100" v:case="page">
+    <fragment id="200" v:case="fragment">
+      <n id="300" Element="8" p="001.250 02.500" Charge="-1" Isotope="13" v:case="node"/>
+      <n id="301" Element="7" p="3.25 -4.5" v:case="node-alt"/>
+      <b id="400" B="300" E="301" Order="3" Display="Bold" v:case="bond"/>
+      <t id="500" p="03.500, -4" BoundingBox="1 2 31 42" Visible="no"
+        IgnoreWarnings="yes" v:case="text">
+        <s font="1" size="12.50" face="2" color="004" alpha="0.75" v:case="run">seed</s>
+        <!-- preserve this comment in the valid text run sequence -->
+      </t>
+      <graphic id="600" BoundingBox="5 6 25 36" GraphicType="Rectangle"
+        Tail3D="1, 2, 3" Center3D="4 5 6" Head3D="7 8 9"
+        MajorAxisEnd3D="10 11 12" MinorAxisEnd3D="13 14 15" Visible="yes"
+        v:case="graphic"/>
+    </fragment>
+    <group id="700" BoundingBox="0 1 10 11" Integral="yes" v:case="group"/>
+    <arrow id="800" BoundingBox="2 3 22 33" Visible="yes"
+      Center3D="1, 2, 3" Head3D="4 5 6" Tail3D="7 8 9"
+      ArrowheadType="Solid" ArrowheadHead="Full" ArrowheadTail="None"
+      HeadSize="0.8" ArrowheadWidth="0.35" FillType="Solid" v:case="arrow"/>
+    <scheme id="900" v:case="scheme">
+      <step id="901" ReactionStepReactants="200" ReactionStepProducts="200"
+        ReactionStepArrows="800" v:case="step"/>
+    </scheme>
+  </page>
+</CDXML>

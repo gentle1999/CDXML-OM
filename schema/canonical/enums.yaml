@@ -1,0 +1,1276 @@
+version: 1
+enums:
+- id: bond_order
+  python_name: BondOrder
+  underlying_datatype: integer
+  representation: intflag
+  status: known
+  provenance:
+  - source: sdk_bond
+    locator: Bond_Order property values
+  - source: sdk_bond_order
+    locator: If this property is absent, it is treated as a single bond; XML values include all 16 documented
+      bond flags
+  - source: revvity_dtd
+    locator: 'b Order CDATA #IMPLIED'
+  values:
+  - name: SINGLE
+    xml_value: '1'
+    cdx_value: 1
+  - name: DOUBLE
+    xml_value: '2'
+    cdx_value: 2
+  - name: TRIPLE
+    xml_value: '3'
+    cdx_value: 4
+  - name: QUADRUPLE
+    xml_value: '4'
+    cdx_value: 8
+  - name: QUINTUPLE
+    xml_value: '5'
+    cdx_value: 16
+  - name: SEXTUPLE
+    xml_value: '6'
+    cdx_value: 32
+  - name: HALF
+    xml_value: '0.5'
+    cdx_value: 64
+  - name: AROMATIC
+    xml_value: '1.5'
+    cdx_value: 128
+  - name: TWO_AND_HALF
+    xml_value: '2.5'
+    cdx_value: 256
+  - name: THREE_AND_HALF
+    xml_value: '3.5'
+    cdx_value: 512
+  - name: FOUR_AND_HALF
+    xml_value: '4.5'
+    cdx_value: 1024
+  - name: FIVE_AND_HALF
+    xml_value: '5.5'
+    cdx_value: 2048
+  - name: DATIVE
+    xml_value: dative
+    cdx_value: 4096
+  - name: IONIC
+    xml_value: ionic
+    cdx_value: 8192
+  - name: HYDROGEN
+    xml_value: hydrogen
+    cdx_value: 16384
+  - name: THREE_CENTER
+    xml_value: threecenter
+    cdx_value: 32768
+- id: bond_display
+  python_name: BondDisplay
+  underlying_datatype: integer
+  representation: int
+  status: known
+  provenance:
+  - source: sdk_bond_display
+    locator: Bond_Display enumerated values
+  values:
+  - name: SOLID
+    xml_value: Solid
+    cdx_value: 0
+  - name: DASH
+    xml_value: Dash
+    cdx_value: 1
+  - name: HASH
+    xml_value: Hash
+    cdx_value: 2
+  - name: WEDGED_HASH_BEGIN
+    xml_value: WedgedHashBegin
+    cdx_value: 3
+  - name: WEDGED_HASH_END
+    xml_value: WedgedHashEnd
+    cdx_value: 4
+  - name: BOLD
+    xml_value: Bold
+    cdx_value: 5
+  - name: WEDGE_BEGIN
+    xml_value: WedgeBegin
+    cdx_value: 6
+  - name: WEDGE_END
+    xml_value: WedgeEnd
+    cdx_value: 7
+  - name: WAVY
+    xml_value: Wavy
+    cdx_value: 8
+  - name: HOLLOW_WEDGE_BEGIN
+    xml_value: HollowWedgeBegin
+    cdx_value: 9
+  - name: HOLLOW_WEDGE_END
+    xml_value: HollowWedgeEnd
+    cdx_value: 10
+  - name: WAVY_WEDGE_BEGIN
+    xml_value: WavyWedgeBegin
+    cdx_value: 11
+  - name: WAVY_WEDGE_END
+    xml_value: WavyWedgeEnd
+    cdx_value: 12
+  - name: DOT
+    xml_value: Dot
+    cdx_value: 13
+  - name: DASH_DOT
+    xml_value: DashDot
+    cdx_value: 14
+- id: graphic_type
+  python_name: GraphicType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: graphic GraphicType enumeration
+  values:
+  - name: UNDEFINED
+    xml_value: Undefined
+  - name: LINE
+    xml_value: Line
+  - name: ARC
+    xml_value: Arc
+  - name: RECTANGLE
+    xml_value: Rectangle
+  - name: OVAL
+    xml_value: Oval
+  - name: ORBITAL
+    xml_value: Orbital
+  - name: BRACKET
+    xml_value: Bracket
+  - name: SYMBOL
+    xml_value: Symbol
+- id: dtd.label_justification.aa6f97a8
+  python_name: LabelJustification
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML LabelJustification> enumeration
+  - source: sdk_document
+    locator: table[2]/row[131]
+  values:
+  - name: AUTO
+    xml_value: Auto
+  - name: LEFT
+    xml_value: Left
+  - name: CENTER
+    xml_value: Center
+  - name: RIGHT
+    xml_value: Right
+  - name: ABOVE
+    xml_value: Above
+  - name: BELOW
+    xml_value: Below
+  - name: BEST
+    xml_value: Best
+- id: dtd.caption_justification.a0380828
+  python_name: CaptionJustification
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CaptionJustification> enumeration
+  - source: sdk_document
+    locator: table[2]/row[98]
+  values:
+  - name: AUTO
+    xml_value: Auto
+  - name: LEFT
+    xml_value: Left
+  - name: CENTER
+    xml_value: Center
+  - name: RIGHT
+    xml_value: Right
+  - name: FULL
+    xml_value: Full
+- id: dtd.amino_acid_termini.a05085d7
+  python_name: AminoAcidTermini
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML AminoAcidTermini> enumeration
+  values:
+  - name: HOH
+    xml_value: HOH
+  - name: NH2_COOH
+    xml_value: NH2COOH
+- id: dtd.page_definition.5d48b9f1
+  python_name: PageDefinition
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page PageDefinition> enumeration
+  - source: sdk_page_page
+    locator: table[2]/row[47]
+  values:
+  - name: UNDEFINED
+    xml_value: Undefined
+  - name: CENTER
+    xml_value: Center
+  - name: TL4
+    xml_value: TL4
+  - name: ID_TERM
+    xml_value: IDTerm
+  - name: FLUSH_LEFT
+    xml_value: FlushLeft
+  - name: FLUSH_RIGHT
+    xml_value: FlushRight
+  - name: REACTION1
+    xml_value: Reaction1
+  - name: REACTION2
+    xml_value: Reaction2
+  - name: MULTICOLUMN_TL4
+    xml_value: MulticolumnTL4
+  - name: MULTICOLUMN_NON_TL4
+    xml_value: MulticolumnNonTL4
+  - name: USER_DEFINED
+    xml_value: UserDefined
+- id: dtd.drawing_space.46069ac7
+  python_name: DrawingSpace
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page DrawingSpace> enumeration
+  - source: sdk_page_page
+    locator: table[2]/row[17]
+  values:
+  - name: POSTER
+    xml_value: poster
+  - name: PAGES
+    xml_value: pages
+- id: dtd.sequence_type.35f3b725
+  python_name: SequenceType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment SequenceType> enumeration
+  values:
+  - name: UNKNOWN
+    xml_value: Unknown
+  - name: PEPTIDE
+    xml_value: Peptide
+  - name: PEPTIDE1
+    xml_value: Peptide1
+  - name: PEPTIDE3
+    xml_value: Peptide3
+  - name: DNA
+    xml_value: DNA
+  - name: RNA
+    xml_value: RNA
+- id: dtd.label_alignment.aa6f97a8
+  python_name: LabelAlignment
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t LabelAlignment> enumeration
+  - source: sdk_page_t
+    locator: table[2]/row[41]
+  values:
+  - name: AUTO
+    xml_value: Auto
+  - name: LEFT
+    xml_value: Left
+  - name: CENTER
+    xml_value: Center
+  - name: RIGHT
+    xml_value: Right
+  - name: ABOVE
+    xml_value: Above
+  - name: BELOW
+    xml_value: Below
+  - name: BEST
+    xml_value: Best
+- id: dtd.justification.8e038579
+  python_name: Justification
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t Justification> enumeration
+  - source: sdk_page_t
+    locator: table[2]/row[29]
+  values:
+  - name: AUTO
+    xml_value: Auto
+  - name: LEFT
+    xml_value: Left
+  - name: CENTER
+    xml_value: Center
+  - name: RIGHT
+    xml_value: Right
+  - name: FULL
+    xml_value: Full
+  - name: ABOVE
+    xml_value: Above
+  - name: BELOW
+    xml_value: Below
+  - name: BEST
+    xml_value: Best
+- id: dtd.unsaturated_bonds.b4aa355d
+  python_name: UnsaturatedBonds
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n UnsaturatedBonds> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[62]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: MUST_BE_ABSENT
+    xml_value: MustBeAbsent
+  - name: MUST_BE_PRESENT
+    xml_value: MustBePresent
+- id: dtd.translation.24452af8
+  python_name: Translation
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n Translation> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[107]
+  values:
+  - name: EQUAL
+    xml_value: Equal
+  - name: BROAD
+    xml_value: Broad
+  - name: NARROW
+    xml_value: Narrow
+  - name: ANY
+    xml_value: Any
+- id: dtd.rxn_stereo.65b93c38
+  python_name: RxnStereo
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n RxnStereo> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[68]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: INVERSION
+    xml_value: Inversion
+  - name: RETENTION
+    xml_value: Retention
+- id: dtd.ring_bond_count.d444e4df
+  python_name: RingBondCount
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n RingBondCount> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[59]
+  values:
+  - name: SPIRO_OR_HIGHER
+    xml_value: SpiroOrHigher
+  - name: FUSION
+    xml_value: Fusion
+  - name: SIMPLE_RING
+    xml_value: SimpleRing
+  - name: AS_DRAWN
+    xml_value: AsDrawn
+  - name: NO_RING_BONDS
+    xml_value: NoRingBonds
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+- id: dtd.radical.6ba1138c
+  python_name: Radical
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n Radical> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[50]
+  values:
+  - name: VALUE_NONE
+    xml_value: None
+  - name: SINGLET
+    xml_value: Singlet
+  - name: DOUBLET
+    xml_value: Doublet
+  - name: TRIPLET
+    xml_value: Triplet
+- id: dtd.node_type.18813628
+  python_name: NodeType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n NodeType> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[29]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: ELEMENT
+    xml_value: Element
+  - name: ELEMENT_LIST
+    xml_value: ElementList
+  - name: ELEMENT_LIST_NICKNAME
+    xml_value: ElementListNickname
+  - name: NICKNAME
+    xml_value: Nickname
+  - name: FRAGMENT
+    xml_value: Fragment
+  - name: FORMULA
+    xml_value: Formula
+  - name: GENERIC_NICKNAME
+    xml_value: GenericNickname
+  - name: ANONYMOUS_ALTERNATIVE_GROUP
+    xml_value: AnonymousAlternativeGroup
+  - name: NAMED_ALTERNATIVE_GROUP
+    xml_value: NamedAlternativeGroup
+  - name: MULTI_ATTACHMENT
+    xml_value: MultiAttachment
+  - name: VARIABLE_ATTACHMENT
+    xml_value: VariableAttachment
+  - name: EXTERNAL_CONNECTION_POINT
+    xml_value: ExternalConnectionPoint
+- id: dtd.label_display.aa6f97a8
+  python_name: LabelDisplay
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n LabelDisplay> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[32]
+  values:
+  - name: AUTO
+    xml_value: Auto
+  - name: LEFT
+    xml_value: Left
+  - name: CENTER
+    xml_value: Center
+  - name: RIGHT
+    xml_value: Right
+  - name: ABOVE
+    xml_value: Above
+  - name: BELOW
+    xml_value: Below
+  - name: BEST
+    xml_value: Best
+- id: dtd.isotopic_abundance.6221caac
+  python_name: IsotopicAbundance
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n IsotopicAbundance> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[128]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: ANY
+    xml_value: Any
+  - name: NATURAL
+    xml_value: Natural
+  - name: ENRICHED
+    xml_value: Enriched
+  - name: DEFICIENT
+    xml_value: Deficient
+  - name: NONNATURAL
+    xml_value: Nonnatural
+- id: dtd.node_geometry.8bcf7656
+  python_name: NodeGeometry
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n Geometry> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[83]
+  values:
+  - name: UNKNOWN
+    xml_value: Unknown
+  - name: VALUE_1
+    xml_value: '1'
+  - name: LINEAR
+    xml_value: Linear
+  - name: BENT
+    xml_value: Bent
+  - name: TRIGONAL_PLANAR
+    xml_value: TrigonalPlanar
+  - name: TRIGONAL_PYRAMIDAL
+    xml_value: TrigonalPyramidal
+  - name: SQUARE_PLANAR
+    xml_value: SquarePlanar
+  - name: TETRAHEDRAL
+    xml_value: Tetrahedral
+  - name: TRIGONAL_BIPYRAMIDAL
+    xml_value: TrigonalBipyramidal
+  - name: SQUARE_PYRAMIDAL
+    xml_value: SquarePyramidal
+  - name: VALUE_5
+    xml_value: '5'
+  - name: OCTAHEDRAL
+    xml_value: Octahedral
+  - name: VALUE_6
+    xml_value: '6'
+  - name: VALUE_7
+    xml_value: '7'
+  - name: VALUE_8
+    xml_value: '8'
+  - name: VALUE_9
+    xml_value: '9'
+  - name: VALUE_10
+    xml_value: '10'
+- id: dtd.external_connection_type.ade6bb36
+  python_name: ExternalConnectionType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n ExternalConnectionType> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[131]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: DIAMOND
+    xml_value: Diamond
+  - name: STAR
+    xml_value: Star
+  - name: POLYMER_BEAD
+    xml_value: PolymerBead
+  - name: WAVY
+    xml_value: Wavy
+  - name: RESIDUE
+    xml_value: Residue
+  - name: PEPTIDE
+    xml_value: Peptide
+  - name: DNA
+    xml_value: DNA
+  - name: RNA
+    xml_value: RNA
+  - name: TERMINUS
+    xml_value: Terminus
+  - name: SULFIDE
+    xml_value: Sulfide
+  - name: NUCLEOTIDE
+    xml_value: Nucleotide
+  - name: UNLINKED_BRANCH
+    xml_value: UnlinkedBranch
+- id: dtd.as.a82c6cfb
+  python_name: NodeStereochemistry
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n AS> enumeration
+  - source: sdk_page_n
+    locator: table[2]/row[104]
+  values:
+  - name: U
+    xml_value: U
+  - name: N
+    xml_value: N
+  - name: R
+    xml_value: R
+  - name: S
+    xml_value: S
+  - name: R_2
+    xml_value: r
+  - name: S_2
+    xml_value: s
+  - name: U_2
+    xml_value: u
+  - name: M
+    xml_value: M
+  - name: P
+    xml_value: P
+  - name: A
+    xml_value: a
+  - name: FIELD
+    xml_value: +
+  - name: FIELD_2
+    xml_value: '-'
+  - name: FIELD_3
+    xml_value: '?'
+- id: dtd.topology.62163c3d
+  python_name: Topology
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b Topology> enumeration
+  - source: sdk_page_b
+    locator: table[2]/row[41]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: RING
+    xml_value: Ring
+  - name: CHAIN
+    xml_value: Chain
+  - name: RING_OR_CHAIN
+    xml_value: RingOrChain
+- id: dtd.rxn_participation.71b2b5ce
+  python_name: RxnParticipation
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b RxnParticipation> enumeration
+  - source: sdk_page_b
+    locator: table[2]/row[44]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: REACTION_CENTER
+    xml_value: ReactionCenter
+  - name: MAKE_OR_BREAK
+    xml_value: MakeOrBreak
+  - name: CHANGE_TYPE
+    xml_value: ChangeType
+  - name: MAKE_AND_CHANGE
+    xml_value: MakeAndChange
+  - name: NOT_REACTION_CENTER
+    xml_value: NotReactionCenter
+  - name: NO_CHANGE
+    xml_value: NoChange
+  - name: UNMAPPED
+    xml_value: Unmapped
+- id: dtd.double_position.94c4e4b1
+  python_name: DoublePosition
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b DoublePosition> enumeration
+  - source: sdk_page_b
+    locator: table[2]/row[32]
+  values:
+  - name: CENTER
+    xml_value: Center
+  - name: RIGHT
+    xml_value: Right
+  - name: LEFT
+    xml_value: Left
+- id: dtd.connectivity.086332b0
+  python_name: Connectivity
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b Connectivity> enumeration
+  values:
+  - name: LINEAR
+    xml_value: Linear
+  - name: BRIDGED
+    xml_value: Bridged
+  - name: STAGGERED
+    xml_value: Staggered
+  - name: CYCLIC
+    xml_value: Cyclic
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+- id: dtd.bs.c9410bb4
+  python_name: BondStereochemistry
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b BS> enumeration
+  - source: sdk_page_b
+    locator: table[2]/row[53]
+  values:
+  - name: U
+    xml_value: U
+  - name: N
+    xml_value: N
+  - name: E
+    xml_value: E
+  - name: Z
+    xml_value: Z
+- id: dtd.symbol_type.4aa0ee0c
+  python_name: SymbolType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic SymbolType> enumeration
+  - source: sdk_page_graphic
+    locator: table[2]/row[74]
+  values:
+  - name: LONE_PAIR
+    xml_value: LonePair
+  - name: ELECTRON
+    xml_value: Electron
+  - name: RADICAL_CATION
+    xml_value: RadicalCation
+  - name: RADICAL_ANION
+    xml_value: RadicalAnion
+  - name: CIRCLE_PLUS
+    xml_value: CirclePlus
+  - name: CIRCLE_MINUS
+    xml_value: CircleMinus
+  - name: DAGGER
+    xml_value: Dagger
+  - name: DOUBLE_DAGGER
+    xml_value: DoubleDagger
+  - name: PLUS
+    xml_value: Plus
+  - name: MINUS
+    xml_value: Minus
+  - name: RACEMIC
+    xml_value: Racemic
+  - name: ABSOLUTE
+    xml_value: Absolute
+  - name: RELATIVE
+    xml_value: Relative
+  - name: LONE_PAIR_BAR
+    xml_value: LonePairBar
+- id: dtd.polymer_repeat_pattern.a2cadba9
+  python_name: PolymerRepeatPattern
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic PolymerRepeatPattern> enumeration
+  - source: sdk_page_graphic
+    locator: table[2]/row[89]
+  values:
+  - name: HEAD_TO_TAIL
+    xml_value: HeadToTail
+  - name: HEAD_TO_HEAD
+    xml_value: HeadToHead
+  - name: EITHER_UNKNOWN
+    xml_value: EitherUnknown
+- id: dtd.polymer_flip_type.7cf04eb5
+  python_name: PolymerFlipType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic PolymerFlipType> enumeration
+  - source: sdk_page_graphic
+    locator: table[2]/row[92]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: NO_FLIP
+    xml_value: NoFlip
+  - name: FLIP
+    xml_value: Flip
+- id: dtd.orbital_type.7ae4dc1f
+  python_name: OrbitalType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic OrbitalType> enumeration
+  - source: sdk_page_graphic
+    locator: table[2]/row[68]
+  values:
+  - name: S
+    xml_value: s
+  - name: P
+    xml_value: p
+  - name: OVAL
+    xml_value: oval
+  - name: LOBE
+    xml_value: lobe
+  - name: HYBRID_PLUS
+    xml_value: hybridPlus
+  - name: HYBRID_MINUS
+    xml_value: hybridMinus
+  - name: DZ2_PLUS
+    xml_value: dz2Plus
+  - name: DZ2_MINUS
+    xml_value: dz2Minus
+  - name: DXY
+    xml_value: dxy
+  - name: S_SHADED
+    xml_value: sShaded
+  - name: S_FILLED
+    xml_value: sFilled
+  - name: OVAL_SHADED
+    xml_value: ovalShaded
+  - name: OVAL_FILLED
+    xml_value: ovalFilled
+  - name: LOBE_SHADED
+    xml_value: lobeShaded
+  - name: P_SHADED
+    xml_value: pShaded
+  - name: LOBE_FILLED
+    xml_value: lobeFilled
+  - name: P_FILLED
+    xml_value: pFilled
+  - name: HYBRID_PLUS_FILLED
+    xml_value: hybridPlusFilled
+  - name: HYBRID_MINUS_FILLED
+    xml_value: hybridMinusFilled
+  - name: DZ2_PLUS_FILLED
+    xml_value: dz2PlusFilled
+  - name: DZ2_MINUS_FILLED
+    xml_value: dz2MinusFilled
+  - name: DXY_FILLED
+    xml_value: dxyFilled
+- id: dtd.line_type.79d84f4b
+  python_name: LineType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic LineType> enumeration
+  - source: sdk_page_graphic
+    locator: table[2]/row[56]
+  values:
+  - name: SOLID
+    xml_value: Solid
+  - name: DASHED
+    xml_value: Dashed
+  - name: BOLD
+    xml_value: Bold
+  - name: WAVY
+    xml_value: Wavy
+- id: dtd.bracket_usage.df42ccc5
+  python_name: BracketUsage
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic BracketUsage> enumeration
+  - source: sdk_page_graphic
+    locator: table[2]/row[86]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: ANYPOLYMER
+    xml_value: Anypolymer
+  - name: COMPONENT
+    xml_value: Component
+  - name: COPOLYMER
+    xml_value: Copolymer
+  - name: COPOLYMER_ALTERNATING
+    xml_value: CopolymerAlternating
+  - name: COPOLYMER_BLOCK
+    xml_value: CopolymerBlock
+  - name: COPOLYMER_RANDOM
+    xml_value: CopolymerRandom
+  - name: CROSSLINK
+    xml_value: Crosslink
+  - name: GENERIC
+    xml_value: Generic
+  - name: GRAFT
+    xml_value: Graft
+  - name: MER
+    xml_value: Mer
+  - name: MIXTURE_ORDERED
+    xml_value: MixtureOrdered
+  - name: MIXTURE_UNORDERED
+    xml_value: MixtureUnordered
+  - name: MODIFICATION
+    xml_value: Modification
+  - name: MONOMER
+    xml_value: Monomer
+  - name: MULTIPLE_GROUP
+    xml_value: MultipleGroup
+  - name: SRU
+    xml_value: SRU
+- id: dtd.bracket_type.8269cca1
+  python_name: BracketType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic BracketType> enumeration
+  - source: sdk_page_graphic
+    locator: table[2]/row[71]
+  values:
+  - name: ROUND_PAIR
+    xml_value: RoundPair
+  - name: SQUARE_PAIR
+    xml_value: SquarePair
+  - name: CURLY_PAIR
+    xml_value: CurlyPair
+  - name: SQUARE
+    xml_value: Square
+  - name: CURLY
+    xml_value: Curly
+  - name: ROUND
+    xml_value: Round
+- id: dtd.arrow_type.7aa56e9a
+  python_name: ArrowType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic ArrowType> enumeration
+  - source: sdk_page_graphic
+    locator: table[2]/row[59]
+  values:
+  - name: NO_HEAD
+    xml_value: NoHead
+  - name: HALF_HEAD
+    xml_value: HalfHead
+  - name: FULL_HEAD
+    xml_value: FullHead
+  - name: RESONANCE
+    xml_value: Resonance
+  - name: EQUILIBRIUM
+    xml_value: Equilibrium
+  - name: HOLLOW
+    xml_value: Hollow
+  - name: RETRO_SYNTHETIC
+    xml_value: RetroSynthetic
+  - name: NO_GO
+    xml_value: NoGo
+  - name: DIPOLE
+    xml_value: Dipole
+- id: dtd.no_go.dbf92440
+  python_name: NoGo
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow NoGo> enumeration
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: VALUE_NONE
+    xml_value: None
+  - name: CROSS
+    xml_value: Cross
+  - name: HASH
+    xml_value: Hash
+- id: dtd.fill_type.b141cafb
+  python_name: FillType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow FillType> enumeration
+  - source: sdk_page_curve
+    locator: table[2]/row[53]
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: VALUE_NONE
+    xml_value: None
+  - name: SOLID
+    xml_value: Solid
+  - name: SHADED
+    xml_value: Shaded
+- id: dtd.arrowhead_type.7f4897fa
+  python_name: ArrowheadType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow ArrowheadType> enumeration
+  values:
+  - name: SOLID
+    xml_value: Solid
+  - name: HOLLOW
+    xml_value: Hollow
+  - name: ANGLE
+    xml_value: Angle
+- id: dtd.arrowhead_side.ee4d6e99
+  python_name: ArrowheadSide
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow ArrowheadTail> enumeration
+  values:
+  - name: UNSPECIFIED
+    xml_value: Unspecified
+  - name: VALUE_NONE
+    xml_value: None
+  - name: FULL
+    xml_value: Full
+  - name: HALF_LEFT
+    xml_value: HalfLeft
+  - name: HALF_RIGHT
+    xml_value: HalfRight
+- id: dtd.geometric_feature.4250a286
+  python_name: GeometricFeature
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry GeometricFeature> enumeration
+  - source: sdk_page_geometry
+    locator: table[2]/row[29]
+  values:
+  - name: UNKNOWN
+    xml_value: Unknown
+  - name: POINT_FROM_POINT_POINT_DISTANCE
+    xml_value: PointFromPointPointDistance
+  - name: POINT_FROM_POINT_POINT_PERCENTAGE
+    xml_value: PointFromPointPointPercentage
+  - name: POINT_FROM_POINT_NORMAL_DISTANCE
+    xml_value: PointFromPointNormalDistance
+  - name: LINE_FROM_POINTS
+    xml_value: LineFromPoints
+  - name: PLANE_FROM_POINTS
+    xml_value: PlaneFromPoints
+  - name: PLANE_FROM_POINT_LINE
+    xml_value: PlaneFromPointLine
+  - name: CENTROID_FROM_POINTS
+    xml_value: CentroidFromPoints
+  - name: NORMAL_FROM_POINT_PLANE
+    xml_value: NormalFromPointPlane
+- id: dtd.constraint_type.eba13b7c
+  python_name: ConstraintType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint ConstraintType> enumeration
+  - source: sdk_page_constraint
+    locator: table[2]/row[35]
+  values:
+  - name: UNKNOWN
+    xml_value: Unknown
+  - name: DISTANCE
+    xml_value: Distance
+  - name: ANGLE
+    xml_value: Angle
+  - name: EXCLUSION_SPHERE
+    xml_value: ExclusionSphere
+- id: dtd.y_type.b80d81f1
+  python_name: SpectrumYType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum YType> enumeration
+  - source: sdk_page_spectrum
+    locator: table[2]/row[53]
+  values:
+  - name: UNKNOWN
+    xml_value: Unknown
+  - name: ABSORBANCE
+    xml_value: Absorbance
+  - name: TRANSMITTANCE
+    xml_value: Transmittance
+  - name: PERCENT_TRANSMITTANCE
+    xml_value: PercentTransmittance
+  - name: OTHER
+    xml_value: Other
+  - name: ARBITRARY_UNITS
+    xml_value: ArbitraryUnits
+- id: dtd.x_type.a4fb96d1
+  python_name: SpectrumXType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum XType> enumeration
+  - source: sdk_page_spectrum
+    locator: table[2]/row[50]
+  values:
+  - name: UNKNOWN
+    xml_value: Unknown
+  - name: WAVENUMBERS
+    xml_value: Wavenumbers
+  - name: MICRONS
+    xml_value: Microns
+  - name: HERTZ
+    xml_value: Hertz
+  - name: MASS_UNITS
+    xml_value: MassUnits
+  - name: PARTS_PER_MILLION
+    xml_value: PartsPerMillion
+  - name: OTHER
+    xml_value: Other
+- id: dtd.class.3a799156
+  python_name: SpectrumClass
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum Class> enumeration
+  - source: sdk_page_spectrum
+    locator: table[2]/row[65]
+  values:
+  - name: UNKNOWN
+    xml_value: Unknown
+  - name: CHROMATOGRAM
+    xml_value: Chromatogram
+  - name: INFRARED
+    xml_value: Infrared
+  - name: UV_VIS
+    xml_value: UVVis
+  - name: X_RAY_DIFFRACTION
+    xml_value: XRayDiffraction
+  - name: MASS_SPECTRUM
+    xml_value: MassSpectrum
+  - name: NMR
+    xml_value: NMR
+  - name: RAMAN
+    xml_value: Raman
+  - name: FLUORESCENCE
+    xml_value: Fluorescence
+  - name: ATOMIC
+    xml_value: Atomic
+- id: dtd.tag_type.e6aee297
+  python_name: TagType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag TagType> enumeration
+  - source: sdk_page_objecttag
+    locator: table[2]/row[8]
+  values:
+  - name: UNKNOWN
+    xml_value: Unknown
+  - name: STRING
+    xml_value: String
+  - name: LONG
+    xml_value: Long
+  - name: DOUBLE
+    xml_value: Double
+- id: dtd.positioning_type.e8ee9663
+  python_name: PositioningType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag PositioningType> enumeration
+  - source: sdk_page_objecttag
+    locator: table[2]/row[20]
+  values:
+  - name: AUTO
+    xml_value: auto
+  - name: ANGLE
+    xml_value: angle
+  - name: OFFSET
+    xml_value: offset
+  - name: ABSOLUTE
+    xml_value: absolute
+- id: dtd.side.5dd5ccc4
+  python_name: Side
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST border Side> enumeration
+  - source: sdk_page_border
+    locator: table[1]/row[11]
+  values:
+  - name: UNDEFINED
+    xml_value: undefined
+  - name: TOP
+    xml_value: top
+  - name: LEFT
+    xml_value: left
+  - name: BOTTOM
+    xml_value: bottom
+  - name: RIGHT
+    xml_value: right
+- id: dtd.bio_shape_type.5423fc35
+  python_name: BioShapeType
+  underlying_datatype: string
+  representation: str
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape BioShapeType> enumeration
+  values:
+  - name: UNDEFINED
+    xml_value: Undefined
+  - name: VALUE_1_SUBSTRATE_ENZYME
+    xml_value: 1SubstrateEnzyme
+  - name: VALUE_2_SUBSTRATE_ENZYME
+    xml_value: 2SubstrateEnzyme
+  - name: RECEPTOR
+    xml_value: Receptor
+  - name: G_PROTEIN_ALPHA
+    xml_value: GProteinAlpha
+  - name: G_PROTEIN_BETA
+    xml_value: GProteinBeta
+  - name: G_PROTEIN_GAMMA
+    xml_value: GProteinGamma
+  - name: IMMUNOGLOBIN
+    xml_value: Immunoglobin
+  - name: ION_CHANNEL
+    xml_value: IonChannel
+  - name: ENDOPLASMIC_RETICULUM
+    xml_value: EndoplasmicReticulum
+  - name: GOLGI
+    xml_value: Golgi
+  - name: MEMBRANE_LINE
+    xml_value: MembraneLine
+  - name: MEMBRANE_ARC
+    xml_value: MembraneArc
+  - name: MEMBRANE_ELLIPSE
+    xml_value: MembraneEllipse
+  - name: MEMBRANE_MICELLE
+    xml_value: MembraneMicelle
+  - name: DNA
+    xml_value: DNA
+  - name: HELIX_PROTEIN
+    xml_value: HelixProtein
+  - name: MITOCHONDRION
+    xml_value: Mitochondrion
+  - name: CLOUD
+    xml_value: Cloud
+  - name: T_RNA
+    xml_value: tRNA
+  - name: RIBOSOME_A
+    xml_value: RibosomeA
+  - name: RIBOSOME_B
+    xml_value: RibosomeB

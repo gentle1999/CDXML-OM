@@ -1,0 +1,140 @@
+version: 1
+datatypes:
+  - id: object_id
+    python_type: int
+    kind: integer
+    codec: object_id
+    minimum: 0
+    maximum: 4294967295
+    status: known
+    provenance:
+      - source: sdk_object_id
+        locator: "CDXObjectID datatype is UINT32"
+  - id: integer
+    python_type: int
+    kind: integer
+    codec: integer
+    status: known
+    provenance:
+      - source: sdk_intro
+        locator: "CDXML properties are quoted text values"
+  - id: local_id
+    python_type: int
+    kind: integer
+    codec: integer
+    minimum: 0
+    maximum: 65535
+    status: known
+    provenance:
+      - source: sdk_intro
+        locator: "Font IDs are UINT16 and scoped to their FontTable"
+      - source: revvity_dtd
+        locator: "font id is CDATA #REQUIRED"
+  - id: string
+    python_type: str
+    kind: string
+    codec: string
+    status: known
+    provenance:
+      - source: sdk_intro
+        locator: "CDXML properties are quoted text values"
+  - id: float
+    python_type: float
+    kind: float
+    codec: float
+    status: known
+    provenance:
+      - source: sdk_intro
+        locator: "CDXML numeric property values are quoted text"
+  - id: unit_interval
+    python_type: float
+    kind: float
+    codec: float
+    minimum: 0
+    maximum: 1
+    status: known
+    provenance:
+      - source: sdk_color
+        locator: "Color RGB components range from 0 to 1"
+  - id: boolean
+    python_type: bool
+    kind: boolean
+    codec: bool
+    status: known
+    provenance:
+      - source: revvity_dtd
+        locator: "Boolean attributes use yes/no lexical values"
+  - id: point_2d
+    python_type: Point2D
+    kind: geometry
+    codec: point_2d
+    status: known
+    provenance:
+      - source: sdk_coordinates
+        locator: "Point2D coordinates are x, y"
+  - id: point_3d
+    python_type: Point3D
+    kind: geometry
+    codec: point_3d
+    status: known
+    provenance:
+      - source: sdk_coordinates
+        locator: "Point3D coordinates are x, y, z"
+  - id: bounding_box
+    python_type: BoundingBox
+    kind: geometry
+    codec: bounding_box
+    status: known
+    provenance:
+      - source: sdk_coordinates
+        locator: "BoundingBox coordinates are left, top, right, bottom"
+  - id: curve_points_2d
+    python_type: tuple[Point2D, ...]
+    kind: geometry
+    codec: curve_points2d
+    status: known
+    provenance:
+      - source: sdk_curve_points
+        locator: "CDXCurvePoints is a flat sequence of 2D coordinate pairs; XML examples have no count prefix"
+  - id: curve_points_3d
+    python_type: tuple[Point3D, ...]
+    kind: geometry
+    codec: curve_points3d
+    status: known
+    provenance:
+      - source: sdk_curve_points_3d
+        locator: "CDXCurvePoints3D is a flat sequence of 3D coordinate triples; XML examples have no count prefix"
+  - id: integer_list
+    python_type: tuple[int, ...]
+    kind: sequence
+    codec: uint16_list
+    status: known
+    provenance:
+      - source: sdk_int16_list_with_counts
+        locator: "INT16ListWithCounts XML values omit the count prefix and contain UINT16 items"
+  - id: element_list
+    python_type: ElementList
+    kind: structured
+    codec: element_list
+    status: known
+    provenance:
+      - source: sdk_element_list
+        locator: "CDXElementList XML values are whitespace-separated UINT16 values with optional NOT prefix"
+  - id: generic_list
+    python_type: GenericList
+    kind: structured
+    codec: generic_list
+    status: known
+    provenance:
+      - source: sdk_generic_list
+        locator: "CDXGenericList XML values are strings with optional NOT prefix"
+  - id: object_tag_value
+    python_type: int | float | str
+    kind: structured
+    codec: object_tag_value
+    status: known
+    provenance:
+      - source: sdk_object_tag_type
+        locator: "ObjectTag Type selects the Value storage type; absent Type is Undefined"
+      - source: sdk_object_tag_value
+        locator: "ObjectTag Value maps Long to INT32, Double to FLOAT64, and String to lexical text"

@@ -1,0 +1,117 @@
+# AUTO-GENERATED. DO NOT EDIT DIRECTLY.
+"""Properties grouped by logical schema owner: arrow."""
+
+from __future__ import annotations
+
+from collections.abc import Mapping
+from types import MappingProxyType
+from typing import Final
+
+from ..provenance.revvity_dtd import (
+    P_02c9bfde61f1adccbb7c,
+    P_1dba1b0eb5d9025c4e36,
+    P_7acd7f52f320965ded0b,
+    P_41838817b462f0938303,
+    P_18266744620f99102833,
+)
+from ..types import PropertyMetadata
+
+PROPERTY_METADATA_GROUP: Final[Mapping[str, PropertyMetadata]] = MappingProxyType(
+    {
+        "dtd.arrow.arrow_equilibrium_ratio": PropertyMetadata(
+            owners=("arrow",),
+            name="arrow_equilibrium_ratio",
+            xml_name="ArrowEquilibriumRatio",
+            storage="attribute",
+            cdx_id=None,
+            cdx_constant=None,
+            datatype="string",
+            codec="string",
+            required=False,
+            default=None,
+            cardinality="one",
+            reference_target=None,
+            reference_many=False,
+            enum=None,
+            status="known",
+            provenance=(P_02c9bfde61f1adccbb7c,),
+            xml_aliases=(),
+        ),
+        "dtd.arrow.arrow_source": PropertyMetadata(
+            owners=("arrow",),
+            name="arrow_source",
+            xml_name="ArrowSource",
+            storage="attribute",
+            cdx_id=None,
+            cdx_constant=None,
+            datatype="string",
+            codec="string",
+            required=False,
+            default=None,
+            cardinality="one",
+            reference_target=None,
+            reference_many=False,
+            enum=None,
+            status="known",
+            provenance=(P_1dba1b0eb5d9025c4e36,),
+            xml_aliases=(),
+        ),
+        "dtd.arrow.arrow_target": PropertyMetadata(
+            owners=("arrow",),
+            name="arrow_target",
+            xml_name="ArrowTarget",
+            storage="attribute",
+            cdx_id=None,
+            cdx_constant=None,
+            datatype="string",
+            codec="string",
+            required=False,
+            default=None,
+            cardinality="one",
+            reference_target=None,
+            reference_many=False,
+            enum=None,
+            status="known",
+            provenance=(P_18266744620f99102833,),
+            xml_aliases=(),
+        ),
+        "dtd.arrow.dipole": PropertyMetadata(
+            owners=("arrow",),
+            name="dipole",
+            xml_name="Dipole",
+            storage="attribute",
+            cdx_id=None,
+            cdx_constant=None,
+            datatype="boolean",
+            codec="bool",
+            required=False,
+            default=False,
+            cardinality="one",
+            reference_target=None,
+            reference_many=False,
+            enum=None,
+            status="known",
+            provenance=(P_41838817b462f0938303,),
+            xml_aliases=(),
+        ),
+        "dtd.arrow.no_go": PropertyMetadata(
+            owners=("arrow",),
+            name="no_go",
+            xml_name="NoGo",
+            storage="attribute",
+            cdx_id=None,
+            cdx_constant=None,
+            datatype="string",
+            codec="string",
+            required=False,
+            default=None,
+            cardinality="one",
+            reference_target=None,
+            reference_many=False,
+            enum="dtd.no_go.dbf92440",
+            status="known",
+            provenance=(P_7acd7f52f320965ded0b,),
+            xml_aliases=(),
+        ),
+    }
+)

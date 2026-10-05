@@ -1,0 +1,16 @@
+{
+  "generator_version": "0.2.0",
+  "input_hashes": {
+    "schema/canonical/datatypes.yaml": "6fb2af1d77d1de8f90abc2f82516fa1fb671bcc9183f79db65700d529e59ac18",
+    "schema/canonical/enums.yaml": "f54852153b8404a4ead26413360805bb66df492c1b37632102ee84c57175defd",
+    "schema/canonical/objects.yaml": "821ef3892e554d2373c6ef3358b8b1b4901a9f3a287ff763f3b8c6a7cdcac4ee",
+    "schema/canonical/properties.yaml": "e6063921f02d1802f83a1c0c38ab73da195a3356e61fed79050519bdb2c0a5a1"
+  },
+  "schema_hash": "3b17db2f8ef73e0e96eaa4fc576115d891d8683e07052b16b170b1cde5e8d2e3",
+  "schema_version": 1,
+  "source_hashes": {
+    "schema/sources/revvity-CDXML.dtd": "5311978e514ffe154108540c3634c314dc66031a4f3c877a681fc6dca8e128c2",
+    "schema/sources/sdk/evidence.json": "6b72e03de5dab0cdbad29d915f0524e7b10c19449e2618a2926c487a054b381c",
+    "schema/sources/sdk/focused-properties.json": "10c653409edeb7fa7c85652776dff5425dedd3261a37b902c152afa6c75055f4"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdxml-om.invalid/schema/coverage/sdk-extension-feature-cases.schema.json",
+  "title": "CDXML-OM SDK extension feature recipes",
+  "type": "object",
+  "required": ["format", "version", "source_evidence", "raw_preservation_test", "cases"],
+  "properties": {
+    "format": { "const": "cdxml-om-sdk-extension-feature-cases" },
+    "version": { "const": 1 },
+    "source_evidence": { "const": "schema/sources/sdk/evidence.json" },
+    "raw_preservation_test": { "$ref": "#/$defs/nodeId" },
+    "cases": {
+      "type": "array",
+      "minItems": 23,
+      "maxItems": 23,
+      "items": { "$ref": "#/$defs/featureCase" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "nodeId": {
+      "type": "string",
+      "pattern": "^tests/.+\\.py::test_.+$"
+    },
+    "caseNodeId": {
+      "type": "string",
+      "pattern": "^tests/.+\\.py::test_[^\\[]+\\[feature-sdk:[^]]+\\]$"
+    },
+    "featureCase": {
+      "type": "object",
+      "required": ["case_id", "owner_tag", "xml_attribute", "source_xml", "sdk_type", "typed_status", "typed_recipe", "assertions", "pytest_nodeid"],
+      "properties": {
+        "case_id": { "type": "string", "pattern": "^feature-sdk:[^@]+@.+$" },
+        "owner_tag": { "type": "string", "minLength": 1 },
+        "xml_attribute": { "type": "string", "minLength": 1 },
+        "source_xml": { "type": "string" },
+        "sdk_type": { "type": "string", "minLength": 1 },
+        "typed_status": { "type": "string", "minLength": 1 },
+        "typed_gap_reason": { "type": ["string", "null"] },
+        "typed_recipe": {
+          "type": "object",
+          "required": ["expected_python_type", "expected_python_value", "mutation_python_value", "mutation_xml", "required_assertions", "pytest_nodeid"],
+          "properties": {
+            "expected_python_type": { "type": "string", "minLength": 1 },
+            "expected_python_value": {},
+            "mutation_python_value": {},
+            "mutation_xml": { "type": "string" },
+            "required_assertions": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+            "pytest_nodeid": { "oneOf": [{ "$ref": "#/$defs/caseNodeId" }, { "type": "null" }] }
+          },
+          "additionalProperties": true
+        },
+        "assertions": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "pytest_nodeid": { "$ref": "#/$defs/caseNodeId" }
+      },
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdxml-om.invalid/schema/coverage/report.schema.json",
+  "title": "CDXML-OM source-relative coverage report",
+  "type": "object",
+  "required": [
+    "format",
+    "format_version",
+    "baseline",
+    "structure",
+    "fingerprints",
+    "test_execution",
+    "summary",
+    "elements",
+    "owner_attribute_pairs",
+    "character_data",
+    "sdk_extension_pairs",
+    "gaps"
+  ],
+  "properties": {
+    "format": { "const": "cdxml-om-coverage-report" },
+    "format_version": { "const": 2 },
+    "baseline": {
+      "type": "object",
+      "required": ["dtd_path", "dtd_sha256", "element_count", "nonroot_element_count", "owner_attribute_pair_count"],
+      "properties": {
+        "dtd_path": { "type": "string" },
+        "dtd_sha256": { "$ref": "#/$defs/sha256" },
+        "element_count": { "const": 53 },
+        "nonroot_element_count": { "const": 52 },
+        "owner_attribute_pair_count": { "const": 762 }
+      },
+      "additionalProperties": false
+    },
+    "structure": {
+      "type": "object",
+      "required": ["unresolved_dtd_child_symbols", "strict_grammar_validation_claimed"],
+      "properties": {
+        "unresolved_dtd_child_symbols": { "type": "array", "items": { "type": "object" } },
+        "strict_grammar_validation_claimed": { "const": false }
+      },
+      "additionalProperties": false
+    },
+    "fingerprints": { "$ref": "#/$defs/fingerprints" },
+    "test_execution": {
+      "type": "object",
+      "required": ["provided", "identity_matches", "status"],
+      "properties": {
+        "provided": { "type": "boolean" },
+        "identity_matches": { "type": "boolean" },
+        "status": { "enum": ["not_provided", "current"] },
+        "junit_sha256": { "$ref": "#/$defs/sha256" },
+        "passed_case_count": { "type": "integer", "minimum": 0 },
+        "failed_case_count": { "type": "integer", "minimum": 0 },
+        "skipped_case_count": { "type": "integer", "minimum": 0 },
+        "not_run_case_count": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "object",
+      "required": ["elements", "owner_attribute_pairs", "character_data", "sdk_extension_pairs"],
+      "properties": {
+        "elements": { "$ref": "#/$defs/summary" },
+        "owner_attribute_pairs": { "$ref": "#/$defs/summary" },
+        "character_data": { "$ref": "#/$defs/characterDataSummary" },
+        "sdk_extension_pairs": { "$ref": "#/$defs/sdkExtensionSummary" }
+      },
+      "additionalProperties": false
+    },
+    "elements": { "type": "array", "items": { "$ref": "#/$defs/element" } },
+    "owner_attribute_pairs": { "type": "array", "items": { "$ref": "#/$defs/attributePair" } },
+    "character_data": { "type": "array", "items": { "$ref": "#/$defs/characterData" } },
+    "sdk_extension_pairs": { "type": "array", "items": { "$ref": "#/$defs/sdkExtensionPair" } },
+    "gaps": { "type": "object", "additionalProperties": { "$ref": "#/$defs/gapGroup" } }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "fingerprints": {
+      "type": "object",
+      "required": ["dtd_sha256", "schema_hash", "schema_lock_sha256", "feature_case_catalog_sha256", "sdk_extension_case_catalog_sha256", "files", "fingerprint_sha256"],
+      "properties": {
+        "dtd_sha256": { "$ref": "#/$defs/sha256" },
+        "schema_hash": { "$ref": "#/$defs/sha256" },
+        "schema_lock_sha256": { "$ref": "#/$defs/sha256" },
+        "feature_case_catalog_sha256": { "$ref": "#/$defs/sha256" },
+        "sdk_extension_case_catalog_sha256": { "$ref": "#/$defs/sha256" },
+        "fingerprint_sha256": { "$ref": "#/$defs/sha256" },
+        "files": { "type": "object", "additionalProperties": { "$ref": "#/$defs/sha256" } }
+      },
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total", "known", "implemented", "typed", "test_case_declared", "tested", "round_trip_verified", "chemdraw_verified"],
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "known": { "type": "integer", "minimum": 0 },
+        "canonical_object_known": { "type": "integer", "minimum": 0 },
+        "canonical_property_known": { "type": "integer", "minimum": 0 },
+        "implemented": { "type": "integer", "minimum": 0 },
+        "typed": { "type": "integer", "minimum": 0 },
+        "test_case_declared": { "type": "integer", "minimum": 0 },
+        "tested": { "type": "integer", "minimum": 0 },
+        "round_trip_verified": { "type": "integer", "minimum": 0 },
+        "raw_preservation_tested": { "type": "integer", "minimum": 0 },
+        "chemdraw_verified": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "characterDataSummary": {
+      "type": "object",
+      "required": ["total", "known", "canonical_text_storage_known", "implemented", "typed", "test_case_declared", "tested", "round_trip_verified", "chemdraw_verified"],
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "known": { "type": "integer", "minimum": 0 },
+        "canonical_text_storage_known": { "type": "integer", "minimum": 0 },
+        "implemented": { "type": "integer", "minimum": 0 },
+        "typed": { "type": "integer", "minimum": 0 },
+        "test_case_declared": { "type": "integer", "minimum": 0 },
+        "tested": { "type": "integer", "minimum": 0 },
+        "round_trip_verified": { "type": "integer", "minimum": 0 },
+        "chemdraw_verified": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "sdkExtensionSummary": {
+      "type": "object",
+      "required": ["total", "known", "canonical_property_known", "implemented", "typed", "test_case_declared", "tested", "round_trip_verified", "raw_preservation_tested", "chemdraw_verified"],
+      "properties": {
+        "total": { "const": 23 },
+        "known": { "type": "integer", "minimum": 0 },
+        "canonical_property_known": { "type": "integer", "minimum": 0 },
+        "implemented": { "type": "integer", "minimum": 0 },
+        "typed": { "type": "integer", "minimum": 0 },
+        "test_case_declared": { "type": "integer", "minimum": 0 },
+        "tested": { "type": "integer", "minimum": 0 },
+        "round_trip_verified": { "type": "integer", "minimum": 0 },
+        "raw_preservation_tested": { "type": "integer", "minimum": 0 },
+        "chemdraw_verified": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "testOperation": {
+      "type": "object",
+      "required": ["declared", "passed", "failed", "skipped", "not_run", "test_ids"],
+      "properties": {
+        "declared": { "type": "boolean" },
+        "passed": { "type": "boolean" },
+        "failed": { "type": "array", "items": { "type": "string" } },
+        "skipped": { "type": "array", "items": { "type": "string" } },
+        "not_run": { "type": "array", "items": { "type": "string" } },
+        "test_ids": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "testStates": { "type": "object", "additionalProperties": { "$ref": "#/$defs/testOperation" } },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["application", "version", "verified_on", "artifact", "observation"],
+        "properties": {
+          "application": { "type": "string" },
+          "version": { "type": "string" },
+          "verified_on": { "type": "string" },
+          "artifact": { "type": "string" },
+          "observation": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "element": {
+      "type": "object",
+      "required": ["xml_name", "known", "canonical_object_known", "implemented", "typed", "tested", "test_case_declared", "round_trip_verified", "chemdraw_verified", "mapping", "canonical_object_id", "feature_case_id", "pytest_nodeid", "dtd_declaration_type", "dtd_children", "dtd_content_model", "operation_applicability", "tests", "chemdraw_evidence"],
+      "properties": {
+        "xml_name": { "type": "string" },
+        "known": { "type": "boolean" },
+        "canonical_object_known": { "type": "boolean" },
+        "implemented": { "type": "boolean" },
+        "typed": { "type": "boolean" },
+        "tested": { "type": "boolean" },
+        "test_case_declared": { "type": "boolean" },
+        "round_trip_verified": { "type": "boolean" },
+        "chemdraw_verified": { "type": "boolean" },
+        "mapping": { "type": "string" },
+        "canonical_object_id": { "type": ["string", "null"] },
+        "feature_case_id": { "type": ["string", "null"] },
+        "pytest_nodeid": { "type": ["string", "null"] },
+        "dtd_declaration_type": { "type": "string" },
+        "dtd_children": { "type": "array", "items": { "type": "string" } },
+        "dtd_content_model": {},
+        "operation_applicability": { "type": "object" },
+        "tests": { "$ref": "#/$defs/testStates" },
+        "chemdraw_evidence": { "$ref": "#/$defs/evidence" }
+      },
+      "additionalProperties": false
+    },
+    "attributePair": {
+      "type": "object",
+      "required": ["owner_xml_name", "xml_name", "known", "canonical_property_known", "implemented", "typed", "tested", "test_case_declared", "round_trip_verified", "chemdraw_verified", "dtd_type", "dtd_required", "dtd_default_kind", "dtd_default_value", "dtd_enum_values", "canonical_property_id", "runtime_codec", "feature_case_id", "pytest_nodeid", "tests", "chemdraw_evidence"],
+      "properties": {
+        "owner_xml_name": { "type": "string" },
+        "xml_name": { "type": "string" },
+        "known": { "type": "boolean" },
+        "canonical_property_known": { "type": "boolean" },
+        "implemented": { "type": "boolean" },
+        "typed": { "type": "boolean" },
+        "tested": { "type": "boolean" },
+        "test_case_declared": { "type": "boolean" },
+        "round_trip_verified": { "type": "boolean" },
+        "chemdraw_verified": { "type": "boolean" },
+        "dtd_type": { "type": "string" },
+        "dtd_required": { "type": "boolean" },
+        "dtd_default_kind": { "type": ["string", "null"] },
+        "dtd_default_value": { "type": ["string", "null"] },
+        "dtd_enum_values": { "type": "array", "items": { "type": "string" } },
+        "canonical_property_id": { "type": ["string", "null"] },
+        "runtime_codec": { "type": ["string", "null"] },
+        "feature_case_id": { "type": ["string", "null"] },
+        "pytest_nodeid": { "type": ["string", "null"] },
+        "tests": { "$ref": "#/$defs/testStates" },
+        "chemdraw_evidence": { "$ref": "#/$defs/evidence" }
+      },
+      "additionalProperties": false
+    },
+    "characterData": {
+      "type": "object",
+      "required": ["xml_name", "known", "canonical_text_storage_known", "implemented", "typed", "tested", "test_case_declared", "round_trip_verified", "chemdraw_verified", "canonical_property_id", "feature_case_id", "pytest_nodeid", "dtd_content_model", "tests", "chemdraw_evidence"],
+      "properties": {
+        "xml_name": { "type": "string" },
+        "known": { "type": "boolean" },
+        "canonical_text_storage_known": { "type": "boolean" },
+        "implemented": { "type": "boolean" },
+        "typed": { "type": "boolean" },
+        "tested": { "type": "boolean" },
+        "test_case_declared": { "type": "boolean" },
+        "round_trip_verified": { "type": "boolean" },
+        "chemdraw_verified": { "type": "boolean" },
+        "canonical_property_id": { "type": ["string", "null"] },
+        "feature_case_id": { "type": ["string", "null"] },
+        "pytest_nodeid": { "type": ["string", "null"] },
+        "dtd_content_model": {},
+        "tests": { "$ref": "#/$defs/testStates" },
+        "chemdraw_evidence": { "$ref": "#/$defs/evidence" }
+      },
+      "additionalProperties": false
+    },
+    "sdkExtensionPair": {
+      "type": "object",
+      "required": ["owner_xml_name", "xml_name", "known", "canonical_property_known", "implemented", "typed", "test_case_declared", "tested", "round_trip_verified", "raw_preservation_tested", "chemdraw_verified", "canonical_property_id", "runtime_codec", "feature_case_id", "pytest_nodeid", "raw_preservation_nodeid", "tests", "raw_preservation_test"],
+      "properties": {
+        "owner_xml_name": { "type": "string" },
+        "xml_name": { "type": "string" },
+        "known": { "type": "boolean" },
+        "canonical_property_known": { "type": "boolean" },
+        "implemented": { "type": "boolean" },
+        "typed": { "type": "boolean" },
+        "test_case_declared": { "type": "boolean" },
+        "tested": { "type": "boolean" },
+        "round_trip_verified": { "type": "boolean" },
+        "raw_preservation_tested": { "type": "boolean" },
+        "chemdraw_verified": { "const": false },
+        "canonical_property_id": { "type": ["string", "null"] },
+        "runtime_codec": { "type": ["string", "null"] },
+        "feature_case_id": { "type": "string" },
+        "pytest_nodeid": { "type": ["string", "null"] },
+        "raw_preservation_nodeid": { "type": "string" },
+        "tests": { "$ref": "#/$defs/testStates" },
+        "raw_preservation_test": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    "gapGroup": {
+      "type": "object",
+      "required": ["elements", "owner_attribute_pairs", "character_data", "sdk_extension_pairs"],
+      "properties": {
+        "elements": { "type": "array", "items": { "type": "string" } },
+        "owner_attribute_pairs": { "type": "array", "items": { "type": "object", "required": ["owner_xml_name", "xml_name"], "properties": { "owner_xml_name": { "type": "string" }, "xml_name": { "type": "string" } }, "additionalProperties": false } },
+        "character_data": { "type": "array", "items": { "type": "string" } }
+        ,"sdk_extension_pairs": { "type": "array", "items": { "type": "object", "required": ["owner_xml_name", "xml_name"], "properties": { "owner_xml_name": { "type": "string" }, "xml_name": { "type": "string" } }, "additionalProperties": false } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

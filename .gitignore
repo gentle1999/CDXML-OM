@@ -95,11 +95,10 @@ ipython_config.py
 #   install all needed dependencies.
 # Pipfile.lock
 
-# uv
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-# uv.lock
+# This project tracks uv.lock and schema/schema.lock.json for reproducible
+# development and schema generation. Generated Python models, source catalogs,
+# test fixtures, executed tutorial notebooks, and manual CDXML samples are also
+# intentional source/evidence artifacts; do not ignore them as build output.
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDXML xmlns:v="urn:vendor" v:root="preserve-root">
+  <!-- keep comments, unknown nodes, and sibling order after a typed edit -->
+  <page id="1" v:page="opaque-case">
+    <altgroup id="2">
+      <bracket v:marker="undeclared-in-pinned-dtd"/>
+    </altgroup>
+    <fragment id="3">
+      <n id="4" Element="6" p="001.250 02.500" Charge="0"
+        v:hint="preserve-attribute"/>
+      <v:opaque marker="preserve-element"/>
+      <n id="5" Element="8"/>
+    </fragment>
+    <v:root-marker marker="preserve-root-child"/>
+  </page>
+</CDXML>

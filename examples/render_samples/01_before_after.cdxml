@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CDXML>
+<CDXML WindowIsZoomed="no" FractionalWidths="yes" LabelFont="3" LabelSize="10.0" LabelFace="96" CaptionFont="4" CaptionSize="12.0" HashSpacing="2.7" MarginWidth="2" LineWidth="1" BoldWidth="4" BondLength="30.0" BondSpacing="12" ChainAngle="120">
+  <colortable>
+<color r="1" g="1" b="1"/>
+<color r="0" g="0" b="0"/>
+<color r="1" g="0" b="0"/>
+<color r="1" g="1" b="0"/>
+<color r="0" g="1" b="0"/>
+<color r="0" g="1" b="1"/>
+<color r="0" g="0" b="1"/>
+<color r="1" g="0" b="1"/>
+</colortable>
+  <fonttable>
+<font id="3" charset="iso-8859-1" name="Arial"/>
+<font id="4" charset="iso-8859-1" name="Times New Roman"/>
+</fonttable>
+  <page id="1" BoundingBox="100.0 205.0 490.0 330.0" WidthPages="1" HeightPages="1">
+    <t p="132.0 225.0" Z="5" id="2">
+      <s font="3" size="16.0" face="1" color="3">BEFORE</s>
+    </t>
+    <t p="304.0 225.0" Z="5" id="3">
+      <s font="3" size="16.0" face="1" color="3">AFTER</s>
+    </t>
+    <t p="304.0 247.0" id="4">
+      <s font="3" size="10.0" color="3">O added; bond order changed</s>
+    </t>
+    <fragment id="5">
+      <n Element="6" p="137.0 276.0" id="6">
+        <t p="134.0 270.0" id="7">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <n Element="6" p="167.0 276.0" id="8">
+        <t p="164.0 270.0" id="9">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <b B="6" E="8" Order="1" id="10"/>
+    </fragment>
+    <arrow Tail3D="208.0 276.0 0.0" Head3D="270.0 276.0 0.0" ArrowheadType="Solid" ArrowheadHead="Full" id="11"/>
+    <fragment id="12">
+      <n Element="6" p="310.0 276.0" id="13">
+        <t p="307.0 270.0" id="14">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <n Element="6" p="340.0 276.0" id="15">
+        <t p="337.0 270.0" id="16">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <b B="13" E="15" Order="2" id="17"/>
+      <n Element="8" p="370.0 276.0" id="18">
+        <t p="367.0 270.0" id="19">
+          <s font="3" size="10.0" color="3">O</s>
+        </t>
+      </n>
+      <b B="15" E="18" Order="1" id="20"/>
+    </fragment>
+  </page>
+</CDXML>

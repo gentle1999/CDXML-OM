@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdxml-om.invalid/schema/coverage/feature-cases.schema.json",
+  "title": "CDXML-OM feature case catalog",
+  "type": "object",
+  "required": ["format", "version", "dtd_sha256", "cases", "element_cases"],
+  "properties": {
+    "format": { "const": "cdxml-om-full-schema-feature-cases" },
+    "version": { "const": 1 },
+    "dtd_sha256": { "$ref": "#/$defs/sha256" },
+    "cases": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/attributeCase" }
+    },
+    "element_cases": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/elementCase" }
+    },
+    "character_data_cases": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/characterDataCase" }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "assertions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "pytestNodeId": {
+      "type": "string",
+      "pattern": "^tests/.+\\.py::test_[^\\[]+\\[feature[^]]+\\]$"
+    },
+    "attributeCase": {
+      "type": "object",
+      "required": ["case_id", "owner_tag", "xml_attribute", "assertions"],
+      "properties": {
+        "case_id": { "type": "string", "minLength": 1 },
+        "owner_tag": { "type": "string", "minLength": 1 },
+        "xml_attribute": { "type": "string", "minLength": 1 },
+        "pytest_nodeid": { "$ref": "#/$defs/pytestNodeId" },
+        "assertions": { "$ref": "#/$defs/assertions" },
+        "chemdraw_evidence": { "$ref": "#/$defs/chemdrawEvidence" }
+      },
+      "if": { "properties": { "assertions": { "minItems": 1 } } },
+      "then": { "required": ["pytest_nodeid"] },
+      "additionalProperties": true
+    },
+    "elementCase": {
+      "type": "object",
+      "required": ["case_id", "xml_name", "pytest_nodeid", "assertions"],
+      "properties": {
+        "case_id": { "type": "string", "minLength": 1 },
+        "xml_name": { "type": "string", "minLength": 1 },
+        "pytest_nodeid": { "oneOf": [{ "$ref": "#/$defs/pytestNodeId" }, { "type": "null" }] },
+        "assertions": { "$ref": "#/$defs/assertions" },
+        "chemdraw_evidence": { "$ref": "#/$defs/chemdrawEvidence" }
+      },
+      "additionalProperties": true
+    },
+    "characterDataCase": {
+      "type": "object",
+      "required": ["case_id", "xml_name", "pytest_nodeid", "assertions"],
+      "properties": {
+        "case_id": { "type": "string", "minLength": 1 },
+        "xml_name": { "type": "string", "minLength": 1 },
+        "pytest_nodeid": { "oneOf": [{ "$ref": "#/$defs/pytestNodeId" }, { "type": "null" }] },
+        "assertions": { "$ref": "#/$defs/assertions" },
+        "source_xml": {},
+        "expected": {},
+        "mutation": {},
+        "mutation_xml": {},
+        "gap_reason": { "type": ["string", "null"] },
+        "chemdraw_evidence": { "$ref": "#/$defs/chemdrawEvidence" }
+      },
+      "additionalProperties": false
+    },
+    "chemdrawEvidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["application", "version", "verified_on", "artifact", "observation"],
+        "properties": {
+          "application": { "type": "string", "minLength": 1 },
+          "version": { "type": "string", "minLength": 1 },
+          "verified_on": { "type": "string", "format": "date" },
+          "artifact": { "type": "string", "minLength": 1 },
+          "observation": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

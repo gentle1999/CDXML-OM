@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CDXML>
+<CDXML WindowIsZoomed="no" FractionalWidths="yes" LabelFont="3" LabelSize="10.0" LabelFace="96" CaptionFont="4" CaptionSize="12.0" HashSpacing="2.7" MarginWidth="2" LineWidth="1" BoldWidth="4" BondLength="30.0" BondSpacing="12" ChainAngle="120">
+  <colortable>
+<color r="1" g="1" b="1"/>
+<color r="0" g="0" b="0"/>
+<color r="1" g="0" b="0"/>
+<color r="1" g="1" b="0"/>
+<color r="0" g="1" b="0"/>
+<color r="0" g="1" b="1"/>
+<color r="0" g="0" b="1"/>
+<color r="1" g="0" b="1"/>
+</colortable>
+  <fonttable>
+<font id="3" charset="iso-8859-1" name="Arial"/>
+<font id="4" charset="iso-8859-1" name="Times New Roman"/>
+</fonttable>
+  <page id="1" BoundingBox="100.0 190.0 560.0 360.0" WidthPages="1" HeightPages="1">
+    <t p="126.0 210.0" Z="5" id="2">
+      <s font="3" size="16.0" face="1" color="3">RICH TEXT + REACTION  /  </s>
+      <s font="4" size="13.0" face="2" color="4">Arial + Times New Roman</s>
+    </t>
+    <fragment id="3">
+      <n Element="6" p="150.0 267.0" id="4">
+        <t p="147.0 261.0" id="5">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <n Element="6" p="180.0 267.0" id="6">
+        <t p="177.0 261.0" id="7">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <b B="4" E="6" Order="1" id="8"/>
+    </fragment>
+    <arrow Tail3D="260.0 267.0 0.0" Head3D="325.0 267.0 0.0" ArrowheadType="Solid" ArrowheadHead="Full" id="9"/>
+    <fragment id="10">
+      <n Element="6" p="390.0 267.0" id="11">
+        <t p="387.0 261.0" id="12">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <n Element="6" p="420.0 267.0" id="13">
+        <t p="417.0 261.0" id="14">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <b B="11" E="13" Order="2" id="15"/>
+    </fragment>
+    <scheme id="16">
+      <step id="17" ReactionStepReactants="3" ReactionStepProducts="10" ReactionStepArrows="9"/>
+    </scheme>
+    <graphic GraphicType="Rectangle" BoundingBox="122.0 305.0 540.0 342.0" id="18"/>
+    <t p="138.0 317.0" Z="6" id="19">
+      <s font="3" size="10.0" color="3">Font table: Arial + Times New Roman | color index 3 black, 4 red</s>
+    </t>
+  </page>
+</CDXML>

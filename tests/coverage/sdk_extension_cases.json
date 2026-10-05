@@ -1,0 +1,652 @@
+{
+  "format": "cdxml-om-sdk-extension-feature-cases",
+  "version": 1,
+  "source_evidence": "schema/sources/sdk/evidence.json",
+  "raw_preservation_test": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit",
+  "cases": [
+    {
+      "case_id": "feature-sdk:n@bgcolor",
+      "owner_tag": "n",
+      "xml_attribute": "bgcolor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:n@bgcolor]",
+        "field_name": "bgcolor"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:n@bgcolor]"
+    },
+    {
+      "case_id": "feature-sdk:b@bgcolor",
+      "owner_tag": "b",
+      "xml_attribute": "bgcolor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:b@bgcolor]",
+        "field_name": "bgcolor"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:b@bgcolor]"
+    },
+    {
+      "case_id": "feature-sdk:graphic@bgcolor",
+      "owner_tag": "graphic",
+      "xml_attribute": "bgcolor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:graphic@bgcolor]",
+        "field_name": "bgcolor"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:graphic@bgcolor]"
+    },
+    {
+      "case_id": "feature-sdk:curve@bgcolor",
+      "owner_tag": "curve",
+      "xml_attribute": "bgcolor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:curve@bgcolor]",
+        "field_name": "bgcolor"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:curve@bgcolor]"
+    },
+    {
+      "case_id": "feature-sdk:curve@ArrowHeadType",
+      "owner_tag": "curve",
+      "xml_attribute": "ArrowHeadType",
+      "source_xml": "Hollow",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "ArrowheadType",
+        "expected_python_value": "Hollow",
+        "mutation_python_value": "Angle",
+        "mutation_xml": "Angle",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:curve@ArrowHeadType]",
+        "field_name": "arrowhead_type"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:curve@ArrowHeadType]"
+    },
+    {
+      "case_id": "feature-sdk:curve@ArrowHeadHead",
+      "owner_tag": "curve",
+      "xml_attribute": "ArrowHeadHead",
+      "source_xml": "HalfLeft",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "ArrowheadSide",
+        "expected_python_value": "HalfLeft",
+        "mutation_python_value": "Full",
+        "mutation_xml": "Full",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:curve@ArrowHeadHead]",
+        "field_name": "arrowhead_head"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:curve@ArrowHeadHead]"
+    },
+    {
+      "case_id": "feature-sdk:curve@ArrowHeadTail",
+      "owner_tag": "curve",
+      "xml_attribute": "ArrowHeadTail",
+      "source_xml": "None",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "ArrowheadSide",
+        "expected_python_value": "None",
+        "mutation_python_value": "HalfRight",
+        "mutation_xml": "HalfRight",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:curve@ArrowHeadTail]",
+        "field_name": "arrowhead_tail"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:curve@ArrowHeadTail]"
+    },
+    {
+      "case_id": "feature-sdk:embeddedobject@bgcolor",
+      "owner_tag": "embeddedobject",
+      "xml_attribute": "bgcolor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:embeddedobject@bgcolor]",
+        "field_name": "bgcolor"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:embeddedobject@bgcolor]"
+    },
+    {
+      "case_id": "feature-sdk:table@bgcolor",
+      "owner_tag": "table",
+      "xml_attribute": "bgcolor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:table@bgcolor]",
+        "field_name": "bgcolor"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:table@bgcolor]"
+    },
+    {
+      "case_id": "feature-sdk:altgroup@bgcolor",
+      "owner_tag": "altgroup",
+      "xml_attribute": "bgcolor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:altgroup@bgcolor]",
+        "field_name": "bgcolor"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:altgroup@bgcolor]"
+    },
+    {
+      "case_id": "feature-sdk:spectrum@bgcolor",
+      "owner_tag": "spectrum",
+      "xml_attribute": "bgcolor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:spectrum@bgcolor]",
+        "field_name": "bgcolor"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:spectrum@bgcolor]"
+    },
+    {
+      "case_id": "feature-sdk:geometry@BondLength",
+      "owner_tag": "geometry",
+      "xml_attribute": "BondLength",
+      "source_xml": "12.5",
+      "sdk_type": "CDXCoordinate",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "float",
+        "expected_python_value": 12.5,
+        "mutation_python_value": 13.75,
+        "mutation_xml": "13.75",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:geometry@BondLength]",
+        "field_name": "bond_length"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:geometry@BondLength]"
+    },
+    {
+      "case_id": "feature-sdk:geometry@LabelFont",
+      "owner_tag": "geometry",
+      "xml_attribute": "LabelFont",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 1,
+        "mutation_xml": "1",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:geometry@LabelFont]",
+        "field_name": "label_font"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:geometry@LabelFont]"
+    },
+    {
+      "case_id": "feature-sdk:geometry@LabelSize",
+      "owner_tag": "geometry",
+      "xml_attribute": "LabelSize",
+      "source_xml": "18",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "float",
+        "expected_python_value": 18,
+        "mutation_python_value": 20,
+          "mutation_xml": "20.0",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:geometry@LabelSize]",
+        "field_name": "label_size"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:geometry@LabelSize]"
+    },
+    {
+      "case_id": "feature-sdk:geometry@LabelFace",
+      "owner_tag": "geometry",
+      "xml_attribute": "LabelFace",
+      "source_xml": "3",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 3,
+        "mutation_python_value": 5,
+        "mutation_xml": "5",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:geometry@LabelFace]",
+        "field_name": "label_face"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:geometry@LabelFace]"
+    },
+    {
+      "case_id": "feature-sdk:geometry@LabelColor",
+      "owner_tag": "geometry",
+      "xml_attribute": "LabelColor",
+      "source_xml": "3",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 3,
+        "mutation_python_value": 2,
+        "mutation_xml": "2",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:geometry@LabelColor]",
+        "field_name": "label_color"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:geometry@LabelColor]"
+    },
+    {
+      "case_id": "feature-sdk:geometry@PointIsDirected",
+      "owner_tag": "geometry",
+      "xml_attribute": "PointIsDirected",
+      "source_xml": "yes",
+      "sdk_type": "CDXBooleanImplied",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "bool",
+        "expected_python_value": true,
+        "mutation_python_value": false,
+        "mutation_xml": "no",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:geometry@PointIsDirected]",
+        "field_name": "point_is_directed"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:geometry@PointIsDirected]"
+    },
+    {
+      "case_id": "feature-sdk:constraint@BondLength",
+      "owner_tag": "constraint",
+      "xml_attribute": "BondLength",
+      "source_xml": "8.25",
+      "sdk_type": "CDXCoordinate",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "float",
+        "expected_python_value": 8.25,
+        "mutation_python_value": 9.5,
+        "mutation_xml": "9.5",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:constraint@BondLength]",
+        "field_name": "bond_length"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:constraint@BondLength]"
+    },
+    {
+      "case_id": "feature-sdk:constraint@LabelFont",
+      "owner_tag": "constraint",
+      "xml_attribute": "LabelFont",
+      "source_xml": "1",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 1,
+        "mutation_python_value": 2,
+        "mutation_xml": "2",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:constraint@LabelFont]",
+        "field_name": "label_font"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:constraint@LabelFont]"
+    },
+    {
+      "case_id": "feature-sdk:constraint@LabelSize",
+      "owner_tag": "constraint",
+      "xml_attribute": "LabelSize",
+      "source_xml": "16",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "float",
+        "expected_python_value": 16,
+        "mutation_python_value": 19,
+          "mutation_xml": "19.0",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:constraint@LabelSize]",
+        "field_name": "label_size"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:constraint@LabelSize]"
+    },
+    {
+      "case_id": "feature-sdk:constraint@LabelFace",
+      "owner_tag": "constraint",
+      "xml_attribute": "LabelFace",
+      "source_xml": "6",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 6,
+        "mutation_python_value": 7,
+        "mutation_xml": "7",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:constraint@LabelFace]",
+        "field_name": "label_face"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:constraint@LabelFace]"
+    },
+    {
+      "case_id": "feature-sdk:constraint@LabelColor",
+      "owner_tag": "constraint",
+      "xml_attribute": "LabelColor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:constraint@LabelColor]",
+        "field_name": "label_color"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:constraint@LabelColor]"
+    },
+    {
+      "case_id": "feature-sdk:tlcplate@bgcolor",
+      "owner_tag": "tlcplate",
+      "xml_attribute": "bgcolor",
+      "source_xml": "2",
+      "sdk_type": "INT16",
+      "typed_status": "typed",
+      "typed_recipe": {
+        "expected_python_type": "int",
+        "expected_python_value": 2,
+        "mutation_python_value": 3,
+        "mutation_xml": "3",
+        "required_assertions": [
+          "typed_read_value_and_python_type",
+          "typed_mutation",
+          "mutation_lexical_value",
+          "serialization_reload_typed_readback"
+        ],
+        "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_typed_mutation_roundtrip[feature-sdk:tlcplate@bgcolor]",
+        "field_name": "bgcolor"
+      },
+      "assertions": [
+        "raw_lexical_read",
+        "unrelated_edit_preserves_raw",
+        "serialization_reload_preserves_raw"
+      ],
+      "pytest_nodeid": "tests/coverage/test_sdk_extension_feature_evidence.py::test_sdk_extension_raw_attributes_survive_an_unrelated_edit[feature-sdk:tlcplate@bgcolor]"
+    }
+  ]
+}

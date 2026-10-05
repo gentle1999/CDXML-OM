@@ -1,0 +1,6556 @@
+version: 1
+properties:
+- id: common.id
+  owners:
+  - alt_group
+  - annotation
+  - arrow
+  - bio_shape
+  - bond
+  - border
+  - bracket_attachment
+  - bracketed_group
+  - chemical_property
+  - colored_molecular_area
+  - constraint
+  - crossing_bond
+  - curve
+  - embedded_object
+  - fragment
+  - geometry
+  - gep_band
+  - gep_lane
+  - gep_plate
+  - graphic
+  - group
+  - marker
+  - node
+  - object_tag
+  - page
+  - plasmid_map
+  - plasmid_marker
+  - plasmid_region
+  - reaction_scheme
+  - reaction_step
+  - registry_number
+  - rlogic
+  - rlogic_item
+  - sg_component
+  - sg_datum
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - tlc_lane
+  - tlc_plate
+  - tlc_spot
+  name: id
+  xml_name: id
+  datatype: object_id
+  status: known
+  provenance:
+  - source: sdk_document
+    locator: Object identifier property (id)
+  - source: revvity_dtd
+    locator: 'page id CDATA #IMPLIED'
+  - source: revvity_dtd
+    locator: 'fragment id CDATA #IMPLIED'
+  - source: revvity_dtd
+    locator: 'n id CDATA #IMPLIED'
+  - source: revvity_dtd
+    locator: 'b id CDATA #IMPLIED'
+  - source: revvity_dtd
+    locator: <!ATTLIST page id>
+  - source: sdk_page_page
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST group id>
+  - source: sdk_page_group
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment id>
+  - source: sdk_page_fragment
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST t id>
+  - source: sdk_page_t
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST n id>
+  - source: sdk_page_n
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST b id>
+  - source: sdk_page_b
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic id>
+  - source: sdk_page_graphic
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow id>
+  - source: revvity_dtd
+    locator: <!ATTLIST curve id>
+  - source: sdk_page_curve
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup id>
+  - source: sdk_page_altgroup
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST step id>
+  - source: sdk_page_step
+    locator: table[1]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST scheme id>
+  - source: sdk_page_scheme
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry id>
+  - source: sdk_page_geometry
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint id>
+  - source: sdk_page_constraint
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum id>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject id>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag id>
+  - source: sdk_page_objecttag
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST regnum id>
+  - source: revvity_dtd
+    locator: <!ATTLIST table id>
+  - source: sdk_page_table
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate id>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlclane id>
+  - source: sdk_page_tlclane
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot id>
+  - source: sdk_page_tlcspot
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate id>
+  - source: revvity_dtd
+    locator: <!ATTLIST geplane id>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband id>
+  - source: revvity_dtd
+    locator: <!ATTLIST marker id>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid id>
+  - source: revvity_dtd
+    locator: <!ATTLIST sgcomponent id>
+  - source: revvity_dtd
+    locator: <!ATTLIST sgdatum id>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap id>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion id>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker id>
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketedgroup id>
+  - source: sdk_page_bracketedgroup
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketattachment id>
+  - source: sdk_page_bracketattachment
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST crossingbond id>
+  - source: sdk_page_crossingbond
+    locator: table[1]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST border id>
+  - source: sdk_page_border
+    locator: table[1]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty id>
+  - source: sdk_page_chemicalproperty
+    locator: table[1]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape id>
+  - source: revvity_dtd
+    locator: <!ATTLIST annotation id>
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogicitem id>
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogic id>
+  - source: revvity_dtd
+    locator: <!ATTLIST coloredmoleculararea id>
+- id: node.element
+  owner: node
+  name: element
+  xml_name: Element
+  cdx_id: 1026
+  cdx_constant: kCDXProp_Node_Element
+  datatype: integer
+  default: 6
+  status: known
+  provenance:
+  - source: sdk_node
+    locator: 'Node properties: Node_Element (0x0402)'
+  - source: sdk_node_element
+    locator: Default value is 6
+  - source: revvity_dtd
+    locator: n Element CDATA default "6"
+  - source: sdk_page_n
+    locator: table[2]/row[35]
+- id: node.position
+  owners:
+  - alt_group
+  - node
+  - plasmid_map
+  - rlogic
+  - splitter
+  - stoichiometry_grid
+  - text
+  name: position
+  xml_name: p
+  cdx_id: 512
+  cdx_constant: kCDXProp_2DPosition
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: sdk_node
+    locator: 'Node properties: 2DPosition (0x0200)'
+  - source: revvity_dtd
+    locator: 'n and t p CDATA #IMPLIED'
+  - source: sdk_page_t
+    locator: table[2]/row[17]
+  - source: sdk_page_n
+    locator: table[2]/row[17]
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup p>
+  - source: revvity_dtd
+    locator: <!ATTLIST splitter p>
+  - source: sdk_page_splitter
+    locator: table[1]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid p>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap p>
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogic p>
+- id: node.charge
+  owner: node
+  name: charge
+  xml_name: Charge
+  cdx_id: 1057
+  cdx_constant: kCDXProp_Atom_Charge
+  datatype: integer
+  default: 0
+  status: known
+  provenance:
+  - source: sdk_node
+    locator: 'Node properties: Atom_Charge (0x0421)'
+  - source: sdk_atom_charge
+    locator: Default value is 0
+  - source: revvity_dtd
+    locator: 'n Charge CDATA #IMPLIED'
+  - source: sdk_page_n
+    locator: table[2]/row[47]
+- id: node.isotope
+  owner: node
+  name: isotope
+  xml_name: Isotope
+  cdx_id: 1056
+  cdx_constant: kCDXProp_Atom_Isotope
+  datatype: integer
+  default: 0
+  status: known
+  provenance:
+  - source: sdk_node
+    locator: 'Node properties: Atom_Isotope (0x0420)'
+  - source: sdk_atom_isotope
+    locator: Default value is 0 for natural abundance
+  - source: revvity_dtd
+    locator: 'n Isotope CDATA #IMPLIED'
+  - source: sdk_page_n
+    locator: table[2]/row[44]
+- id: bond.begin
+  owner: bond
+  name: begin
+  xml_name: B
+  cdx_id: 1540
+  cdx_constant: kCDXProp_Bond_Begin
+  datatype: object_id
+  required: true
+  reference: node
+  status: known
+  provenance:
+  - source: sdk_bond
+    locator: 'Bond properties: Bond_Begin (0x0604)'
+  - source: revvity_dtd
+    locator: 'b B CDATA #REQUIRED'
+  - source: sdk_page_b
+    locator: table[2]/row[35]
+  reference_many: false
+  cardinality: one
+- id: bond.end
+  owner: bond
+  name: end
+  xml_name: E
+  cdx_id: 1541
+  cdx_constant: kCDXProp_Bond_End
+  datatype: object_id
+  required: true
+  reference: node
+  status: known
+  provenance:
+  - source: sdk_bond
+    locator: 'Bond properties: Bond_End (0x0605)'
+  - source: revvity_dtd
+    locator: 'b E CDATA #REQUIRED'
+  - source: sdk_page_b
+    locator: table[2]/row[38]
+  reference_many: false
+  cardinality: one
+- id: bond.order
+  owner: bond
+  name: order
+  xml_name: Order
+  cdx_id: 1536
+  cdx_constant: kCDXProp_Bond_Order
+  datatype: integer
+  codec: bond_order
+  enum: bond_order
+  default: '1'
+  status: known
+  provenance:
+  - source: sdk_bond
+    locator: 'Bond properties: Bond_Order (0x0600)'
+  - source: sdk_bond_order
+    locator: If this property is absent, it is treated as a single bond
+  - source: revvity_dtd
+    locator: 'b Order CDATA #IMPLIED'
+  - source: sdk_page_b
+    locator: table[2]/row[23]
+- id: bond.display
+  owner: bond
+  name: display
+  xml_name: Display
+  cdx_id: 1537
+  cdx_constant: kCDXProp_Bond_Display
+  datatype: integer
+  enum: bond_display
+  default: Solid
+  status: known
+  provenance:
+  - source: sdk_bond_display
+    locator: Bond_Display enumerated property (0x0601)
+  - source: revvity_dtd
+    locator: b Display enumeration; default Solid
+  - source: sdk_page_b
+    locator: table[2]/row[26]
+- id: geometry.bounding_box
+  owners:
+  - alt_group
+  - arrow
+  - bio_shape
+  - cdxml_root
+  - constraint
+  - curve
+  - embedded_object
+  - fragment
+  - geometry
+  - gep_plate
+  - graphic
+  - group
+  - page
+  - plasmid_map
+  - plasmid_region
+  - rlogic
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - tlc_plate
+  name: bounding_box
+  xml_name: BoundingBox
+  cdx_id: 516
+  cdx_constant: kCDXProp_BoundingBox
+  datatype: bounding_box
+  status: known
+  provenance:
+  - source: sdk_coordinates
+    locator: BoundingBox datatype; shared 0x0204 property
+  - source: revvity_dtd
+    locator: BoundingBox CDATA attribute on group, t, graphic, and arrow
+  - source: sdk_page_group
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML BoundingBox>
+  - source: sdk_document
+    locator: table[2]/row[29]
+  - source: revvity_dtd
+    locator: <!ATTLIST page BoundingBox>
+  - source: sdk_page_page
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment BoundingBox>
+  - source: sdk_page_fragment
+    locator: table[2]/row[5]
+  - source: sdk_page_t
+    locator: table[2]/row[20]
+  - source: sdk_page_graphic
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST curve BoundingBox>
+  - source: sdk_page_curve
+    locator: table[2]/row[17]
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup BoundingBox>
+  - source: sdk_page_altgroup
+    locator: table[2]/row[17]
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry BoundingBox>
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint BoundingBox>
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum BoundingBox>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[17]
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject BoundingBox>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST table BoundingBox>
+  - source: sdk_page_table
+    locator: table[2]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate BoundingBox>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate BoundingBox>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid BoundingBox>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap BoundingBox>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion BoundingBox>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape BoundingBox>
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogic BoundingBox>
+- id: group.integral
+  owner: group
+  name: integral
+  xml_name: Integral
+  cdx_id: 4352
+  cdx_constant: kCDXProp_Group_Integral
+  datatype: boolean
+  default: false
+  status: known
+  provenance:
+  - source: sdk_group
+    locator: Group Integral property (0x1100)
+  - source: revvity_dtd
+    locator: group Integral (yes|no) default no
+  - source: sdk_page_group
+    locator: table[2]/row[8]
+- id: common.visible
+  owners:
+  - alt_group
+  - arrow
+  - bio_shape
+  - bond
+  - curve
+  - gep_band
+  - gep_lane
+  - gep_plate
+  - graphic
+  - node
+  - object_tag
+  - plasmid_map
+  - sg_component
+  - sg_datum
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - tlc_lane
+  - tlc_plate
+  - tlc_spot
+  name: visible
+  xml_name: Visible
+  cdx_id: 17
+  cdx_constant: kCDXProp_Visible
+  datatype: boolean
+  default: true
+  status: known
+  provenance:
+  - source: sdk_objects
+    locator: Visible boolean property (0x0011)
+  - source: revvity_dtd
+    locator: Visible (yes|no) default yes on t, graphic, and arrow
+  - source: sdk_page_t
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST n Visible>
+  - source: sdk_page_n
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST b Visible>
+  - source: sdk_page_b
+    locator: table[2]/row[14]
+  - source: sdk_page_graphic
+    locator: table[2]/row[14]
+  - source: sdk_page_altgroup
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST curve Visible>
+  - source: sdk_page_curve
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup Visible>
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum Visible>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag Visible>
+  - source: revvity_dtd
+    locator: <!ATTLIST table Visible>
+  - source: sdk_page_table
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate Visible>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlclane Visible>
+  - source: sdk_page_tlclane
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot Visible>
+  - source: sdk_page_tlcspot
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate Visible>
+  - source: revvity_dtd
+    locator: <!ATTLIST geplane Visible>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband Visible>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid Visible>
+  - source: revvity_dtd
+    locator: <!ATTLIST sgcomponent Visible>
+  - source: revvity_dtd
+    locator: <!ATTLIST sgdatum Visible>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap Visible>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape Visible>
+- id: text.ignore_warnings
+  name: ignore_warnings
+  xml_name: IgnoreWarnings
+  datatype: boolean
+  default: false
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: t IgnoreWarnings (yes|no) default no
+  - source: sdk_page_t
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST n IgnoreWarnings>
+  - source: sdk_page_n
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST b IgnoreWarnings>
+  - source: sdk_page_b
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic IgnoreWarnings>
+  - source: sdk_page_graphic
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow IgnoreWarnings>
+  - source: sdk_page_altgroup
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST curve IgnoreWarnings>
+  - source: sdk_page_curve
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup IgnoreWarnings>
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum IgnoreWarnings>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[8]
+  cdx_id: 15
+  cdx_constant: kCDXProp_IgnoreWarnings
+  owners:
+  - alt_group
+  - arrow
+  - bond
+  - curve
+  - graphic
+  - node
+  - spectrum
+  - text
+- id: text_run.content
+  owner: text_run
+  name: content
+  xml_name: content
+  storage: text
+  datatype: string
+  required: true
+  default: ''
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: s element character data (#PCDATA)
+- id: text_run.font_id
+  owner: text_run
+  name: font_id
+  xml_name: font
+  datatype: local_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: s font CDATA formatting attribute, a FontTable-local ID
+  - source: sdk_page_s
+    locator: table[1]/row[5]
+- id: text_run.size
+  owner: text_run
+  name: size
+  xml_name: size
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: s size CDATA formatting attribute
+  - source: sdk_page_s
+    locator: table[1]/row[8]
+- id: text_run.face
+  owner: text_run
+  name: face
+  xml_name: face
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: s face CDATA formatting attribute
+  - source: sdk_page_s
+    locator: table[1]/row[2]
+- id: text_run.color
+  name: color
+  xml_name: color
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: s color CDATA formatting attribute
+  - source: sdk_page_s
+    locator: table[1]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML color>
+  - source: sdk_page_altgroup
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST page color>
+  - source: revvity_dtd
+    locator: <!ATTLIST t color>
+  - source: revvity_dtd
+    locator: <!ATTLIST n color>
+  - source: sdk_page_n
+    locator: table[2]/row[23]
+  - source: revvity_dtd
+    locator: <!ATTLIST b color>
+  - source: sdk_page_b
+    locator: table[2]/row[17]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic color>
+  - source: sdk_page_graphic
+    locator: table[2]/row[29]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow color>
+  - source: revvity_dtd
+    locator: <!ATTLIST curve color>
+  - source: sdk_page_curve
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup color>
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry color>
+  - source: sdk_page_geometry
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint color>
+  - source: sdk_page_constraint
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum color>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject color>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST table color>
+  - source: sdk_page_table
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate color>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[26]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot color>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate color>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband color>
+  - source: revvity_dtd
+    locator: <!ATTLIST marker color>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid color>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap color>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion color>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker color>
+  - source: revvity_dtd
+    locator: <!ATTLIST border color>
+  - source: sdk_page_border
+    locator: table[1]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape color>
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogic color>
+  cdx_id: 769
+  cdx_constant: kCDXProp_ForegroundColor
+  owners:
+  - alt_group
+  - arrow
+  - bio_shape
+  - bond
+  - border
+  - cdxml_root
+  - constraint
+  - curve
+  - embedded_object
+  - geometry
+  - gep_band
+  - gep_plate
+  - graphic
+  - marker
+  - node
+  - page
+  - plasmid_map
+  - plasmid_marker
+  - plasmid_region
+  - rlogic
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - text_run
+  - tlc_plate
+  - tlc_spot
+- id: text_run.alpha
+  owner: text_run
+  name: alpha
+  xml_name: alpha
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: s alpha CDATA formatting attribute
+- id: graphic.graphic_type
+  owner: graphic
+  name: graphic_type
+  xml_name: GraphicType
+  cdx_id: 2560
+  cdx_constant: kCDXProp_Graphic_Type
+  datatype: string
+  enum: graphic_type
+  default: Undefined
+  status: known
+  provenance:
+  - source: sdk_graphic
+    locator: GraphicType property (0x0A00) and DTD values
+  - source: revvity_dtd
+    locator: graphic GraphicType enumeration; default Undefined
+  - source: sdk_page_graphic
+    locator: table[2]/row[53]
+- id: arrow.head_3d
+  name: head_3d
+  xml_name: Head3D
+  datatype: point_3d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: arrow Head3D CDATA attribute
+  - source: sdk_page_graphic
+    locator: table[2]/row[23]
+  - source: revvity_dtd
+    locator: graphic Head3D CDATA attribute
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion Head3D>
+  - source: sdk_coordinates
+    locator: 'CDXPoint3D CDXML lexical form: x y z; decimal point units'
+  cdx_id: 519
+  cdx_constant: kCDXProp_3DHead
+  owners:
+  - arrow
+  - graphic
+  - plasmid_region
+- id: arrow.tail_3d
+  name: tail_3d
+  xml_name: Tail3D
+  datatype: point_3d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: arrow Tail3D CDATA attribute
+  - source: sdk_page_graphic
+    locator: table[2]/row[26]
+  - source: sdk_coordinates
+    locator: Point3D datatype x, y, z
+  - source: revvity_dtd
+    locator: graphic Tail3D CDATA attribute
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion Tail3D>
+  - source: sdk_coordinates
+    locator: 'CDXPoint3D CDXML lexical form: x y z; decimal point units'
+  cdx_id: 520
+  cdx_constant: kCDXProp_3DTail
+  owners:
+  - arrow
+  - graphic
+  - plasmid_region
+- id: arrow.arrowhead_type
+  name: arrowhead_type
+  xml_name: ArrowheadType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: ArrowheadType lexical values Solid, Hollow, Angle
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion ArrowheadType>
+  enum: dtd.arrowhead_type.7f4897fa
+  owners:
+  - arrow
+  - plasmid_region
+- id: arrow.arrowhead_head
+  name: arrowhead_head
+  xml_name: ArrowheadHead
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: ArrowheadHead lexical values
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion ArrowheadHead>
+  enum: dtd.arrowhead_side.ee4d6e99
+  owners:
+  - arrow
+  - plasmid_region
+- id: arrow.arrowhead_tail
+  name: arrowhead_tail
+  xml_name: ArrowheadTail
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: ArrowheadTail lexical values
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion ArrowheadTail>
+  enum: dtd.arrowhead_side.ee4d6e99
+  owners:
+  - arrow
+  - plasmid_region
+- id: arrow.head_size
+  name: head_size
+  xml_name: HeadSize
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: arrow HeadSize CDATA attribute
+  - source: sdk_page_curve
+    locator: table[2]/row[29]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic HeadSize>
+  - source: sdk_page_graphic
+    locator: table[2]/row[77]
+  - source: sdk_page_graphic
+    locator: 'Graphic property table: HeadSize uses kCDXProp_Arrowhead_Size (0x0A20), binary INT16'
+  - source: sdk_arrow
+    locator: 'Arrow object definition: HeadSize uses the same arrowhead-size property'
+  - source: revvity_dtd
+    locator: <!ATTLIST curve HeadSize>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion HeadSize>
+  cdx_id: 2592
+  cdx_constant: kCDXProp_Arrowhead_Size
+  owners:
+  - arrow
+  - curve
+  - graphic
+  - plasmid_region
+- id: arrow.fill_type
+  name: fill_type
+  xml_name: FillType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: FillType lexical values Unspecified, None, Solid, Shaded
+  - source: sdk_page_curve
+    locator: table[2]/row[53]
+  - source: revvity_dtd
+    locator: <!ATTLIST curve FillType>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion FillType>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape FillType>
+  enum: dtd.fill_type.b141cafb
+  cdx_id: 2615
+  cdx_constant: kCDXProp_Fill_Type
+  owners:
+  - arrow
+  - bio_shape
+  - curve
+  - plasmid_region
+- id: reaction_step.reactants
+  owner: reaction_step
+  name: reactants
+  xml_name: ReactionStepReactants
+  cdx_id: 3073
+  cdx_constant: kCDXProp_ReactionStep_Reactants
+  datatype: object_id
+  codec: object_id_list
+  cardinality: many
+  reference: '*'
+  reference_many: true
+  status: known
+  provenance:
+  - source: sdk_step
+    locator: Reactants ID-array property (0x0C01)
+  - source: revvity_dtd
+    locator: step ReactionStepReactants CDATA attribute
+  - source: sdk_page_step
+    locator: table[1]/row[8]
+- id: reaction_step.products
+  owner: reaction_step
+  name: products
+  xml_name: ReactionStepProducts
+  cdx_id: 3074
+  cdx_constant: kCDXProp_ReactionStep_Products
+  datatype: object_id
+  codec: object_id_list
+  cardinality: many
+  reference: '*'
+  reference_many: true
+  status: known
+  provenance:
+  - source: sdk_step
+    locator: Products ID-array property (0x0C02)
+  - source: revvity_dtd
+    locator: step ReactionStepProducts CDATA attribute
+  - source: sdk_page_step
+    locator: table[1]/row[11]
+- id: reaction_step.arrows
+  owner: reaction_step
+  name: arrows
+  xml_name: ReactionStepArrows
+  cdx_id: 3076
+  cdx_constant: kCDXProp_ReactionStep_Arrows
+  datatype: object_id
+  codec: object_id_list
+  cardinality: many
+  reference: '*'
+  reference_many: true
+  status: known
+  provenance:
+  - source: sdk_step
+    locator: Arrows ID-array property (0x0C04)
+  - source: revvity_dtd
+    locator: step ReactionStepArrows CDATA attribute
+  - source: sdk_page_step
+    locator: table[1]/row[17]
+- id: font.id
+  owner: font
+  name: id
+  xml_name: id
+  datatype: local_id
+  required: true
+  status: known
+  provenance:
+  - source: sdk_font
+    locator: Font object ID is UINT16 scoped to a FontTable
+  - source: revvity_dtd
+    locator: 'font id CDATA #REQUIRED'
+  - source: sdk_page_font
+    locator: table[1]/row[8]
+- id: font.name
+  owner: font
+  name: name
+  xml_name: name
+  datatype: string
+  required: true
+  status: known
+  provenance:
+  - source: sdk_font
+    locator: Font name string
+  - source: revvity_dtd
+    locator: 'font name CDATA #REQUIRED'
+  - source: sdk_page_font
+    locator: table[1]/row[2]
+- id: font.charset
+  owner: font
+  name: charset
+  xml_name: charset
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: font charset is preserved as a lexical string
+  - source: sdk_page_font
+    locator: table[1]/row[5]
+  - source: sdk_font_charset_xml
+    locator: 'CDXFontTable datatype page: CDXML charset values are encoding names'
+  - source: sdk_page_font
+    locator: 'Font page table row 5: INT16 is the binary storage type'
+- id: color.r
+  owner: color
+  name: r
+  xml_name: r
+  datatype: unit_interval
+  required: true
+  status: known
+  provenance:
+  - source: sdk_color
+    locator: Color red component range 0..1
+  - source: revvity_dtd
+    locator: 'color r CDATA #REQUIRED'
+  - source: sdk_page_color
+    locator: table[1]/row[8]
+- id: color.g
+  owner: color
+  name: g
+  xml_name: g
+  datatype: unit_interval
+  required: true
+  status: known
+  provenance:
+  - source: sdk_color
+    locator: Color green component range 0..1
+  - source: revvity_dtd
+    locator: 'color g CDATA #REQUIRED'
+  - source: sdk_page_color
+    locator: table[1]/row[5]
+- id: color.b
+  owner: color
+  name: b
+  xml_name: b
+  datatype: unit_interval
+  required: true
+  status: known
+  provenance:
+  - source: sdk_color
+    locator: Color blue component range 0..1
+  - source: revvity_dtd
+    locator: 'color b CDATA #REQUIRED'
+  - source: sdk_page_color
+    locator: table[1]/row[2]
+- id: dtd.CDXML.alpha
+  name: alpha
+  xml_name: alpha
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST page alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST t alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST n alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST b alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST curve alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST table alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST border alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape alpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogic alpha>
+  owners:
+  - alt_group
+  - arrow
+  - bio_shape
+  - bond
+  - border
+  - cdxml_root
+  - constraint
+  - curve
+  - embedded_object
+  - geometry
+  - gep_band
+  - gep_plate
+  - graphic
+  - node
+  - page
+  - plasmid_map
+  - plasmid_region
+  - rlogic
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - tlc_plate
+  - tlc_spot
+- id: dtd.CDXML.show_residue_id
+  owner: cdxml_root
+  name: show_residue_id
+  xml_name: ShowResidueID
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowResidueID>
+  default: false
+- id: dtd.CDXML.rxn_autonumber_style
+  owner: cdxml_root
+  name: rxn_autonumber_style
+  xml_name: RxnAutonumberStyle
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML RxnAutonumberStyle>
+- id: dtd.CDXML.rxn_autonumber_start
+  owner: cdxml_root
+  name: rxn_autonumber_start
+  xml_name: RxnAutonumberStart
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML RxnAutonumberStart>
+- id: dtd.CDXML.rxn_autonumber_format
+  owner: cdxml_root
+  name: rxn_autonumber_format
+  xml_name: RxnAutonumberFormat
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML RxnAutonumberFormat>
+- id: dtd.CDXML.rxn_autonumber_conditions
+  owner: cdxml_root
+  name: rxn_autonumber_conditions
+  xml_name: RxnAutonumberConditions
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML RxnAutonumberConditions>
+- id: dtd.CDXML.residue_wrap_count
+  owner: cdxml_root
+  name: residue_wrap_count
+  xml_name: ResidueWrapCount
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ResidueWrapCount>
+- id: dtd.CDXML.residue_block_count
+  owner: cdxml_root
+  name: residue_block_count
+  xml_name: ResidueBlockCount
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ResidueBlockCount>
+- id: dtd.CDXML.chem_prop_p_ka
+  owner: cdxml_root
+  name: chem_prop_p_ka
+  xml_name: ChemPropPKa
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropPKa>
+- id: dtd.CDXML.chem_prop_log_s
+  owner: cdxml_root
+  name: chem_prop_log_s
+  xml_name: ChemPropLogS
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropLogS>
+- id: dtd.CDXML.chem_prop_fragment_label
+  owner: cdxml_root
+  name: chem_prop_fragment_label
+  xml_name: ChemPropFragmentLabel
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropFragmentLabel>
+- id: dtd.CDXML.chem_prop_id
+  owner: cdxml_root
+  name: chem_prop_id
+  xml_name: ChemPropID
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropID>
+- id: dtd.CDXML.win_print_info
+  owner: cdxml_root
+  name: win_print_info
+  xml_name: WinPrintInfo
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML WinPrintInfo>
+  - source: sdk_document
+    locator: table[2]/row[65]
+  cdx_id: 2049
+  cdx_constant: kCDXProp_WinPrintInfo
+- id: dtd.CDXML.window_size
+  owner: cdxml_root
+  name: window_size
+  xml_name: WindowSize
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML WindowSize>
+  - source: sdk_document
+    locator: table[2]/row[149]
+  cdx_id: 2306
+  cdx_constant: kCDXProp_Window_Size
+- id: dtd.CDXML.window_position
+  owner: cdxml_root
+  name: window_position
+  xml_name: WindowPosition
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML WindowPosition>
+  - source: sdk_document
+    locator: table[2]/row[146]
+  cdx_id: 2305
+  cdx_constant: kCDXProp_Window_Position
+- id: dtd.CDXML.window_is_zoomed
+  owner: cdxml_root
+  name: window_is_zoomed
+  xml_name: WindowIsZoomed
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML WindowIsZoomed>
+  - source: sdk_document
+    locator: table[2]/row[143]
+  cdx_id: 2304
+  cdx_constant: kCDXProp_Window_IsZoomed
+  default: false
+- id: dtd.CDXML.show_terminal_carbon_labels
+  name: show_terminal_carbon_labels
+  xml_name: ShowTerminalCarbonLabels
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowTerminalCarbonLabels>
+  - source: revvity_dtd
+    locator: <!ATTLIST n ShowTerminalCarbonLabels>
+  default: false
+  owners:
+  - cdxml_root
+  - node
+- id: dtd.CDXML.show_sequence_unlinked_branches
+  owner: cdxml_root
+  name: show_sequence_unlinked_branches
+  xml_name: ShowSequenceUnlinkedBranches
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowSequenceUnlinkedBranches>
+  default: false
+- id: dtd.CDXML.show_sequence_termini
+  owner: cdxml_root
+  name: show_sequence_termini
+  xml_name: ShowSequenceTermini
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowSequenceTermini>
+  default: true
+- id: dtd.CDXML.show_sequence_bonds
+  owner: cdxml_root
+  name: show_sequence_bonds
+  xml_name: ShowSequenceBonds
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowSequenceBonds>
+  default: true
+- id: dtd.CDXML.show_non_terminal_carbon_labels
+  name: show_non_terminal_carbon_labels
+  xml_name: ShowNonTerminalCarbonLabels
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowNonTerminalCarbonLabels>
+  - source: revvity_dtd
+    locator: <!ATTLIST n ShowNonTerminalCarbonLabels>
+  default: false
+  owners:
+  - cdxml_root
+  - node
+- id: dtd.CDXML.show_bond_stereo
+  name: show_bond_stereo
+  xml_name: ShowBondStereo
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowBondStereo>
+  - source: sdk_document
+    locator: table[2]/row[47]
+  - source: revvity_dtd
+    locator: <!ATTLIST b ShowBondStereo>
+  - source: sdk_page_b
+    locator: table[2]/row[62]
+  cdx_id: 1549
+  cdx_constant: kCDXProp_Bond_ShowStereo
+  default: false
+  owners:
+  - bond
+  - cdxml_root
+- id: dtd.CDXML.show_bond_rxn
+  name: show_bond_rxn
+  xml_name: ShowBondRxn
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowBondRxn>
+  - source: sdk_document
+    locator: table[2]/row[50]
+  - source: revvity_dtd
+    locator: <!ATTLIST b ShowBondRxn>
+  - source: sdk_page_b
+    locator: table[2]/row[68]
+  cdx_id: 1551
+  cdx_constant: kCDXProp_Bond_ShowRxn
+  default: true
+  owners:
+  - bond
+  - cdxml_root
+- id: dtd.CDXML.show_bond_query
+  name: show_bond_query
+  xml_name: ShowBondQuery
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowBondQuery>
+  - source: sdk_document
+    locator: table[2]/row[44]
+  - source: revvity_dtd
+    locator: <!ATTLIST b ShowBondQuery>
+  - source: sdk_page_b
+    locator: table[2]/row[59]
+  cdx_id: 1548
+  cdx_constant: kCDXProp_Bond_ShowQuery
+  default: true
+  owners:
+  - bond
+  - cdxml_root
+- id: dtd.CDXML.show_atom_stereo
+  name: show_atom_stereo
+  xml_name: ShowAtomStereo
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowAtomStereo>
+  - source: sdk_document
+    locator: table[2]/row[38]
+  - source: revvity_dtd
+    locator: <!ATTLIST n ShowAtomStereo>
+  - source: sdk_page_n
+    locator: table[2]/row[116]
+  cdx_id: 1083
+  cdx_constant: kCDXProp_Atom_ShowStereo
+  default: false
+  owners:
+  - cdxml_root
+  - node
+- id: dtd.CDXML.show_atom_query
+  name: show_atom_query
+  xml_name: ShowAtomQuery
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowAtomQuery>
+  - source: sdk_document
+    locator: table[2]/row[35]
+  - source: revvity_dtd
+    locator: <!ATTLIST n ShowAtomQuery>
+  - source: sdk_page_n
+    locator: table[2]/row[113]
+  cdx_id: 1082
+  cdx_constant: kCDXProp_Atom_ShowQuery
+  default: true
+  owners:
+  - cdxml_root
+  - node
+- id: dtd.CDXML.show_atom_number
+  name: show_atom_number
+  xml_name: ShowAtomNumber
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowAtomNumber>
+  - source: sdk_document
+    locator: table[2]/row[41]
+  - source: revvity_dtd
+    locator: <!ATTLIST n ShowAtomNumber>
+  - source: sdk_page_n
+    locator: table[2]/row[119]
+  cdx_id: 1084
+  cdx_constant: kCDXProp_Atom_ShowAtomNumber
+  default: false
+  owners:
+  - cdxml_root
+  - node
+- id: dtd.CDXML.show_atom_enhanced_stereo
+  name: show_atom_enhanced_stereo
+  xml_name: ShowAtomEnhancedStereo
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ShowAtomEnhancedStereo>
+  - source: sdk_page_n
+    locator: table[2]/row[137]
+  - source: revvity_dtd
+    locator: <!ATTLIST n ShowAtomEnhancedStereo>
+  cdx_id: 1093
+  cdx_constant: kCDXProp_Atom_ShowEnhancedStereo
+  default: true
+  owners:
+  - cdxml_root
+  - node
+- id: dtd.CDXML.print_margins
+  owner: cdxml_root
+  name: print_margins
+  xml_name: PrintMargins
+  datatype: bounding_box
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML PrintMargins>
+  - source: sdk_document
+    locator: table[2]/row[68]
+  cdx_id: 2050
+  cdx_constant: kCDXProp_PrintMargins
+- id: dtd.CDXML.name
+  name: name
+  xml_name: Name
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML Name>
+  - source: sdk_document
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry Name>
+  - source: sdk_page_geometry
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint Name>
+  - source: sdk_page_constraint
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty Name>
+  - source: sdk_page_chemicalproperty
+    locator: table[1]/row[5]
+  cdx_id: 8
+  cdx_constant: kCDXProp_Name
+  owners:
+  - cdxml_root
+  - chemical_property
+  - constraint
+  - geometry
+- id: dtd.CDXML.modification_user_name
+  owner: cdxml_root
+  name: modification_user_name
+  xml_name: ModificationUserName
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ModificationUserName>
+  - source: sdk_document
+    locator: table[2]/row[11]
+  cdx_id: 4
+  cdx_constant: kCDXProp_ModificationUserName
+- id: dtd.CDXML.modification_program
+  owner: cdxml_root
+  name: modification_program
+  xml_name: ModificationProgram
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ModificationProgram>
+  - source: sdk_document
+    locator: table[2]/row[17]
+  cdx_id: 6
+  cdx_constant: kCDXProp_ModificationProgram
+- id: dtd.CDXML.modification_date
+  owner: cdxml_root
+  name: modification_date
+  xml_name: ModificationDate
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ModificationDate>
+  - source: sdk_document
+    locator: table[2]/row[14]
+  cdx_id: 5
+  cdx_constant: kCDXProp_ModificationDate
+- id: dtd.CDXML.margin_width
+  name: margin_width
+  xml_name: MarginWidth
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML MarginWidth>
+  - source: sdk_document
+    locator: table[2]/row[86]
+  - source: revvity_dtd
+    locator: <!ATTLIST n MarginWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST b MarginWidth>
+  - source: sdk_page_b
+    locator: table[2]/row[83]
+  - source: revvity_dtd
+    locator: <!ATTLIST table MarginWidth>
+  - source: sdk_page_table
+    locator: table[2]/row[26]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate MarginWidth>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[38]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate MarginWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid MarginWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap MarginWidth>
+  cdx_id: 2056
+  cdx_constant: kCDXProp_MarginWidth
+  owners:
+  - bond
+  - cdxml_root
+  - gep_plate
+  - node
+  - plasmid_map
+  - stoichiometry_grid
+  - table
+  - tlc_plate
+- id: dtd.CDXML.magnification
+  owner: cdxml_root
+  name: magnification
+  xml_name: Magnification
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML Magnification>
+  - source: sdk_document
+    locator: table[2]/row[104]
+  cdx_id: 2062
+  cdx_constant: kCDXProp_Magnification
+- id: dtd.CDXML.mac_print_info
+  owner: cdxml_root
+  name: mac_print_info
+  xml_name: MacPrintInfo
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML MacPrintInfo>
+  - source: sdk_document
+    locator: table[2]/row[62]
+  cdx_id: 2048
+  cdx_constant: kCDXProp_MacPrintInfo
+- id: dtd.CDXML.line_width
+  name: line_width
+  xml_name: LineWidth
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML LineWidth>
+  - source: sdk_document
+    locator: table[2]/row[83]
+  - source: revvity_dtd
+    locator: <!ATTLIST n LineWidth>
+  - source: sdk_page_n
+    locator: table[2]/row[146]
+  - source: revvity_dtd
+    locator: <!ATTLIST b LineWidth>
+  - source: sdk_page_b
+    locator: table[2]/row[80]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic LineWidth>
+  - source: sdk_page_graphic
+    locator: table[2]/row[38]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow LineWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST curve LineWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry LineWidth>
+  - source: sdk_page_geometry
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint LineWidth>
+  - source: sdk_page_constraint
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum LineWidth>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[29]
+  - source: revvity_dtd
+    locator: <!ATTLIST table LineWidth>
+  - source: sdk_page_table
+    locator: table[2]/row[23]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate LineWidth>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[35]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate LineWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid LineWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap LineWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST border LineWidth>
+  - source: sdk_page_border
+    locator: table[1]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape LineWidth>
+  cdx_id: 2055
+  cdx_constant: kCDXProp_LineWidth
+  owners:
+  - arrow
+  - bio_shape
+  - bond
+  - border
+  - cdxml_root
+  - constraint
+  - curve
+  - geometry
+  - gep_plate
+  - graphic
+  - node
+  - plasmid_map
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - tlc_plate
+- id: dtd.CDXML.label_size
+  name: label_size
+  xml_name: LabelSize
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML LabelSize>
+  - source: sdk_document
+    locator: table[2]/row[113]
+  - source: sdk_label_style_size
+    locator: LabelStyleSize property summary; default font size
+  - source: revvity_dtd
+    locator: <!ATTLIST t LabelSize>
+  - source: sdk_page_t
+    locator: table[2]/row[68]
+  - source: revvity_dtd
+    locator: <!ATTLIST n LabelSize>
+  - source: sdk_page_n
+    locator: table[2]/row[155]
+  - source: sdk_label_style_size
+    locator: 'LabelStyleSize property page: default label font size; binary type does not specify CDXML
+      scale'
+  - source: revvity_dtd
+    locator: <!ATTLIST b LabelSize>
+  - source: sdk_page_b
+    locator: table[2]/row[95]
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum LabelSize>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[38]
+  - source: revvity_dtd
+    locator: <!ATTLIST table LabelSize>
+  - source: sdk_page_table
+    locator: table[2]/row[32]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate LabelSize>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[44]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate LabelSize>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid LabelSize>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap LabelSize>
+  - source: sdk_page_geometry
+    locator: 'table[2]/row[20]: LabelSize / kCDXProp_LabelStyleSize / 0x081C (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared geometry@LabelSize attribute pair
+  - source: sdk_page_constraint
+    locator: 'table[2]/row[23]: LabelSize / kCDXProp_LabelStyleSize / 0x081C (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared constraint@LabelSize attribute pair
+  cdx_id: 2076
+  cdx_constant: kCDXProp_LabelStyleSize
+  owners:
+  - bond
+  - cdxml_root
+  - constraint
+  - geometry
+  - gep_plate
+  - node
+  - plasmid_map
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - tlc_plate
+- id: dtd.CDXML.label_line_height
+  name: label_line_height
+  xml_name: LabelLineHeight
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML LabelLineHeight>
+  - source: sdk_document
+    locator: table[2]/row[53]
+  - source: revvity_dtd
+    locator: <!ATTLIST t LabelLineHeight>
+  - source: sdk_page_t
+    locator: table[2]/row[44]
+  cdx_id: 1798
+  cdx_constant: kCDXProp_LabelLineHeight
+  owners:
+  - cdxml_root
+  - text
+- id: dtd.CDXML.label_justification
+  name: label_justification
+  xml_name: LabelJustification
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML LabelJustification>
+  - source: sdk_document
+    locator: table[2]/row[131]
+  - source: revvity_dtd
+    locator: <!ATTLIST t LabelJustification>
+  - source: sdk_page_t
+    locator: table[2]/row[86]
+  cdx_id: 2083
+  cdx_constant: kCDXProp_LabelJustification
+  default: Left
+  enum: dtd.label_justification.aa6f97a8
+  owners:
+  - cdxml_root
+  - text
+- id: dtd.CDXML.label_font
+  name: label_font
+  xml_name: LabelFont
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML LabelFont>
+  - source: sdk_document
+    locator: table[2]/row[107]
+  - source: revvity_dtd
+    locator: <!ATTLIST t LabelFont>
+  - source: sdk_page_t
+    locator: table[2]/row[62]
+  - source: revvity_dtd
+    locator: <!ATTLIST n LabelFont>
+  - source: sdk_page_n
+    locator: table[2]/row[152]
+  - source: revvity_dtd
+    locator: <!ATTLIST b LabelFont>
+  - source: sdk_page_b
+    locator: table[2]/row[92]
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum LabelFont>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[35]
+  - source: revvity_dtd
+    locator: <!ATTLIST table LabelFont>
+  - source: sdk_page_table
+    locator: table[2]/row[29]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate LabelFont>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[41]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate LabelFont>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid LabelFont>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap LabelFont>
+  - source: sdk_page_geometry
+    locator: 'table[2]/row[17]: LabelFont / kCDXProp_LabelStyleFont / 0x081A (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared geometry@LabelFont attribute pair
+  - source: sdk_page_constraint
+    locator: 'table[2]/row[20]: LabelFont / kCDXProp_LabelStyleFont / 0x081A (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared constraint@LabelFont attribute pair
+  cdx_id: 2074
+  cdx_constant: kCDXProp_LabelStyleFont
+  owners:
+  - bond
+  - cdxml_root
+  - constraint
+  - geometry
+  - gep_plate
+  - node
+  - plasmid_map
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - tlc_plate
+- id: dtd.CDXML.label_face
+  name: label_face
+  xml_name: LabelFace
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML LabelFace>
+  - source: sdk_document
+    locator: table[2]/row[119]
+  - source: revvity_dtd
+    locator: <!ATTLIST t LabelFace>
+  - source: sdk_page_t
+    locator: table[2]/row[74]
+  - source: revvity_dtd
+    locator: <!ATTLIST n LabelFace>
+  - source: sdk_page_n
+    locator: table[2]/row[158]
+  - source: revvity_dtd
+    locator: <!ATTLIST b LabelFace>
+  - source: sdk_page_b
+    locator: table[2]/row[98]
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum LabelFace>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[41]
+  - source: revvity_dtd
+    locator: <!ATTLIST table LabelFace>
+  - source: sdk_page_table
+    locator: table[2]/row[35]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate LabelFace>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[47]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate LabelFace>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid LabelFace>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap LabelFace>
+  - source: sdk_page_geometry
+    locator: 'table[2]/row[23]: LabelFace / kCDXProp_LabelStyleFace / 0x081E (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared geometry@LabelFace attribute pair
+  - source: sdk_page_constraint
+    locator: 'table[2]/row[26]: LabelFace / kCDXProp_LabelStyleFace / 0x081E (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared constraint@LabelFace attribute pair
+  cdx_id: 2078
+  cdx_constant: kCDXProp_LabelStyleFace
+  owners:
+  - bond
+  - cdxml_root
+  - constraint
+  - geometry
+  - gep_plate
+  - node
+  - plasmid_map
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - tlc_plate
+- id: dtd.CDXML.label_color
+  name: label_color
+  xml_name: LabelColor
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML LabelColor>
+  - source: sdk_document
+    locator: table[2]/row[125]
+  - source: revvity_dtd
+    locator: <!ATTLIST t LabelColor>
+  - source: sdk_page_t
+    locator: table[2]/row[80]
+  - source: sdk_page_geometry
+    locator: 'table[2]/row[26]: LabelColor / kCDXProp_LabelStyleColor / 0x0820 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared geometry@LabelColor attribute pair
+  - source: sdk_page_constraint
+    locator: 'table[2]/row[29]: LabelColor / kCDXProp_LabelStyleColor / 0x0820 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared constraint@LabelColor attribute pair
+  cdx_id: 2080
+  cdx_constant: kCDXProp_LabelStyleColor
+  owners:
+  - cdxml_root
+  - constraint
+  - geometry
+  - text
+- id: dtd.CDXML.interpret_chemically
+  name: interpret_chemically
+  xml_name: InterpretChemically
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML InterpretChemically>
+  - source: sdk_document
+    locator: table[2]/row[59]
+  - source: revvity_dtd
+    locator: <!ATTLIST t InterpretChemically>
+  - source: sdk_page_t
+    locator: table[2]/row[50]
+  cdx_id: 1800
+  cdx_constant: kCDXProp_InterpretChemically
+  default: true
+  owners:
+  - cdxml_root
+  - text
+- id: dtd.CDXML.hide_implicit_hydrogens
+  name: hide_implicit_hydrogens
+  xml_name: HideImplicitHydrogens
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML HideImplicitHydrogens>
+  - source: revvity_dtd
+    locator: <!ATTLIST n HideImplicitHydrogens>
+  default: false
+  owners:
+  - cdxml_root
+  - node
+- id: dtd.CDXML.hash_spacing
+  name: hash_spacing
+  xml_name: HashSpacing
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML HashSpacing>
+  - source: sdk_document
+    locator: table[2]/row[89]
+  - source: revvity_dtd
+    locator: <!ATTLIST b HashSpacing>
+  - source: sdk_page_b
+    locator: table[2]/row[86]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic HashSpacing>
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow HashSpacing>
+  - source: revvity_dtd
+    locator: <!ATTLIST curve HashSpacing>
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint HashSpacing>
+  - source: sdk_page_constraint
+    locator: table[2]/row[17]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate HashSpacing>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate HashSpacing>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape HashSpacing>
+  cdx_id: 2057
+  cdx_constant: kCDXProp_HashSpacing
+  owners:
+  - arrow
+  - bio_shape
+  - bond
+  - cdxml_root
+  - constraint
+  - curve
+  - gep_plate
+  - graphic
+  - tlc_plate
+- id: dtd.CDXML.fractional_widths
+  owner: cdxml_root
+  name: fractional_widths
+  xml_name: FractionalWidths
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML FractionalWidths>
+  - source: sdk_document
+    locator: table[2]/row[101]
+  cdx_id: 2061
+  cdx_constant: kCDXProp_FractionalWidths
+  default: false
+- id: dtd.CDXML.fix_in_place_gap
+  owner: cdxml_root
+  name: fix_in_place_gap
+  xml_name: FixInPlaceGap
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML FixInPlaceGap>
+  - source: sdk_document
+    locator: table[2]/row[137]
+  cdx_id: 2086
+  cdx_constant: kCDXProp_FixInplaceGap
+- id: dtd.CDXML.fix_in_place_extent
+  owner: cdxml_root
+  name: fix_in_place_extent
+  xml_name: FixInPlaceExtent
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML FixInPlaceExtent>
+  - source: sdk_document
+    locator: table[2]/row[134]
+  cdx_id: 2084
+  cdx_constant: kCDXProp_FixInplaceExtent
+- id: dtd.CDXML.creation_user_name
+  owner: cdxml_root
+  name: creation_user_name
+  xml_name: CreationUserName
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CreationUserName>
+  - source: sdk_document
+    locator: table[2]/row[2]
+  cdx_id: 1
+  cdx_constant: kCDXProp_CreationUserName
+- id: dtd.CDXML.creation_program
+  owner: cdxml_root
+  name: creation_program
+  xml_name: CreationProgram
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CreationProgram>
+  - source: sdk_document
+    locator: table[2]/row[8]
+  cdx_id: 3
+  cdx_constant: kCDXProp_CreationProgram
+- id: dtd.CDXML.creation_date
+  owner: cdxml_root
+  name: creation_date
+  xml_name: CreationDate
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CreationDate>
+  - source: sdk_document
+    locator: table[2]/row[5]
+  cdx_id: 2
+  cdx_constant: kCDXProp_CreationDate
+- id: dtd.CDXML.comment
+  owner: cdxml_root
+  name: comment
+  xml_name: Comment
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML Comment>
+  - source: sdk_document
+    locator: table[2]/row[23]
+  cdx_id: 9
+  cdx_constant: kCDXProp_Comment
+- id: dtd.CDXML.chem_propt_psa
+  owner: cdxml_root
+  name: chem_propt_psa
+  xml_name: ChemProptPSA
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemProptPSA>
+- id: dtd.CDXML.chem_prop_name
+  owner: cdxml_root
+  name: chem_prop_name
+  xml_name: ChemPropName
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropName>
+- id: dtd.CDXML.chem_prop_mr
+  owner: cdxml_root
+  name: chem_prop_mr
+  xml_name: ChemPropMR
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropMR>
+- id: dtd.CDXML.chem_prop_m_over_z
+  owner: cdxml_root
+  name: chem_prop_m_over_z
+  xml_name: ChemPropMOverZ
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropMOverZ>
+- id: dtd.CDXML.chem_prop_mol_wt
+  owner: cdxml_root
+  name: chem_prop_mol_wt
+  xml_name: ChemPropMolWt
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropMolWt>
+- id: dtd.CDXML.chem_prop_melting_pt
+  owner: cdxml_root
+  name: chem_prop_melting_pt
+  xml_name: ChemPropMeltingPt
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropMeltingPt>
+- id: dtd.CDXML.chem_prop_log_p
+  owner: cdxml_root
+  name: chem_prop_log_p
+  xml_name: ChemPropLogP
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropLogP>
+- id: dtd.CDXML.chem_prop_henry
+  owner: cdxml_root
+  name: chem_prop_henry
+  xml_name: ChemPropHenry
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropHenry>
+- id: dtd.CDXML.chem_prop_gibbs
+  owner: cdxml_root
+  name: chem_prop_gibbs
+  xml_name: ChemPropGibbs
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropGibbs>
+- id: dtd.CDXML.chem_prop_formula
+  owner: cdxml_root
+  name: chem_prop_formula
+  xml_name: ChemPropFormula
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropFormula>
+- id: dtd.CDXML.chem_prop_exact_mass
+  owner: cdxml_root
+  name: chem_prop_exact_mass
+  xml_name: ChemPropExactMass
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropExactMass>
+- id: dtd.CDXML.chem_prop_e_form
+  owner: cdxml_root
+  name: chem_prop_e_form
+  xml_name: ChemPropEForm
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropEForm>
+- id: dtd.CDXML.chem_prop_crit_vol
+  owner: cdxml_root
+  name: chem_prop_crit_vol
+  xml_name: ChemPropCritVol
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropCritVol>
+- id: dtd.CDXML.chem_prop_crit_temp
+  owner: cdxml_root
+  name: chem_prop_crit_temp
+  xml_name: ChemPropCritTemp
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropCritTemp>
+- id: dtd.CDXML.chem_prop_crit_pres
+  owner: cdxml_root
+  name: chem_prop_crit_pres
+  xml_name: ChemPropCritPres
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropCritPres>
+- id: dtd.CDXML.chem_prop_cmr
+  owner: cdxml_root
+  name: chem_prop_cmr
+  xml_name: ChemPropCMR
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropCMR>
+- id: dtd.CDXML.chem_prop_c_log_p
+  owner: cdxml_root
+  name: chem_prop_c_log_p
+  xml_name: ChemPropCLogP
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropCLogP>
+- id: dtd.CDXML.chem_prop_boiling_pt
+  owner: cdxml_root
+  name: chem_prop_boiling_pt
+  xml_name: ChemPropBoilingPt
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropBoilingPt>
+- id: dtd.CDXML.chem_prop_analysis
+  owner: cdxml_root
+  name: chem_prop_analysis
+  xml_name: ChemPropAnalysis
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChemPropAnalysis>
+- id: dtd.CDXML.chain_angle
+  owner: cdxml_root
+  name: chain_angle
+  xml_name: ChainAngle
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML ChainAngle>
+  - source: sdk_document
+    locator: table[2]/row[71]
+  cdx_id: 2051
+  cdx_constant: kCDXProp_ChainAngle
+- id: dtd.CDXML.cartridge_data
+  owner: cdxml_root
+  name: cartridge_data
+  xml_name: CartridgeData
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CartridgeData>
+  - source: sdk_document
+    locator: table[2]/row[140]
+  cdx_id: 2087
+  cdx_constant: kCDXProp_CartridgeData
+- id: dtd.CDXML.caption_size
+  name: caption_size
+  xml_name: CaptionSize
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CaptionSize>
+  - source: sdk_document
+    locator: table[2]/row[116]
+  - source: sdk_caption_style_size
+    locator: CaptionStyleSize property summary; default font size
+  - source: revvity_dtd
+    locator: <!ATTLIST t CaptionSize>
+  - source: sdk_page_t
+    locator: table[2]/row[71]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic CaptionSize>
+  - source: sdk_page_graphic
+    locator: table[2]/row[47]
+  - source: sdk_caption_style_size
+    locator: 'CaptionStyleSize property page: default caption font size; binary type does not specify
+      CDXML scale'
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow CaptionSize>
+  cdx_id: 2077
+  cdx_constant: kCDXProp_CaptionStyleSize
+  owners:
+  - arrow
+  - cdxml_root
+  - graphic
+  - text
+- id: dtd.CDXML.caption_line_height
+  name: caption_line_height
+  xml_name: CaptionLineHeight
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CaptionLineHeight>
+  - source: sdk_document
+    locator: table[2]/row[56]
+  - source: revvity_dtd
+    locator: <!ATTLIST t CaptionLineHeight>
+  - source: sdk_page_t
+    locator: table[2]/row[47]
+  cdx_id: 1799
+  cdx_constant: kCDXProp_CaptionLineHeight
+  owners:
+  - cdxml_root
+  - text
+- id: dtd.CDXML.caption_justification
+  name: caption_justification
+  xml_name: CaptionJustification
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CaptionJustification>
+  - source: sdk_document
+    locator: table[2]/row[98]
+  - source: revvity_dtd
+    locator: <!ATTLIST t CaptionJustification>
+  - source: sdk_page_t
+    locator: table[2]/row[59]
+  - source: revvity_dtd
+    locator: <!ATTLIST marker CaptionJustification>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker CaptionJustification>
+  cdx_id: 2060
+  cdx_constant: kCDXProp_CaptionJustification
+  default: Left
+  enum: dtd.caption_justification.a0380828
+  owners:
+  - cdxml_root
+  - marker
+  - plasmid_marker
+  - text
+- id: dtd.CDXML.caption_font
+  name: caption_font
+  xml_name: CaptionFont
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CaptionFont>
+  - source: sdk_document
+    locator: table[2]/row[110]
+  - source: revvity_dtd
+    locator: <!ATTLIST t CaptionFont>
+  - source: sdk_page_t
+    locator: table[2]/row[65]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic CaptionFont>
+  - source: sdk_page_graphic
+    locator: table[2]/row[44]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow CaptionFont>
+  cdx_id: 2075
+  cdx_constant: kCDXProp_CaptionStyleFont
+  owners:
+  - arrow
+  - cdxml_root
+  - graphic
+  - text
+- id: dtd.CDXML.caption_face
+  name: caption_face
+  xml_name: CaptionFace
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CaptionFace>
+  - source: sdk_document
+    locator: table[2]/row[122]
+  - source: revvity_dtd
+    locator: <!ATTLIST t CaptionFace>
+  - source: sdk_page_t
+    locator: table[2]/row[77]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic CaptionFace>
+  - source: sdk_page_graphic
+    locator: table[2]/row[50]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow CaptionFace>
+  cdx_id: 2079
+  cdx_constant: kCDXProp_CaptionStyleFace
+  owners:
+  - arrow
+  - cdxml_root
+  - graphic
+  - text
+- id: dtd.CDXML.caption_color
+  name: caption_color
+  xml_name: CaptionColor
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML CaptionColor>
+  - source: sdk_document
+    locator: table[2]/row[128]
+  - source: revvity_dtd
+    locator: <!ATTLIST t CaptionColor>
+  - source: sdk_page_t
+    locator: table[2]/row[83]
+  cdx_id: 2081
+  cdx_constant: kCDXProp_CaptionStyleColor
+  owners:
+  - cdxml_root
+  - text
+- id: dtd.CDXML.bond_spacing_abs
+  name: bond_spacing_abs
+  xml_name: BondSpacingAbs
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML BondSpacingAbs>
+  - source: sdk_page_b
+    locator: table[2]/row[101]
+  - source: revvity_dtd
+    locator: <!ATTLIST b BondSpacingAbs>
+  cdx_id: 2082
+  cdx_constant: kCDXProp_BondSpacingAbs
+  owners:
+  - bond
+  - cdxml_root
+- id: dtd.CDXML.bond_spacing
+  name: bond_spacing
+  xml_name: BondSpacing
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML BondSpacing>
+  - source: sdk_document
+    locator: table[2]/row[74]
+  - source: revvity_dtd
+    locator: <!ATTLIST b BondSpacing>
+  - source: sdk_page_b
+    locator: table[2]/row[71]
+  cdx_id: 2052
+  cdx_constant: kCDXProp_BondSpacing
+  owners:
+  - bond
+  - cdxml_root
+- id: dtd.CDXML.bond_length
+  name: bond_length
+  xml_name: BondLength
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML BondLength>
+  - source: sdk_document
+    locator: table[2]/row[77]
+  - source: revvity_dtd
+    locator: <!ATTLIST b BondLength>
+  - source: sdk_page_b
+    locator: table[2]/row[74]
+  - source: sdk_page_geometry
+    locator: 'table[2]/row[11]: BondLength / kCDXProp_BondLength / 0x0805 (CDXCoordinate)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared geometry@BondLength attribute pair
+  - source: sdk_page_constraint
+    locator: 'table[2]/row[11]: BondLength / kCDXProp_BondLength / 0x0805 (CDXCoordinate)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared constraint@BondLength attribute pair
+  cdx_id: 2053
+  cdx_constant: kCDXProp_BondLength
+  owners:
+  - bond
+  - cdxml_root
+  - constraint
+  - geometry
+- id: dtd.CDXML.bold_width
+  name: bold_width
+  xml_name: BoldWidth
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML BoldWidth>
+  - source: sdk_document
+    locator: table[2]/row[80]
+  - source: revvity_dtd
+    locator: <!ATTLIST b BoldWidth>
+  - source: sdk_page_b
+    locator: table[2]/row[77]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic BoldWidth>
+  - source: sdk_page_graphic
+    locator: table[2]/row[35]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow BoldWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST curve BoldWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum BoldWidth>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[26]
+  - source: revvity_dtd
+    locator: <!ATTLIST table BoldWidth>
+  - source: sdk_page_table
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate BoldWidth>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[32]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate BoldWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid BoldWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap BoldWidth>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape BoldWidth>
+  cdx_id: 2054
+  cdx_constant: kCDXProp_BoldWidth
+  owners:
+  - arrow
+  - bio_shape
+  - bond
+  - cdxml_root
+  - curve
+  - gep_plate
+  - graphic
+  - plasmid_map
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - tlc_plate
+- id: dtd.CDXML.bgcolor
+  name: bgcolor
+  xml_name: bgcolor
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML bgcolor>
+  - source: sdk_page_page
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST page bgcolor>
+  - source: revvity_dtd
+    locator: <!ATTLIST coloredmoleculararea bgcolor>
+  - source: sdk_page_n
+    locator: 'table[2]/row[26]: bgcolor / kCDXProp_BackgroundColor / 0x0302 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared n@bgcolor attribute pair
+  - source: sdk_page_b
+    locator: 'table[2]/row[20]: bgcolor / kCDXProp_BackgroundColor / 0x0302 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared b@bgcolor attribute pair
+  - source: sdk_page_graphic
+    locator: 'table[2]/row[32]: bgcolor / kCDXProp_BackgroundColor / 0x0302 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared graphic@bgcolor attribute pair
+  - source: sdk_page_curve
+    locator: 'table[2]/row[23]: bgcolor / kCDXProp_BackgroundColor / 0x0302 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared curve@bgcolor attribute pair
+  - source: sdk_page_embeddedobject
+    locator: 'table[2]/row[17]: bgcolor / kCDXProp_BackgroundColor / 0x0302 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared embeddedobject@bgcolor attribute pair
+  - source: sdk_page_table
+    locator: 'table[2]/row[17]: bgcolor / kCDXProp_BackgroundColor / 0x0302 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared table@bgcolor attribute pair
+  - source: sdk_page_altgroup
+    locator: 'table[2]/row[23]: bgcolor / kCDXProp_BackgroundColor / 0x0302 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared altgroup@bgcolor attribute pair
+  - source: sdk_page_spectrum
+    locator: 'table[2]/row[23]: bgcolor / kCDXProp_BackgroundColor / 0x0302 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared spectrum@bgcolor attribute pair
+  - source: sdk_page_tlcplate
+    locator: 'table[2]/row[29]: bgcolor / kCDXProp_BackgroundColor / 0x0302 (INT16)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared tlcplate@bgcolor attribute pair
+  cdx_id: 770
+  cdx_constant: kCDXProp_BackgroundColor
+  owners:
+  - alt_group
+  - bond
+  - cdxml_root
+  - colored_molecular_area
+  - curve
+  - embedded_object
+  - graphic
+  - node
+  - page
+  - spectrum
+  - table
+  - tlc_plate
+- id: dtd.CDXML.bgalpha
+  name: bgalpha
+  xml_name: bgalpha
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML bgalpha>
+  - source: revvity_dtd
+    locator: <!ATTLIST page bgalpha>
+  owners:
+  - cdxml_root
+  - page
+- id: dtd.CDXML.amino_acid_termini
+  owner: cdxml_root
+  name: amino_acid_termini
+  xml_name: AminoAcidTermini
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST CDXML AminoAcidTermini>
+  default: HOH
+  enum: dtd.amino_acid_termini.a05085d7
+- id: dtd.colortable.xml_id
+  name: xml_id
+  xml_name: id
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST colortable id>
+  - source: sdk_page_colortable
+    locator: table[2]/row[2]
+  - source: revvity_dtd
+    locator: <!ATTLIST fonttable id>
+  - source: sdk_page_fonttable
+    locator: table[2]/row[2]
+  owners:
+  - color_table
+  - font_table
+- id: dtd.page.z
+  name: z
+  xml_name: Z
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page Z>
+  - source: sdk_page_altgroup
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST group Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST t Z>
+  - source: sdk_page_t
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST n Z>
+  - source: sdk_page_n
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST b Z>
+  - source: sdk_page_b
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic Z>
+  - source: sdk_page_graphic
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST curve Z>
+  - source: sdk_page_curve
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum Z>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject Z>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST table Z>
+  - source: sdk_page_table
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate Z>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST border Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape Z>
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogic Z>
+  cdx_id: 10
+  cdx_constant: kCDXProp_ZOrder
+  owners:
+  - alt_group
+  - arrow
+  - bio_shape
+  - bond
+  - border
+  - constraint
+  - curve
+  - embedded_object
+  - fragment
+  - geometry
+  - gep_band
+  - gep_plate
+  - graphic
+  - group
+  - node
+  - page
+  - plasmid_map
+  - plasmid_region
+  - rlogic
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - tlc_plate
+  - tlc_spot
+- id: dtd.page.width
+  name: width
+  xml_name: Width
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page Width>
+  - source: sdk_page_page
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot Width>
+  - source: sdk_page_tlcspot
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband Width>
+  - source: revvity_dtd
+    locator: <!ATTLIST sgcomponent Width>
+  cdx_id: 2066
+  cdx_constant: kCDXProp_Width
+  owners:
+  - gep_band
+  - page
+  - sg_component
+  - tlc_spot
+- id: dtd.page.splitter_positions
+  owner: page
+  name: splitter_positions
+  xml_name: SplitterPositions
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page SplitterPositions>
+  - source: sdk_page_page
+    locator: table[2]/row[44]
+  cdx_id: 8176
+  cdx_constant: kCDXProp_SplitterPositions
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.page.print_trim_marks
+  owner: page
+  name: print_trim_marks
+  xml_name: PrintTrimMarks
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page PrintTrimMarks>
+  - source: sdk_page_page
+    locator: table[2]/row[41]
+  cdx_id: 2073
+  cdx_constant: kCDXProp_PrintTrimMarks
+  default: false
+- id: dtd.page.page_overlap
+  owner: page
+  name: page_overlap
+  xml_name: PageOverlap
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page PageOverlap>
+  - source: sdk_page_page
+    locator: table[2]/row[26]
+  cdx_id: 2068
+  cdx_constant: kCDXProp_PageOverlap
+- id: dtd.page.page_definition
+  name: page_definition
+  xml_name: PageDefinition
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page PageDefinition>
+  - source: sdk_page_page
+    locator: table[2]/row[47]
+  - source: revvity_dtd
+    locator: <!ATTLIST splitter PageDefinition>
+  - source: sdk_page_splitter
+    locator: table[1]/row[5]
+  cdx_id: 8177
+  cdx_constant: kCDXProp_PageDefinition
+  default: Undefined
+  enum: dtd.page_definition.5d48b9f1
+  owners:
+  - page
+  - splitter
+- id: dtd.page.height_pages
+  owner: page
+  name: height_pages
+  xml_name: HeightPages
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page HeightPages>
+  - source: sdk_page_page
+    locator: table[2]/row[14]
+  cdx_id: 2064
+  cdx_constant: kCDXProp_HeightPages
+  default: 1
+- id: dtd.page.header_position
+  owner: page
+  name: header_position
+  xml_name: HeaderPosition
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page HeaderPosition>
+  - source: sdk_page_page
+    locator: table[2]/row[32]
+  cdx_id: 2070
+  cdx_constant: kCDXProp_HeaderPosition
+- id: dtd.page.header
+  owner: page
+  name: header
+  xml_name: Header
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page Header>
+  - source: sdk_page_page
+    locator: table[2]/row[29]
+  cdx_id: 2069
+  cdx_constant: kCDXProp_Header
+- id: dtd.page.width_pages
+  owner: page
+  name: width_pages
+  xml_name: WidthPages
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page WidthPages>
+  - source: sdk_page_page
+    locator: table[2]/row[11]
+  cdx_id: 2063
+  cdx_constant: kCDXProp_WidthPages
+  default: 1
+- id: dtd.page.height
+  name: height
+  xml_name: Height
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page Height>
+  - source: sdk_page_page
+    locator: table[2]/row[23]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot Height>
+  - source: sdk_page_tlcspot
+    locator: table[2]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband Height>
+  cdx_id: 2067
+  cdx_constant: kCDXProp_Height
+  owners:
+  - gep_band
+  - page
+  - tlc_spot
+- id: dtd.page.footer_position
+  owner: page
+  name: footer_position
+  xml_name: FooterPosition
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page FooterPosition>
+  - source: sdk_page_page
+    locator: table[2]/row[38]
+  cdx_id: 2072
+  cdx_constant: kCDXProp_FooterPosition
+- id: dtd.page.footer
+  owner: page
+  name: footer
+  xml_name: Footer
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page Footer>
+  - source: sdk_page_page
+    locator: table[2]/row[35]
+  cdx_id: 2071
+  cdx_constant: kCDXProp_Footer
+- id: dtd.page.drawing_space
+  owner: page
+  name: drawing_space
+  xml_name: DrawingSpace
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page DrawingSpace>
+  - source: sdk_page_page
+    locator: table[2]/row[17]
+  cdx_id: 2065
+  cdx_constant: kCDXProp_DrawingSpaceType
+  default: pages
+  enum: dtd.drawing_space.46069ac7
+- id: dtd.page.bounds_in_parent
+  owner: page
+  name: bounds_in_parent
+  xml_name: BoundsInParent
+  datatype: bounding_box
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST page BoundsInParent>
+  - source: sdk_page_page
+    locator: table[2]/row[50]
+  cdx_id: 518
+  cdx_constant: kCDXProp_BoundsInParent
+- id: dtd.fragment.absolute
+  owner: fragment
+  name: absolute
+  xml_name: Absolute
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment Absolute>
+  - source: sdk_page_fragment
+    locator: table[2]/row[11]
+  cdx_id: 1281
+  cdx_constant: kCDXProp_Mole_Absolute
+  default: false
+- id: dtd.fragment.weight
+  owner: fragment
+  name: weight
+  xml_name: Weight
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment Weight>
+  - source: sdk_page_fragment
+    locator: table[2]/row[20]
+  cdx_id: 1284
+  cdx_constant: kCDXProp_Mole_Weight
+- id: dtd.fragment.sequence_type
+  owner: fragment
+  name: sequence_type
+  xml_name: SequenceType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment SequenceType>
+  default: Unknown
+  enum: dtd.sequence_type.35f3b725
+- id: dtd.fragment.racemic
+  owner: fragment
+  name: racemic
+  xml_name: Racemic
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment Racemic>
+  - source: sdk_page_fragment
+    locator: table[2]/row[8]
+  cdx_id: 1280
+  cdx_constant: kCDXProp_Mole_Racemic
+  default: false
+- id: dtd.fragment.relative
+  owner: fragment
+  name: relative
+  xml_name: Relative
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment Relative>
+  - source: sdk_page_fragment
+    locator: table[2]/row[14]
+  cdx_id: 1282
+  cdx_constant: kCDXProp_Mole_Relative
+  default: false
+- id: dtd.fragment.formula
+  owner: fragment
+  name: formula
+  xml_name: Formula
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment Formula>
+  - source: sdk_page_fragment
+    locator: table[2]/row[17]
+  cdx_id: 1283
+  cdx_constant: kCDXProp_Mole_Formula
+- id: dtd.fragment.connection_order
+  owner: fragment
+  name: connection_order
+  xml_name: ConnectionOrder
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST fragment ConnectionOrder>
+  - source: sdk_page_fragment
+    locator: table[2]/row[23]
+  cdx_id: 1285
+  cdx_constant: kCDXProp_Frag_ConnectionOrder
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.t.word_wrap_width
+  owner: text
+  name: word_wrap_width
+  xml_name: WordWrapWidth
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t WordWrapWidth>
+  - source: sdk_page_t
+    locator: table[2]/row[35]
+  cdx_id: 1795
+  cdx_constant: kCDXProp_WordWrapWidth
+- id: dtd.t.warning
+  name: warning
+  xml_name: Warning
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t Warning>
+  - source: sdk_page_t
+    locator: table[2]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST n Warning>
+  - source: sdk_page_n
+    locator: table[2]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST b Warning>
+  - source: sdk_page_b
+    locator: table[2]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic Warning>
+  - source: sdk_page_graphic
+    locator: table[2]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow Warning>
+  - source: sdk_page_altgroup
+    locator: table[2]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST curve Warning>
+  - source: sdk_page_curve
+    locator: table[2]/row[11]
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup Warning>
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum Warning>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[11]
+  cdx_id: 16
+  cdx_constant: kCDXProp_ChemicalWarning
+  owners:
+  - alt_group
+  - arrow
+  - bond
+  - curve
+  - graphic
+  - node
+  - spectrum
+  - text
+- id: dtd.t.superseded_by
+  name: superseded_by
+  xml_name: SupersededBy
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t SupersededBy>
+  - source: sdk_page_graphic
+    locator: table[2]/row[17]
+  - source: revvity_dtd
+    locator: <!ATTLIST n SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST b SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST curve SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST table SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST stoichiometrygrid SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap SupersededBy>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape SupersededBy>
+  cdx_id: 18
+  cdx_constant: kCDXProp_SupersededBy
+  reference: '*'
+  reference_many: false
+  owners:
+  - alt_group
+  - arrow
+  - bio_shape
+  - bond
+  - constraint
+  - curve
+  - embedded_object
+  - geometry
+  - gep_plate
+  - graphic
+  - node
+  - plasmid_map
+  - spectrum
+  - stoichiometry_grid
+  - table
+  - text
+  - tlc_plate
+  cardinality: one
+- id: dtd.t.rotation_angle
+  name: rotation_angle
+  xml_name: RotationAngle
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t RotationAngle>
+  - source: sdk_page_t
+    locator: table[2]/row[23]
+  - source: sdk_rotation_angle
+    locator: 'RotationAngle property description: angle measured in degrees'
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject RotationAngle>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[11]
+  cdx_id: 517
+  cdx_constant: kCDXProp_RotationAngle
+  owners:
+  - embedded_object
+  - text
+- id: dtd.t.line_height
+  name: line_height
+  xml_name: LineHeight
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t LineHeight>
+  - source: sdk_page_t
+    locator: table[2]/row[32]
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogic LineHeight>
+  cdx_id: 1794
+  cdx_constant: kCDXProp_LineHeight
+  owners:
+  - rlogic
+  - text
+- id: dtd.t.line_starts
+  owner: text
+  name: line_starts
+  xml_name: LineStarts
+  datatype: integer_list
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t LineStarts>
+  - source: sdk_page_t
+    locator: table[2]/row[38]
+  cdx_id: 1796
+  cdx_constant: kCDXProp_LineStarts
+  codec: uint16_list
+- id: dtd.t.label_alignment
+  owner: text
+  name: label_alignment
+  xml_name: LabelAlignment
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t LabelAlignment>
+  - source: sdk_page_t
+    locator: table[2]/row[41]
+  cdx_id: 1797
+  cdx_constant: kCDXProp_LabelAlignment
+  default: Auto
+  enum: dtd.label_justification.aa6f97a8
+- id: dtd.t.justification
+  owner: text
+  name: justification
+  xml_name: Justification
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST t Justification>
+  - source: sdk_page_t
+    locator: table[2]/row[29]
+  cdx_id: 1793
+  cdx_constant: kCDXProp_Justification
+  default: Left
+  enum: dtd.justification.8e038579
+- id: dtd.n.abnormal_valence
+  owner: node
+  name: abnormal_valence
+  xml_name: AbnormalValence
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n AbnormalValence>
+  - source: sdk_page_n
+    locator: table[2]/row[71]
+  cdx_id: 1065
+  cdx_constant: kCDXProp_Atom_AbnormalValence
+  default: false
+- id: dtd.n.xyz
+  name: xyz
+  xml_name: xyz
+  datatype: point_3d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n xyz>
+  - source: sdk_page_n
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape xyz>
+  cdx_id: 513
+  cdx_constant: kCDXProp_3DPosition
+  owners:
+  - bio_shape
+  - node
+- id: dtd.n.unsaturated_bonds
+  owner: node
+  name: unsaturated_bonds
+  xml_name: UnsaturatedBonds
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n UnsaturatedBonds>
+  - source: sdk_page_n
+    locator: table[2]/row[62]
+  cdx_id: 1062
+  cdx_constant: kCDXProp_Atom_RestrictUnsaturatedBonds
+  default: Unspecified
+  enum: dtd.unsaturated_bonds.b4aa355d
+- id: dtd.n.translation
+  owner: node
+  name: translation
+  xml_name: Translation
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n Translation>
+  - source: sdk_page_n
+    locator: table[2]/row[107]
+  cdx_id: 1080
+  cdx_constant: kCDXProp_Atom_Translation
+  default: Equal
+  enum: dtd.translation.24452af8
+- id: dtd.n.substituents_up_to
+  owner: node
+  name: substituents_up_to
+  xml_name: SubstituentsUpTo
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n SubstituentsUpTo>
+  - source: sdk_page_n
+    locator: table[2]/row[98]
+  cdx_id: 1077
+  cdx_constant: kCDXProp_Atom_RestrictSubstituentsUpTo
+- id: dtd.n.substituents_exactly
+  owner: node
+  name: substituents_exactly
+  xml_name: SubstituentsExactly
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n SubstituentsExactly>
+  - source: sdk_page_n
+    locator: table[2]/row[101]
+  cdx_id: 1078
+  cdx_constant: kCDXProp_Atom_RestrictSubstituentsExactly
+- id: dtd.n.show_atom_id
+  owner: node
+  name: show_atom_id
+  xml_name: ShowAtomID
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n ShowAtomID>
+  default: false
+- id: dtd.n.rxn_stereo
+  owner: node
+  name: rxn_stereo
+  xml_name: RxnStereo
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n RxnStereo>
+  - source: sdk_page_n
+    locator: table[2]/row[68]
+  cdx_id: 1064
+  cdx_constant: kCDXProp_Atom_RestrictRxnStereo
+  default: Unspecified
+  enum: dtd.rxn_stereo.65b93c38
+- id: dtd.n.rxn_change
+  owner: node
+  name: rxn_change
+  xml_name: RxnChange
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n RxnChange>
+  - source: sdk_page_n
+    locator: table[2]/row[65]
+  cdx_id: 1063
+  cdx_constant: kCDXProp_Atom_RestrictRxnChange
+  default: false
+- id: dtd.n.ring_bond_count
+  owner: node
+  name: ring_bond_count
+  xml_name: RingBondCount
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n RingBondCount>
+  - source: sdk_page_n
+    locator: table[2]/row[59]
+  cdx_id: 1061
+  cdx_constant: kCDXProp_Atom_RestrictRingBondCount
+  default: Unspecified
+  enum: dtd.ring_bond_count.d444e4df
+- id: dtd.n.radical
+  owner: node
+  name: radical
+  xml_name: Radical
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n Radical>
+  - source: sdk_page_n
+    locator: table[2]/row[50]
+  cdx_id: 1058
+  cdx_constant: kCDXProp_Atom_Radical
+  default: None
+  enum: dtd.radical.6ba1138c
+- id: dtd.n.node_type
+  owner: node
+  name: node_type
+  xml_name: NodeType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n NodeType>
+  - source: sdk_page_n
+    locator: table[2]/row[29]
+  cdx_id: 1024
+  cdx_constant: kCDXProp_Node_Type
+  default: Element
+  enum: dtd.node_type.18813628
+- id: dtd.n.num_hydrogens
+  owner: node
+  name: num_hydrogens
+  xml_name: NumHydrogens
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n NumHydrogens>
+  - source: sdk_page_n
+    locator: table[2]/row[74]
+  cdx_id: 1067
+  cdx_constant: kCDXProp_Atom_NumHydrogens
+- id: dtd.n.needs_clean
+  owner: node
+  name: needs_clean
+  xml_name: NeedsClean
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n NeedsClean>
+  default: false
+- id: dtd.n.link_count_low
+  owner: node
+  name: link_count_low
+  xml_name: LinkCountLow
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n LinkCountLow>
+  - source: sdk_page_n
+    locator: table[2]/row[122]
+  cdx_id: 1085
+  cdx_constant: kCDXProp_Atom_LinkCountLow
+- id: dtd.n.link_count_high
+  owner: node
+  name: link_count_high
+  xml_name: LinkCountHigh
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n LinkCountHigh>
+  - source: sdk_page_n
+    locator: table[2]/row[125]
+  cdx_id: 1086
+  cdx_constant: kCDXProp_Atom_LinkCountHigh
+- id: dtd.n.label_display
+  owner: node
+  name: label_display
+  xml_name: LabelDisplay
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n LabelDisplay>
+  - source: sdk_page_n
+    locator: table[2]/row[32]
+  cdx_id: 1025
+  cdx_constant: kCDXProp_Node_LabelDisplay
+  default: Auto
+  enum: dtd.label_justification.aa6f97a8
+- id: dtd.n.isotopic_abundance
+  owner: node
+  name: isotopic_abundance
+  xml_name: IsotopicAbundance
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n IsotopicAbundance>
+  - source: sdk_page_n
+    locator: table[2]/row[128]
+  cdx_id: 1087
+  cdx_constant: kCDXProp_Atom_IsotopicAbundance
+  default: Unspecified
+  enum: dtd.isotopic_abundance.6221caac
+- id: dtd.n.implicit_hydrogens
+  owner: node
+  name: implicit_hydrogens
+  xml_name: ImplicitHydrogens
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n ImplicitHydrogens>
+  - source: sdk_page_n
+    locator: table[2]/row[56]
+  cdx_id: 1060
+  cdx_constant: kCDXProp_Atom_RestrictImplicitHydrogens
+  default: false
+- id: dtd.n.h_dot
+  owner: node
+  name: h_dot
+  xml_name: HDot
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n HDot>
+  - source: sdk_page_n
+    locator: table[2]/row[77]
+  cdx_id: 1070
+  cdx_constant: kCDXProp_Atom_HDot
+  default: false
+- id: dtd.n.h_dash
+  owner: node
+  name: h_dash
+  xml_name: HDash
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n HDash>
+  - source: sdk_page_n
+    locator: table[2]/row[80]
+  cdx_id: 1071
+  cdx_constant: kCDXProp_Atom_HDash
+  default: false
+- id: dtd.n.generic_nickname
+  owner: node
+  name: generic_nickname
+  xml_name: GenericNickname
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n GenericNickname>
+  - source: sdk_page_n
+    locator: table[2]/row[92]
+  cdx_id: 1075
+  cdx_constant: kCDXProp_Atom_GenericNickname
+- id: dtd.n.generic_list
+  owner: node
+  name: generic_list
+  xml_name: GenericList
+  datatype: generic_list
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n GenericList>
+  - source: sdk_page_n
+    locator: table[2]/row[134]
+  cdx_id: 1089
+  cdx_constant: kCDXProp_Atom_GenericList
+  codec: generic_list
+- id: dtd.n.geometry
+  owner: node
+  name: geometry
+  xml_name: Geometry
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n Geometry>
+  - source: sdk_page_n
+    locator: table[2]/row[83]
+  cdx_id: 1072
+  cdx_constant: kCDXProp_Atom_Geometry
+  default: Unknown
+  enum: dtd.node_geometry.8bcf7656
+- id: dtd.n.free_sites
+  owner: node
+  name: free_sites
+  xml_name: FreeSites
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n FreeSites>
+  - source: sdk_page_n
+    locator: table[2]/row[53]
+  cdx_id: 1059
+  cdx_constant: kCDXProp_Atom_RestrictFreeSites
+- id: dtd.n.formula
+  owner: node
+  name: formula
+  xml_name: Formula
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n Formula>
+  - source: sdk_page_n
+    locator: table[2]/row[41]
+  cdx_id: 1028
+  cdx_constant: kCDXProp_Atom_Formula
+- id: dtd.n.external_connection_num
+  owner: node
+  name: external_connection_num
+  xml_name: ExternalConnectionNum
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n ExternalConnectionNum>
+- id: dtd.n.external_connection_type
+  owner: node
+  name: external_connection_type
+  xml_name: ExternalConnectionType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n ExternalConnectionType>
+  - source: sdk_page_n
+    locator: table[2]/row[131]
+  cdx_id: 1088
+  cdx_constant: kCDXProp_Atom_ExternalConnectionType
+  default: Unspecified
+  enum: dtd.external_connection_type.ade6bb36
+- id: dtd.n.enhanced_stereo_type
+  owner: node
+  name: enhanced_stereo_type
+  xml_name: EnhancedStereoType
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n EnhancedStereoType>
+  - source: sdk_page_n
+    locator: table[2]/row[140]
+  cdx_id: 1094
+  cdx_constant: kCDXProp_Atom_EnhancedStereoType
+- id: dtd.n.enhanced_stereo_group_num
+  owner: node
+  name: enhanced_stereo_group_num
+  xml_name: EnhancedStereoGroupNum
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n EnhancedStereoGroupNum>
+  - source: sdk_page_n
+    locator: table[2]/row[143]
+  cdx_id: 1095
+  cdx_constant: kCDXProp_Atom_EnhancedStereoGroupNum
+- id: dtd.n.element_list
+  owner: node
+  name: element_list
+  xml_name: ElementList
+  datatype: element_list
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n ElementList>
+  - source: sdk_page_n
+    locator: table[2]/row[38]
+  cdx_id: 1027
+  cdx_constant: kCDXProp_Atom_ElementList
+  codec: element_list
+- id: dtd.n.bond_ordering
+  owner: node
+  name: bond_ordering
+  xml_name: BondOrdering
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n BondOrdering>
+  - source: sdk_page_n
+    locator: table[2]/row[86]
+  cdx_id: 1073
+  cdx_constant: kCDXProp_Atom_BondOrdering
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.n.attachments
+  owner: node
+  name: attachments
+  xml_name: Attachments
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n Attachments>
+  - source: sdk_page_n
+    locator: table[2]/row[89]
+  cdx_id: 1074
+  cdx_constant: kCDXProp_Node_Attachments
+  reference: node
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.n.atom_number
+  owner: node
+  name: atom_number
+  xml_name: AtomNumber
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n AtomNumber>
+  - source: sdk_page_n
+    locator: table[2]/row[110]
+  cdx_id: 1081
+  cdx_constant: kCDXProp_Atom_AtomNumber
+- id: dtd.n.atom_id
+  owner: node
+  name: atom_id
+  xml_name: AtomID
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n AtomID>
+- id: dtd.n.as_value
+  owner: node
+  name: as_value
+  xml_name: AS
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n AS>
+  - source: sdk_page_n
+    locator: table[2]/row[104]
+  cdx_id: 1079
+  cdx_constant: kCDXProp_Atom_CIPStereochemistry
+  default: U
+  enum: dtd.as.a82c6cfb
+- id: dtd.n.alt_group_id
+  owner: node
+  name: alt_group_id
+  xml_name: AltGroupID
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST n AltGroupID>
+  - source: sdk_page_n
+    locator: table[2]/row[95]
+  cdx_id: 1076
+  cdx_constant: kCDXProp_Atom_AltGroupID
+  reference: '*'
+  reference_many: false
+  cardinality: one
+- id: dtd.b.topology
+  owner: bond
+  name: topology
+  xml_name: Topology
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b Topology>
+  - source: sdk_page_b
+    locator: table[2]/row[41]
+  cdx_id: 1542
+  cdx_constant: kCDXProp_Bond_RestrictTopology
+  default: Unspecified
+  enum: dtd.topology.62163c3d
+- id: dtd.b.rxn_participation
+  owner: bond
+  name: rxn_participation
+  xml_name: RxnParticipation
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b RxnParticipation>
+  - source: sdk_page_b
+    locator: table[2]/row[44]
+  cdx_id: 1543
+  cdx_constant: kCDXProp_Bond_RestrictRxnParticipation
+  default: Unspecified
+  enum: dtd.rxn_participation.71b2b5ce
+- id: dtd.b.end_external_num
+  owner: bond
+  name: end_external_num
+  xml_name: EndExternalNum
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b EndExternalNum>
+- id: dtd.b.end_attach
+  owner: bond
+  name: end_attach
+  xml_name: EndAttach
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b EndAttach>
+  - source: sdk_page_b
+    locator: table[2]/row[50]
+  cdx_id: 1545
+  cdx_constant: kCDXProp_Bond_EndAttach
+- id: dtd.b.double_position
+  owner: bond
+  name: double_position
+  xml_name: DoublePosition
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b DoublePosition>
+  - source: sdk_page_b
+    locator: table[2]/row[32]
+  cdx_id: 1539
+  cdx_constant: kCDXProp_Bond_DoublePosition
+  enum: dtd.double_position.94c4e4b1
+- id: dtd.b.display2
+  owner: bond
+  name: display2
+  xml_name: Display2
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b Display2>
+  - source: sdk_page_b
+    locator: table[2]/row[29]
+  cdx_id: 1538
+  cdx_constant: kCDXProp_Bond_Display2
+  default: Solid
+  enum: bond_display
+- id: dtd.b.crossing_bondss
+  owner: bond
+  name: crossing_bondss
+  xml_name: CrossingBondss
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b CrossingBondss>
+- id: dtd.b.crossing_bonds
+  owner: bond
+  name: crossing_bonds
+  xml_name: CrossingBonds
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b CrossingBonds>
+  - source: sdk_page_b
+    locator: table[2]/row[65]
+  cdx_id: 1550
+  cdx_constant: kCDXProp_Bond_CrossingBonds
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.b.connectivity
+  owner: bond
+  name: connectivity
+  xml_name: Connectivity
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b Connectivity>
+  default: Unspecified
+  enum: dtd.connectivity.086332b0
+- id: dtd.b.bs
+  owner: bond
+  name: bs
+  xml_name: BS
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b BS>
+  - source: sdk_page_b
+    locator: table[2]/row[53]
+  cdx_id: 1546
+  cdx_constant: kCDXProp_Bond_CIPStereochemistry
+  default: U
+  enum: dtd.bs.c9410bb4
+- id: dtd.b.bond_circular_ordering
+  owner: bond
+  name: bond_circular_ordering
+  xml_name: BondCircularOrdering
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b BondCircularOrdering>
+  - source: sdk_page_b
+    locator: table[2]/row[56]
+  cdx_id: 1547
+  cdx_constant: kCDXProp_Bond_BondOrdering
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.b.begin_external_num
+  owner: bond
+  name: begin_external_num
+  xml_name: BeginExternalNum
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b BeginExternalNum>
+- id: dtd.b.begin_attach
+  owner: bond
+  name: begin_attach
+  xml_name: BeginAttach
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST b BeginAttach>
+  - source: sdk_page_b
+    locator: table[2]/row[47]
+  cdx_id: 1544
+  cdx_constant: kCDXProp_Bond_BeginAttach
+- id: dtd.graphic.symbol_type
+  owner: graphic
+  name: symbol_type
+  xml_name: SymbolType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic SymbolType>
+  - source: sdk_page_graphic
+    locator: table[2]/row[74]
+  cdx_id: 2567
+  cdx_constant: kCDXProp_Symbol_Type
+  enum: dtd.symbol_type.4aa0ee0c
+- id: dtd.graphic.rectangle_type
+  owner: graphic
+  name: rectangle_type
+  xml_name: RectangleType
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic RectangleType>
+  - source: sdk_page_graphic
+    locator: table[2]/row[62]
+  cdx_id: 2563
+  cdx_constant: kCDXProp_Rectangle_Type
+- id: dtd.graphic.shadow_size
+  owner: graphic
+  name: shadow_size
+  xml_name: ShadowSize
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic ShadowSize>
+- id: dtd.graphic.polymer_repeat_pattern
+  name: polymer_repeat_pattern
+  xml_name: PolymerRepeatPattern
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic PolymerRepeatPattern>
+  - source: sdk_page_graphic
+    locator: table[2]/row[89]
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketedgroup PolymerRepeatPattern>
+  - source: sdk_page_bracketedgroup
+    locator: table[2]/row[8]
+  cdx_id: 2597
+  cdx_constant: kCDXProp_Polymer_RepeatPattern
+  enum: dtd.polymer_repeat_pattern.a2cadba9
+  owners:
+  - bracketed_group
+  - graphic
+- id: dtd.graphic.polymer_flip_type
+  name: polymer_flip_type
+  xml_name: PolymerFlipType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic PolymerFlipType>
+  - source: sdk_page_graphic
+    locator: table[2]/row[92]
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketedgroup PolymerFlipType>
+  - source: sdk_page_bracketedgroup
+    locator: table[2]/row[11]
+  cdx_id: 2598
+  cdx_constant: kCDXProp_Polymer_FlipType
+  enum: dtd.polymer_flip_type.7cf04eb5
+  owners:
+  - bracketed_group
+  - graphic
+- id: dtd.graphic.oval_type
+  owner: graphic
+  name: oval_type
+  xml_name: OvalType
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic OvalType>
+  - source: sdk_page_graphic
+    locator: table[2]/row[65]
+  cdx_id: 2564
+  cdx_constant: kCDXProp_Oval_Type
+- id: dtd.graphic.orbital_type
+  owner: graphic
+  name: orbital_type
+  xml_name: OrbitalType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic OrbitalType>
+  - source: sdk_page_graphic
+    locator: table[2]/row[68]
+  cdx_id: 2565
+  cdx_constant: kCDXProp_Orbital_Type
+  enum: dtd.orbital_type.7ae4dc1f
+- id: dtd.graphic.lip_size
+  owner: graphic
+  name: lip_size
+  xml_name: LipSize
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic LipSize>
+  - source: sdk_page_graphic
+    locator: table[2]/row[83]
+  cdx_id: 2594
+  cdx_constant: kCDXProp_Bracket_LipSize
+- id: dtd.graphic.line_type
+  name: line_type
+  xml_name: LineType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic LineType>
+  - source: sdk_page_graphic
+    locator: table[2]/row[56]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow LineType>
+  - source: sdk_page_border
+    locator: table[1]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST curve LineType>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion LineType>
+  - source: revvity_dtd
+    locator: <!ATTLIST border LineType>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape LineType>
+  cdx_id: 2561
+  cdx_constant: kCDXProp_Line_Type
+  enum: dtd.line_type.79d84f4b
+  owners:
+  - arrow
+  - bio_shape
+  - border
+  - curve
+  - graphic
+  - plasmid_region
+- id: dtd.graphic.frame_type
+  owner: graphic
+  name: frame_type
+  xml_name: FrameType
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic FrameType>
+  - source: sdk_page_graphic
+    locator: table[2]/row[98]
+  cdx_id: 2621
+  cdx_constant: kCDXProp_Frame_Type
+- id: dtd.graphic.fade_percent
+  name: fade_percent
+  xml_name: FadePercent
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic FadePercent>
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow FadePercent>
+  - source: revvity_dtd
+    locator: <!ATTLIST curve FadePercent>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion FadePercent>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape FadePercent>
+  owners:
+  - arrow
+  - bio_shape
+  - curve
+  - graphic
+  - plasmid_region
+- id: dtd.graphic.corner_radius
+  owner: graphic
+  name: corner_radius
+  xml_name: CornerRadius
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic CornerRadius>
+  - source: sdk_page_graphic
+    locator: table[2]/row[95]
+  cdx_id: 2620
+  cdx_constant: kCDXProp_CornerRadius
+- id: dtd.graphic.bracket_usage
+  name: bracket_usage
+  xml_name: BracketUsage
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic BracketUsage>
+  - source: sdk_page_graphic
+    locator: table[2]/row[86]
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketedgroup BracketUsage>
+  - source: sdk_page_bracketedgroup
+    locator: table[2]/row[5]
+  cdx_id: 2596
+  cdx_constant: kCDXProp_Bracket_Usage
+  enum: dtd.bracket_usage.df42ccc5
+  owners:
+  - bracketed_group
+  - graphic
+- id: dtd.graphic.bracket_type
+  owner: graphic
+  name: bracket_type
+  xml_name: BracketType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic BracketType>
+  - source: sdk_page_graphic
+    locator: table[2]/row[71]
+  cdx_id: 2566
+  cdx_constant: kCDXProp_Bracket_Type
+  enum: dtd.bracket_type.8269cca1
+- id: dtd.graphic.arrow_type
+  owner: graphic
+  name: arrow_type
+  xml_name: ArrowType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic ArrowType>
+  - source: sdk_page_graphic
+    locator: table[2]/row[59]
+  cdx_id: 2562
+  cdx_constant: kCDXProp_Arrow_Type
+  enum: dtd.arrow_type.7aa56e9a
+- id: dtd.graphic.angular_size
+  name: angular_size
+  xml_name: AngularSize
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST graphic AngularSize>
+  - source: sdk_page_graphic
+    locator: table[2]/row[80]
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow AngularSize>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion AngularSize>
+  cdx_id: 2593
+  cdx_constant: kCDXProp_Arc_AngularSize
+  owners:
+  - arrow
+  - graphic
+  - plasmid_region
+- id: dtd.arrow.no_go
+  owner: arrow
+  name: no_go
+  xml_name: NoGo
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow NoGo>
+  enum: dtd.no_go.dbf92440
+- id: dtd.arrow.minor_axis_end3_d
+  name: minor_axis_end_3d
+  xml_name: MinorAxisEnd3D
+  datatype: point_3d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow MinorAxisEnd3D>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion MinorAxisEnd3D>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape MinorAxisEnd3D>
+  - source: sdk_coordinates
+    locator: 'CDXPoint3D CDXML lexical form: x y z; decimal point units'
+  - source: sdk_geometry_properties
+    locator: Minor axis endpoint is CDXPoint3D; table repeats XML name Center3D
+  - source: revvity_dtd
+    locator: graphic MinorAxisEnd3D CDATA attribute
+  owners:
+  - arrow
+  - bio_shape
+  - graphic
+  - plasmid_region
+- id: dtd.arrow.major_axis_end3_d
+  name: major_axis_end_3d
+  xml_name: MajorAxisEnd3D
+  datatype: point_3d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow MajorAxisEnd3D>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion MajorAxisEnd3D>
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape MajorAxisEnd3D>
+  - source: sdk_coordinates
+    locator: 'CDXPoint3D CDXML lexical form: x y z; decimal point units'
+  - source: sdk_geometry_properties
+    locator: Major axis endpoint is CDXPoint3D; table repeats XML name Center3D
+  - source: revvity_dtd
+    locator: graphic MajorAxisEnd3D CDATA attribute
+  owners:
+  - arrow
+  - bio_shape
+  - graphic
+  - plasmid_region
+- id: dtd.arrow.dipole
+  owner: arrow
+  name: dipole
+  xml_name: Dipole
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow Dipole>
+  default: false
+- id: dtd.arrow.arrow_target
+  owner: arrow
+  name: arrow_target
+  xml_name: ArrowTarget
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow ArrowTarget>
+- id: dtd.arrow.arrow_source
+  owner: arrow
+  name: arrow_source
+  xml_name: ArrowSource
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow ArrowSource>
+- id: dtd.arrow.arrow_shaft_spacing
+  name: arrow_shaft_spacing
+  xml_name: ArrowShaftSpacing
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow ArrowShaftSpacing>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion ArrowShaftSpacing>
+  owners:
+  - arrow
+  - plasmid_region
+- id: dtd.arrow.arrowhead_center_size
+  name: arrowhead_center_size
+  xml_name: ArrowheadCenterSize
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow ArrowheadCenterSize>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion ArrowheadCenterSize>
+  owners:
+  - arrow
+  - plasmid_region
+- id: dtd.arrow.arrow_equilibrium_ratio
+  owner: arrow
+  name: arrow_equilibrium_ratio
+  xml_name: ArrowEquilibriumRatio
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow ArrowEquilibriumRatio>
+- id: dtd.curve.head_width
+  owner: curve
+  name: head_width
+  xml_name: HeadWidth
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve HeadWidth>
+  - source: sdk_page_curve
+    locator: table[2]/row[44]
+  cdx_id: 2609
+  cdx_constant: kCDXProp_Arrowhead_Width
+- id: dtd.curve.head_center_size
+  owner: curve
+  name: head_center_size
+  xml_name: HeadCenterSize
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve HeadCenterSize>
+  - source: sdk_page_curve
+    locator: table[2]/row[41]
+  cdx_id: 2608
+  cdx_constant: kCDXProp_Arrowhead_CenterSize
+- id: dtd.curve.curve_type
+  name: curve_type
+  xml_name: CurveType
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve CurveType>
+  - source: sdk_page_curve
+    locator: table[2]/row[26]
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot CurveType>
+  - source: sdk_page_tlcspot
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband CurveType>
+  cdx_id: 2568
+  cdx_constant: kCDXProp_Curve_Type
+  owners:
+  - curve
+  - gep_band
+  - tlc_spot
+- id: dtd.curve.curve_spacing
+  owner: curve
+  name: curve_spacing
+  xml_name: CurveSpacing
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve CurveSpacing>
+  - source: sdk_page_curve
+    locator: table[2]/row[59]
+  - source: sdk_page_curve
+    locator: 'table[2]/row[59]: Curve_Spacing / UINT16 / 0x0A38'
+  - source: sdk_page_curve
+    locator: 'table[2]/row[56]: Closed / CDXBoolean / 0x0A38'
+  - source: revvity_dtd
+    locator: <!ATTLIST curve CurveSpacing> and <!ATTLIST curve Closed>
+- id: dtd.curve.curve_points3_d
+  owner: curve
+  name: curve_points3_d
+  xml_name: CurvePoints3D
+  datatype: curve_points_3d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve CurvePoints3D>
+  - source: sdk_page_curve
+    locator: table[2]/row[35]
+  cdx_id: 2606
+  cdx_constant: kCDXProp_Curve_Points3D
+  codec: curve_points3d
+- id: dtd.curve.curve_points
+  owner: curve
+  name: curve_points
+  xml_name: CurvePoints
+  datatype: curve_points_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve CurvePoints>
+  - source: sdk_page_curve
+    locator: table[2]/row[32]
+  cdx_id: 2595
+  cdx_constant: kCDXProp_Curve_Points
+  codec: curve_points2d
+- id: dtd.curve.closed
+  owner: curve
+  name: closed
+  xml_name: Closed
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve Closed>
+  - source: sdk_page_curve
+    locator: table[2]/row[56]
+  - source: sdk_page_curve
+    locator: 'table[2]/row[59]: Curve_Spacing / UINT16 / 0x0A38'
+  - source: sdk_page_curve
+    locator: 'table[2]/row[56]: Closed / CDXBoolean / 0x0A38'
+  - source: revvity_dtd
+    locator: <!ATTLIST curve CurveSpacing> and <!ATTLIST curve Closed>
+  default: false
+- id: dtd.curve.arrowhead_type
+  owner: curve
+  name: arrowhead_type
+  xml_name: ArrowheadType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve ArrowheadType>
+  - source: sdk_page_curve
+    locator: table[2]/row[38]
+  - source: sdk_page_curve
+    locator: 'table[2]/row[38]: ArrowHeadType / kCDXProp_Arrowhead_Type / 0x0A2F (INT16)'
+  cdx_id: 2607
+  cdx_constant: kCDXProp_Arrowhead_Type
+  enum: dtd.arrowhead_type.7f4897fa
+  xml_aliases:
+  - ArrowHeadType
+- id: dtd.curve.arrowhead_tail
+  owner: curve
+  name: arrowhead_tail
+  xml_name: ArrowheadTail
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve ArrowheadTail>
+  - source: sdk_page_curve
+    locator: table[2]/row[50]
+  - source: sdk_page_curve
+    locator: 'table[2]/row[50]: ArrowHeadTail / kCDXProp_Arrow_ArrowHead_Tail / 0x0A36 (INT16)'
+  cdx_id: 2614
+  cdx_constant: kCDXProp_Arrow_ArrowHead_Tail
+  enum: dtd.arrowhead_side.ee4d6e99
+  xml_aliases:
+  - ArrowHeadTail
+- id: dtd.curve.arrowhead_head
+  owner: curve
+  name: arrowhead_head
+  xml_name: ArrowheadHead
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST curve ArrowheadHead>
+  - source: sdk_page_curve
+    locator: table[2]/row[47]
+  - source: sdk_page_curve
+    locator: 'table[2]/row[47]: ArrowHeadHead / kCDXProp_Arrow_ArrowHead_Head / 0x0A35 (INT16)'
+  cdx_id: 2613
+  cdx_constant: kCDXProp_Arrow_ArrowHead_Head
+  enum: dtd.arrowhead_side.ee4d6e99
+  xml_aliases:
+  - ArrowHeadHead
+- id: dtd.altgroup.valence
+  owner: alt_group
+  name: valence
+  xml_name: Valence
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup Valence>
+  - source: sdk_page_altgroup
+    locator: table[2]/row[32]
+  cdx_id: 2818
+  cdx_constant: kCDXProp_NamedAlternativeGroup_Valence
+- id: dtd.altgroup.text_frame
+  owner: alt_group
+  name: text_frame
+  xml_name: TextFrame
+  datatype: bounding_box
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup TextFrame>
+  - source: sdk_page_altgroup
+    locator: table[2]/row[26]
+  cdx_id: 2816
+  cdx_constant: kCDXProp_NamedAlternativeGroup_TextFrame
+- id: dtd.altgroup.group_frame
+  owner: alt_group
+  name: group_frame
+  xml_name: GroupFrame
+  datatype: bounding_box
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST altgroup GroupFrame>
+  - source: sdk_page_altgroup
+    locator: table[2]/row[29]
+  cdx_id: 2817
+  cdx_constant: kCDXProp_NamedAlternativeGroup_GroupFrame
+- id: dtd.step.reaction_step_plusses
+  owner: reaction_step
+  name: reaction_step_plusses
+  xml_name: ReactionStepPlusses
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST step ReactionStepPlusses>
+  - source: sdk_page_step
+    locator: table[1]/row[14]
+  cdx_id: 3075
+  cdx_constant: kCDXProp_ReactionStep_Plusses
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.step.reaction_step_objects_below_arrow
+  owner: reaction_step
+  name: reaction_step_objects_below_arrow
+  xml_name: ReactionStepObjectsBelowArrow
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST step ReactionStepObjectsBelowArrow>
+  - source: sdk_page_step
+    locator: table[1]/row[23]
+  cdx_id: 3078
+  cdx_constant: kCDXProp_ReactionStep_ObjectsBelowArrow
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.step.reaction_step_objects_above_arrow
+  owner: reaction_step
+  name: reaction_step_objects_above_arrow
+  xml_name: ReactionStepObjectsAboveArrow
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST step ReactionStepObjectsAboveArrow>
+  - source: sdk_page_step
+    locator: table[1]/row[20]
+  cdx_id: 3077
+  cdx_constant: kCDXProp_ReactionStep_ObjectsAboveArrow
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.step.reaction_step_atom_map_manual
+  owner: reaction_step
+  name: reaction_step_atom_map_manual
+  xml_name: ReactionStepAtomMapManual
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST step ReactionStepAtomMapManual>
+  - source: sdk_page_step
+    locator: table[1]/row[26]
+  cdx_id: 3079
+  cdx_constant: kCDXProp_ReactionStep_Atom_Map_Manual
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.step.reaction_step_atom_map_auto
+  owner: reaction_step
+  name: reaction_step_atom_map_auto
+  xml_name: ReactionStepAtomMapAuto
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST step ReactionStepAtomMapAuto>
+  - source: sdk_page_step
+    locator: table[1]/row[29]
+  cdx_id: 3080
+  cdx_constant: kCDXProp_ReactionStep_Atom_Map_Auto
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.step.reaction_step_atom_map
+  owner: reaction_step
+  name: reaction_step_atom_map
+  xml_name: ReactionStepAtomMap
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST step ReactionStepAtomMap>
+  - source: sdk_page_step
+    locator: table[1]/row[5]
+  cdx_id: 3072
+  cdx_constant: kCDXProp_ReactionStep_Atom_Map
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.geometry.relation_value
+  owner: geometry
+  name: relation_value
+  xml_name: RelationValue
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry RelationValue>
+  - source: sdk_page_geometry
+    locator: table[2]/row[32]
+  cdx_id: 2945
+  cdx_constant: kCDXProp_RelationValue
+- id: dtd.geometry.geometric_feature
+  owner: geometry
+  name: geometric_feature
+  xml_name: GeometricFeature
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry GeometricFeature>
+  - source: sdk_page_geometry
+    locator: table[2]/row[29]
+  cdx_id: 2944
+  cdx_constant: kCDXProp_GeometricFeature
+  default: Unknown
+  enum: dtd.geometric_feature.4250a286
+- id: dtd.geometry.basis_objects
+  name: basis_objects
+  xml_name: BasisObjects
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST geometry BasisObjects>
+  - source: sdk_page_geometry
+    locator: table[2]/row[35]
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint BasisObjects>
+  - source: sdk_page_constraint
+    locator: table[2]/row[32]
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty BasisObjects>
+  - source: sdk_page_chemicalproperty
+    locator: table[1]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST coloredmoleculararea BasisObjects>
+  cdx_id: 2946
+  cdx_constant: kCDXProp_BasisObjects
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  owners:
+  - chemical_property
+  - colored_molecular_area
+  - constraint
+  - geometry
+  codec: object_id_list
+- id: dtd.constraint.point_is_directed
+  owner: constraint
+  name: point_is_directed
+  xml_name: PointIsDirected
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint PointIsDirected>
+  default: false
+- id: dtd.constraint.ignore_unconnected_atoms
+  owner: constraint
+  name: ignore_unconnected_atoms
+  xml_name: IgnoreUnconnectedAtoms
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint IgnoreUnconnectedAtoms>
+  - source: sdk_page_constraint
+    locator: table[2]/row[44]
+  cdx_id: 2950
+  cdx_constant: kCDXProp_IgnoreUnconnectedAtoms
+  default: false
+- id: dtd.constraint.dihedral_is_chiral
+  owner: constraint
+  name: dihedral_is_chiral
+  xml_name: DihedralIsChiral
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint DihedralIsChiral>
+  - source: sdk_page_constraint
+    locator: table[2]/row[47]
+  cdx_id: 2951
+  cdx_constant: kCDXProp_DihedralIsChiral
+  default: false
+- id: dtd.constraint.constraint_type
+  owner: constraint
+  name: constraint_type
+  xml_name: ConstraintType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint ConstraintType>
+  - source: sdk_page_constraint
+    locator: table[2]/row[35]
+  cdx_id: 2947
+  cdx_constant: kCDXProp_ConstraintType
+  default: Unknown
+  enum: dtd.constraint_type.eba13b7c
+- id: dtd.constraint.constraint_min
+  owner: constraint
+  name: constraint_min
+  xml_name: ConstraintMin
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint ConstraintMin>
+  - source: sdk_page_constraint
+    locator: table[2]/row[38]
+  cdx_id: 2948
+  cdx_constant: kCDXProp_ConstraintMin
+- id: dtd.constraint.constraint_max
+  owner: constraint
+  name: constraint_max
+  xml_name: ConstraintMax
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST constraint ConstraintMax>
+  - source: sdk_page_constraint
+    locator: table[2]/row[41]
+  cdx_id: 2949
+  cdx_constant: kCDXProp_ConstraintMax
+- id: dtd.templategrid.extent
+  owner: template_grid
+  name: extent
+  xml_name: extent
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST templategrid extent>
+  - source: sdk_page_templategrid
+    locator: table[1]/row[2]
+  cdx_id: 514
+  cdx_constant: kCDXProp_2DExtent
+- id: dtd.templategrid.pane_height
+  owner: template_grid
+  name: pane_height
+  xml_name: PaneHeight
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST templategrid PaneHeight>
+  - source: sdk_page_templategrid
+    locator: table[1]/row[5]
+  cdx_id: 4096
+  cdx_constant: kCDXProp_Template_PaneHeight
+- id: dtd.templategrid.num_rows
+  owner: template_grid
+  name: num_rows
+  xml_name: NumRows
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST templategrid NumRows>
+  - source: sdk_page_templategrid
+    locator: table[1]/row[8]
+  cdx_id: 4097
+  cdx_constant: kCDXProp_Template_NumRows
+- id: dtd.templategrid.num_columns
+  owner: template_grid
+  name: num_columns
+  xml_name: NumColumns
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST templategrid NumColumns>
+  - source: sdk_page_templategrid
+    locator: table[1]/row[11]
+  cdx_id: 4098
+  cdx_constant: kCDXProp_Template_NumColumns
+- id: dtd.spectrum.y_type
+  owner: spectrum
+  name: y_type
+  xml_name: YType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum YType>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[53]
+  cdx_id: 2691
+  cdx_constant: kCDXProp_Spectrum_YType
+  default: Unknown
+  enum: dtd.y_type.b80d81f1
+- id: dtd.spectrum.y_scale
+  owner: spectrum
+  name: y_scale
+  xml_name: YScale
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum YScale>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[71]
+  cdx_id: 2697
+  cdx_constant: kCDXProp_Spectrum_YScale
+  default: 1.0
+- id: dtd.spectrum.y_low
+  owner: spectrum
+  name: y_low
+  xml_name: YLow
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum YLow>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[68]
+  cdx_id: 2696
+  cdx_constant: kCDXProp_Spectrum_YLow
+  default: 0.0
+- id: dtd.spectrum.y_axis_label
+  owner: spectrum
+  name: y_axis_label
+  xml_name: YAxisLabel
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum YAxisLabel>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[59]
+  cdx_id: 2693
+  cdx_constant: kCDXProp_Spectrum_YAxisLabel
+- id: dtd.spectrum.x_type
+  owner: spectrum
+  name: x_type
+  xml_name: XType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum XType>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[50]
+  cdx_id: 2690
+  cdx_constant: kCDXProp_Spectrum_XType
+  default: Unknown
+  enum: dtd.x_type.a4fb96d1
+- id: dtd.spectrum.x_spacing
+  owner: spectrum
+  name: x_spacing
+  xml_name: XSpacing
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum XSpacing>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[44]
+  cdx_id: 2688
+  cdx_constant: kCDXProp_Spectrum_XSpacing
+- id: dtd.spectrum.x_low
+  owner: spectrum
+  name: x_low
+  xml_name: XLow
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum XLow>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[47]
+  cdx_id: 2689
+  cdx_constant: kCDXProp_Spectrum_XLow
+- id: dtd.spectrum.x_axis_label
+  owner: spectrum
+  name: x_axis_label
+  xml_name: XAxisLabel
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum XAxisLabel>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[56]
+  cdx_id: 2692
+  cdx_constant: kCDXProp_Spectrum_XAxisLabel
+- id: dtd.spectrum.class_name
+  owner: spectrum
+  name: class_name
+  xml_name: Class
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST spectrum Class>
+  - source: sdk_page_spectrum
+    locator: table[2]/row[65]
+  cdx_id: 2695
+  cdx_constant: kCDXProp_Spectrum_Class
+  default: Unknown
+  enum: dtd.class.3a799156
+- id: dtd.embeddedobject.windows_metafile
+  owner: embedded_object
+  name: windows_metafile
+  xml_name: WindowsMetafile
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject WindowsMetafile>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[29]
+  cdx_id: 2659
+  cdx_constant: kCDXProp_WindowsMetafile
+- id: dtd.embeddedobject.uncompressed_windows_metafile_size
+  owner: embedded_object
+  name: uncompressed_windows_metafile_size
+  xml_name: UncompressedWindowsMetafileSize
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject UncompressedWindowsMetafileSize>
+- id: dtd.embeddedobject.uncompressed_ole_object_size
+  owner: embedded_object
+  name: uncompressed_ole_object_size
+  xml_name: UncompressedOLEObjectSize
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject UncompressedOLEObjectSize>
+- id: dtd.embeddedobject.uncompressed_enhanced_metafile_size
+  owner: embedded_object
+  name: uncompressed_enhanced_metafile_size
+  xml_name: UncompressedEnhancedMetafileSize
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject UncompressedEnhancedMetafileSize>
+- id: dtd.embeddedobject.tiff
+  owner: embedded_object
+  name: tiff
+  xml_name: TIFF
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject TIFF>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[41]
+  cdx_id: 2671
+  cdx_constant: kCDXProp_TIFF
+- id: dtd.embeddedobject.png
+  owner: embedded_object
+  name: png
+  xml_name: PNG
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject PNG>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[44]
+  cdx_id: 2672
+  cdx_constant: kCDXProp_PNG
+- id: dtd.embeddedobject.pdf
+  owner: embedded_object
+  name: pdf
+  xml_name: PDF
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject PDF>
+- id: dtd.embeddedobject.ole_object
+  owner: embedded_object
+  name: ole_object
+  xml_name: OLEObject
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject OLEObject>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[32]
+  cdx_id: 2660
+  cdx_constant: kCDXProp_OLEObject
+- id: dtd.embeddedobject.mac_pict
+  owner: embedded_object
+  name: mac_pict
+  xml_name: MacPICT
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject MacPICT>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[26]
+  cdx_id: 2658
+  cdx_constant: kCDXProp_MacPICT
+- id: dtd.embeddedobject.jpeg
+  owner: embedded_object
+  name: jpeg
+  xml_name: JPEG
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject JPEG>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[47]
+  cdx_id: 2673
+  cdx_constant: kCDXProp_JPEG
+- id: dtd.embeddedobject.gif
+  owner: embedded_object
+  name: gif
+  xml_name: GIF
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject GIF>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[38]
+  cdx_id: 2670
+  cdx_constant: kCDXProp_GIF
+- id: dtd.embeddedobject.enhanced_metafile
+  owner: embedded_object
+  name: enhanced_metafile
+  xml_name: EnhancedMetafile
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject EnhancedMetafile>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[35]
+  cdx_id: 2661
+  cdx_constant: kCDXProp_EnhancedMetafile
+- id: dtd.embeddedobject.edition_alias
+  owner: embedded_object
+  name: edition_alias
+  xml_name: EditionAlias
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject EditionAlias>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[23]
+  cdx_id: 2657
+  cdx_constant: kCDXProp_Picture_EditionAlias
+- id: dtd.embeddedobject.edition
+  owner: embedded_object
+  name: edition
+  xml_name: Edition
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject Edition>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[20]
+  cdx_id: 2656
+  cdx_constant: kCDXProp_Picture_Edition
+- id: dtd.embeddedobject.compressed_windows_metafile
+  owner: embedded_object
+  name: compressed_windows_metafile
+  xml_name: CompressedWindowsMetafile
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject CompressedWindowsMetafile>
+- id: dtd.embeddedobject.compressed_ole_object
+  owner: embedded_object
+  name: compressed_ole_object
+  xml_name: CompressedOLEObject
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject CompressedOLEObject>
+- id: dtd.embeddedobject.compressed_enhanced_metafile
+  owner: embedded_object
+  name: compressed_enhanced_metafile
+  xml_name: CompressedEnhancedMetafile
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject CompressedEnhancedMetafile>
+- id: dtd.embeddedobject.bmp
+  owner: embedded_object
+  name: bmp
+  xml_name: BMP
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST embeddedobject BMP>
+  - source: sdk_page_embeddedobject
+    locator: table[2]/row[50]
+  cdx_id: 2674
+  cdx_constant: kCDXProp_BMP
+- id: dtd.represent.attribute_id
+  owner: represent
+  name: attribute_id
+  xml_name: attribute
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST represent attribute>
+  - source: sdk_page_represent
+    locator: table[1]/row[5]
+  required: true
+- id: dtd.represent.object_reference
+  owner: represent
+  name: object_reference
+  xml_name: object
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST represent object>
+  - source: sdk_page_represent
+    locator: table[1]/row[2]
+  required: true
+  reference: '*'
+  reference_many: false
+  cardinality: one
+- id: dtd.objecttag.display_name
+  name: display_name
+  xml_name: DisplayName
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag DisplayName>
+  - source: revvity_dtd
+    locator: <!ATTLIST marker DisplayName>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker DisplayName>
+  owners:
+  - marker
+  - object_tag
+  - plasmid_marker
+- id: dtd.objecttag.value
+  name: value
+  xml_name: Value
+  datatype: object_tag_value
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag Value>
+  - source: sdk_page_objecttag
+    locator: table[2]/row[17]
+  - source: revvity_dtd
+    locator: <!ATTLIST marker Value>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker Value>
+  - source: sdk_object_tag_value
+    locator: ObjectTag.Value is zero when the value property is absent
+  cdx_id: 3333
+  cdx_constant: kCDXProp_ObjectTag_Value
+  codec: object_tag_value
+  owners:
+  - marker
+  - object_tag
+  - plasmid_marker
+  default: 0
+- id: dtd.objecttag.tracking
+  owner: object_tag
+  name: tracking
+  xml_name: Tracking
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag Tracking>
+  - source: sdk_page_objecttag
+    locator: table[2]/row[11]
+  cdx_id: 3331
+  cdx_constant: kCDXProp_ObjectTag_Tracking
+  default: true
+- id: dtd.objecttag.tag_type
+  name: tag_type
+  xml_name: TagType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag TagType>
+  - source: sdk_page_objecttag
+    locator: table[2]/row[8]
+  - source: revvity_dtd
+    locator: <!ATTLIST marker TagType>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker TagType>
+  cdx_id: 3328
+  cdx_constant: kCDXProp_ObjectTag_Type
+  enum: dtd.tag_type.e6aee297
+  owners:
+  - marker
+  - object_tag
+  - plasmid_marker
+- id: dtd.objecttag.positioning_type
+  name: positioning_type
+  xml_name: PositioningType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag PositioningType>
+  - source: sdk_page_objecttag
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty PositioningType>
+  - source: sdk_page_chemicalproperty
+    locator: table[1]/row[20]
+  cdx_id: 3334
+  cdx_constant: kCDXProp_Positioning
+  default: auto
+  enum: dtd.positioning_type.e8ee9663
+  owners:
+  - chemical_property
+  - object_tag
+- id: dtd.objecttag.positioning_offset
+  name: positioning_offset
+  xml_name: PositioningOffset
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag PositioningOffset>
+  - source: sdk_page_objecttag
+    locator: table[2]/row[26]
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty PositioningOffset>
+  - source: sdk_page_chemicalproperty
+    locator: table[1]/row[26]
+  cdx_id: 3336
+  cdx_constant: kCDXProp_PositioningOffset
+  owners:
+  - chemical_property
+  - object_tag
+- id: dtd.objecttag.positioning_angle
+  name: positioning_angle
+  xml_name: PositioningAngle
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag PositioningAngle>
+  - source: sdk_page_objecttag
+    locator: table[2]/row[23]
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty PositioningAngle>
+  - source: sdk_page_chemicalproperty
+    locator: table[1]/row[23]
+  cdx_id: 3335
+  cdx_constant: kCDXProp_PositioningAngle
+  owners:
+  - chemical_property
+  - object_tag
+- id: dtd.objecttag.persistent
+  name: persistent
+  xml_name: Persistent
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag Persistent>
+  - source: sdk_page_objecttag
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST marker Persistent>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker Persistent>
+  cdx_id: 3332
+  cdx_constant: kCDXProp_ObjectTag_Persistent
+  default: true
+  owners:
+  - marker
+  - object_tag
+  - plasmid_marker
+- id: dtd.objecttag.name
+  name: name
+  xml_name: Name
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST objecttag Name>
+  - source: sdk_page_objecttag
+    locator: table[2]/row[5]
+  - source: revvity_dtd
+    locator: <!ATTLIST marker Name>
+  - source: sdk_document
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker Name>
+  cdx_id: 8
+  cdx_constant: kCDXProp_Name
+  required: true
+  owners:
+  - marker
+  - object_tag
+  - plasmid_marker
+- id: dtd.sequence.sequence_identifier
+  owner: sequence
+  name: sequence_identifier
+  xml_name: SequenceIdentifier
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sequence SequenceIdentifier>
+  - source: sdk_page_sequence
+    locator: table[1]/row[2]
+  cdx_id: 3584
+  cdx_constant: kCDXProp_Sequence_Identifier
+  required: true
+- id: dtd.crossreference.cross_reference_container
+  owner: cross_reference
+  name: cross_reference_container
+  xml_name: CrossReferenceContainer
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST crossreference CrossReferenceContainer>
+  - source: sdk_page_crossreference
+    locator: table[1]/row[2]
+  cdx_id: 3840
+  cdx_constant: kCDXProp_CrossReference_Container
+- id: dtd.crossreference.cross_reference_sequence
+  owner: cross_reference
+  name: cross_reference_sequence
+  xml_name: CrossReferenceSequence
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST crossreference CrossReferenceSequence>
+  - source: sdk_page_crossreference
+    locator: table[1]/row[11]
+  cdx_id: 3843
+  cdx_constant: kCDXProp_CrossReference_Sequence
+  required: true
+- id: dtd.crossreference.cross_reference_identifier
+  owner: cross_reference
+  name: cross_reference_identifier
+  xml_name: CrossReferenceIdentifier
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST crossreference CrossReferenceIdentifier>
+  - source: sdk_page_crossreference
+    locator: table[1]/row[8]
+  cdx_id: 3842
+  cdx_constant: kCDXProp_CrossReference_Identifier
+  required: true
+- id: dtd.crossreference.cross_reference_document
+  owner: cross_reference
+  name: cross_reference_document
+  xml_name: CrossReferenceDocument
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST crossreference CrossReferenceDocument>
+  - source: sdk_page_crossreference
+    locator: table[1]/row[5]
+  cdx_id: 3841
+  cdx_constant: kCDXProp_CrossReference_Document
+- id: dtd.regnum.registry_number
+  owner: registry_number
+  name: registry_number
+  xml_name: RegistryNumber
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST regnum RegistryNumber>
+  - source: sdk_page_regnum
+    locator: table[1]/row[2]
+  cdx_id: 11
+  cdx_constant: kCDXProp_RegistryNumber
+  required: true
+- id: dtd.regnum.registry_authority
+  owner: registry_number
+  name: registry_authority
+  xml_name: RegistryAuthority
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST regnum RegistryAuthority>
+  - source: sdk_page_regnum
+    locator: table[1]/row[5]
+  cdx_id: 12
+  cdx_constant: kCDXProp_RegistryAuthority
+  required: true
+- id: dtd.tlcplate.transparent
+  name: transparent
+  xml_name: Transparent
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate Transparent>
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate Transparent>
+  default: false
+  owners:
+  - gep_plate
+  - tlc_plate
+- id: dtd.tlcplate.top_right
+  name: top_right
+  xml_name: TopRight
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate TopRight>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[17]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate TopRight>
+  cdx_id: 522
+  cdx_constant: kCDXProp_TopRight
+  owners:
+  - gep_plate
+  - tlc_plate
+- id: dtd.tlcplate.top_left
+  name: top_left
+  xml_name: TopLeft
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate TopLeft>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[14]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate TopLeft>
+  cdx_id: 521
+  cdx_constant: kCDXProp_TopLeft
+  owners:
+  - gep_plate
+  - tlc_plate
+- id: dtd.tlcplate.solvent_front_fraction
+  owner: tlc_plate
+  name: solvent_front_fraction
+  xml_name: SolventFrontFraction
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate SolventFrontFraction>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[53]
+  cdx_id: 2721
+  cdx_constant: kCDXProp_TLC_SolventFrontFraction
+- id: dtd.tlcplate.show_solvent_front
+  owner: tlc_plate
+  name: show_solvent_front
+  xml_name: ShowSolventFront
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate ShowSolventFront>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[59]
+  cdx_id: 2723
+  cdx_constant: kCDXProp_TLC_ShowSolventFront
+  default: false
+- id: dtd.tlcplate.show_side_ticks
+  owner: tlc_plate
+  name: show_side_ticks
+  xml_name: ShowSideTicks
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate ShowSideTicks>
+  default: false
+- id: dtd.tlcplate.show_origin
+  owner: tlc_plate
+  name: show_origin
+  xml_name: ShowOrigin
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate ShowOrigin>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[56]
+  cdx_id: 2722
+  cdx_constant: kCDXProp_TLC_ShowOrigin
+  default: false
+- id: dtd.tlcplate.show_borders
+  name: show_borders
+  xml_name: ShowBorders
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate ShowBorders>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[62]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate ShowBorders>
+  cdx_id: 2724
+  cdx_constant: kCDXProp_TLC_ShowBorders
+  default: false
+  owners:
+  - gep_plate
+  - tlc_plate
+- id: dtd.tlcplate.origin_fraction
+  owner: tlc_plate
+  name: origin_fraction
+  xml_name: OriginFraction
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate OriginFraction>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[50]
+  cdx_id: 2720
+  cdx_constant: kCDXProp_TLC_OriginFraction
+- id: dtd.tlcplate.bottom_right
+  name: bottom_right
+  xml_name: BottomRight
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate BottomRight>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[20]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate BottomRight>
+  cdx_id: 523
+  cdx_constant: kCDXProp_BottomRight
+  owners:
+  - gep_plate
+  - tlc_plate
+- id: dtd.tlcplate.bottom_left
+  name: bottom_left
+  xml_name: BottomLeft
+  datatype: point_2d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcplate BottomLeft>
+  - source: sdk_page_tlcplate
+    locator: table[2]/row[23]
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate BottomLeft>
+  cdx_id: 524
+  cdx_constant: kCDXProp_BottomLeft
+  owners:
+  - gep_plate
+  - tlc_plate
+- id: dtd.tlcspot.tail_value
+  owner: tlc_spot
+  name: tail_value
+  xml_name: Tail
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot Tail>
+  - source: sdk_page_tlcspot
+    locator: table[2]/row[20]
+  cdx_id: 2737
+  cdx_constant: kCDXProp_TLC_Tail
+- id: dtd.tlcspot.show_rf
+  owner: tlc_spot
+  name: show_rf
+  xml_name: ShowRf
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot ShowRf>
+  - source: sdk_page_tlcspot
+    locator: table[2]/row[23]
+  cdx_id: 2738
+  cdx_constant: kCDXProp_TLC_ShowRf
+  default: false
+- id: dtd.tlcspot.rf
+  owner: tlc_spot
+  name: rf
+  xml_name: Rf
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST tlcspot Rf>
+  - source: sdk_page_tlcspot
+    locator: table[2]/row[17]
+  cdx_id: 2736
+  cdx_constant: kCDXProp_TLC_Rf
+- id: dtd.gepplate.axis_width
+  owner: gep_plate
+  name: axis_width
+  xml_name: AxisWidth
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate AxisWidth>
+- id: dtd.gepplate.unit_id
+  owner: gep_plate
+  name: unit_id
+  xml_name: UnitID
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate UnitID>
+- id: dtd.gepplate.start_range
+  owner: gep_plate
+  name: start_range
+  xml_name: StartRange
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate StartRange>
+- id: dtd.gepplate.show_scale
+  owner: gep_plate
+  name: show_scale
+  xml_name: ShowScale
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate ShowScale>
+  default: false
+- id: dtd.gepplate.label_text
+  name: label_text
+  xml_name: LabelText
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate LabelText>
+  - source: revvity_dtd
+    locator: <!ATTLIST geplane LabelText>
+  owners:
+  - gep_lane
+  - gep_plate
+- id: dtd.gepplate.labels_angle
+  owner: gep_plate
+  name: labels_angle
+  xml_name: LabelsAngle
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate LabelsAngle>
+- id: dtd.gepplate.end_range
+  owner: gep_plate
+  name: end_range
+  xml_name: EndRange
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST gepplate EndRange>
+- id: dtd.gepband.show_value
+  owner: gep_band
+  name: show_value
+  xml_name: ShowValue
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband ShowValue>
+  default: false
+- id: dtd.gepband.band_value
+  owner: gep_band
+  name: band_value
+  xml_name: BandValue
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST gepband BandValue>
+- id: dtd.marker.marker_offset
+  name: marker_offset
+  xml_name: MarkerOffset
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST marker MarkerOffset>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker MarkerOffset>
+  owners:
+  - marker
+  - plasmid_marker
+- id: dtd.marker.marker_angle
+  name: marker_angle
+  xml_name: MarkerAngle
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST marker MarkerAngle>
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmarker MarkerAngle>
+  owners:
+  - marker
+  - plasmid_marker
+- id: dtd.sgcomponent.component_is_header
+  owner: sg_component
+  name: component_is_header
+  xml_name: ComponentIsHeader
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sgcomponent ComponentIsHeader>
+  default: false
+- id: dtd.sgcomponent.component_reference_id
+  owner: sg_component
+  name: component_reference_id
+  xml_name: ComponentReferenceID
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sgcomponent ComponentReferenceID>
+- id: dtd.sgcomponent.component_is_reactant
+  owner: sg_component
+  name: component_is_reactant
+  xml_name: ComponentIsReactant
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sgcomponent ComponentIsReactant>
+  default: false
+- id: dtd.sgdatum.sg_property_type
+  owner: sg_datum
+  name: sg_property_type
+  xml_name: SGPropertyType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sgdatum SGPropertyType>
+- id: dtd.sgdatum.sg_data_value
+  owner: sg_datum
+  name: sg_data_value
+  xml_name: SGDataValue
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sgdatum SGDataValue>
+- id: dtd.sgdatum.sg_data_type
+  owner: sg_datum
+  name: sg_data_type
+  xml_name: SGDataType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sgdatum SGDataType>
+- id: dtd.sgdatum.is_read_only
+  owner: sg_datum
+  name: is_read_only
+  xml_name: IsReadOnly
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sgdatum IsReadOnly>
+  default: false
+- id: dtd.sgdatum.is_hidden
+  owner: sg_datum
+  name: is_hidden
+  xml_name: IsHidden
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sgdatum IsHidden>
+  default: false
+- id: dtd.sgdatum.is_edited
+  owner: sg_datum
+  name: is_edited
+  xml_name: IsEdited
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST sgdatum IsEdited>
+  default: false
+- id: dtd.plasmidmap.ring_radius
+  owner: plasmid_map
+  name: ring_radius
+  xml_name: RingRadius
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap RingRadius>
+- id: dtd.plasmidmap.number_base_pairs
+  owner: plasmid_map
+  name: number_base_pairs
+  xml_name: NumberBasePairs
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidmap NumberBasePairs>
+- id: dtd.plasmidregion.region_start
+  owner: plasmid_region
+  name: region_start
+  xml_name: RegionStart
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion RegionStart>
+- id: dtd.plasmidregion.region_offset
+  owner: plasmid_region
+  name: region_offset
+  xml_name: RegionOffset
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion RegionOffset>
+- id: dtd.plasmidregion.region_end
+  owner: plasmid_region
+  name: region_end
+  xml_name: RegionEnd
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion RegionEnd>
+- id: dtd.plasmidregion.center3_d
+  name: center_3d
+  xml_name: Center3D
+  datatype: point_3d
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion Center3D>
+  - source: sdk_coordinates
+    locator: 'CDXPoint3D CDXML lexical form: x y z; decimal point units'
+  - source: sdk_geometry_properties
+    locator: Center3D is CDXPoint3D (global property table)
+  - source: revvity_dtd
+    locator: arrow Center3D CDATA attribute
+  - source: revvity_dtd
+    locator: graphic Center3D CDATA attribute
+  owners:
+  - arrow
+  - graphic
+  - plasmid_region
+- id: dtd.plasmidregion.arrowhead_width
+  name: arrowhead_width
+  xml_name: ArrowheadWidth
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST plasmidregion ArrowheadWidth>
+  - source: sdk_page_curve
+    locator: 'table[2]/row[44]: SDK XML name HeadWidth, not ArrowheadWidth'
+  - source: revvity_dtd
+    locator: arrow ArrowheadWidth CDATA attribute
+  - source: revvity_dtd
+    locator: <!ATTLIST arrow ArrowheadWidth>
+  owners:
+  - arrow
+  - plasmid_region
+- id: dtd.bracketedgroup.bracketed_object_i_ds
+  owner: bracketed_group
+  name: bracketed_object_i_ds
+  xml_name: BracketedObjectIDs
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketedgroup BracketedObjectIDs>
+  - source: sdk_page_bracketedgroup
+    locator: table[2]/row[14]
+  cdx_id: 2599
+  cdx_constant: kCDXProp_BracketedObjects
+  reference: '*'
+  reference_many: true
+  cardinality: many
+  codec: object_id_list
+- id: dtd.bracketedgroup.sru_label
+  owner: bracketed_group
+  name: sru_label
+  xml_name: SRULabel
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketedgroup SRULabel>
+  - source: sdk_page_bracketedgroup
+    locator: table[2]/row[23]
+  cdx_id: 2602
+  cdx_constant: kCDXProp_Bracket_SRULabel
+- id: dtd.bracketedgroup.repeat_count
+  owner: bracketed_group
+  name: repeat_count
+  xml_name: RepeatCount
+  datatype: float
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketedgroup RepeatCount>
+  - source: sdk_page_bracketedgroup
+    locator: table[2]/row[17]
+  cdx_id: 2600
+  cdx_constant: kCDXProp_Bracket_RepeatCount
+- id: dtd.bracketedgroup.component_order
+  owner: bracketed_group
+  name: component_order
+  xml_name: ComponentOrder
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketedgroup ComponentOrder>
+  - source: sdk_page_bracketedgroup
+    locator: table[2]/row[20]
+  cdx_id: 2601
+  cdx_constant: kCDXProp_Bracket_ComponentOrder
+- id: dtd.bracketattachment.graphic_id
+  owner: bracket_attachment
+  name: graphic_id
+  xml_name: GraphicID
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bracketattachment GraphicID>
+  - source: sdk_page_bracketattachment
+    locator: table[2]/row[5]
+  cdx_id: 2603
+  cdx_constant: kCDXProp_Bracket_GraphicID
+  reference: '*'
+  reference_many: false
+  cardinality: one
+- id: dtd.crossingbond.bond_id
+  owner: crossing_bond
+  name: bond_id
+  xml_name: BondID
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST crossingbond BondID>
+  - source: sdk_page_crossingbond
+    locator: table[1]/row[5]
+  cdx_id: 2604
+  cdx_constant: kCDXProp_Bracket_BondID
+  required: true
+  reference: bond
+  reference_many: false
+  cardinality: one
+- id: dtd.crossingbond.inner_atom_id
+  owner: crossing_bond
+  name: inner_atom_id
+  xml_name: InnerAtomID
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST crossingbond InnerAtomID>
+  - source: sdk_page_crossingbond
+    locator: table[1]/row[8]
+  cdx_id: 2605
+  cdx_constant: kCDXProp_Bracket_InnerAtomID
+  required: true
+  reference: node
+  reference_many: false
+  cardinality: one
+- id: dtd.border.side
+  owner: border
+  name: side
+  xml_name: Side
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST border Side>
+  - source: sdk_page_border
+    locator: table[1]/row[11]
+  cdx_id: 2085
+  cdx_constant: kCDXProp_Side
+  required: true
+  enum: dtd.side.5dd5ccc4
+- id: dtd.chemicalproperty.external_bonds
+  owner: chemical_property
+  name: external_bonds
+  xml_name: ExternalBonds
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty ExternalBonds>
+- id: dtd.chemicalproperty.chemical_property_type
+  owner: chemical_property
+  name: chemical_property_type
+  xml_name: ChemicalPropertyType
+  datatype: integer
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty ChemicalPropertyType>
+  - source: sdk_page_chemicalproperty
+    locator: table[1]/row[11]
+  cdx_id: 2992
+  cdx_constant: kCDXProp_ChemicalPropertyType
+- id: dtd.chemicalproperty.chemically_significant
+  owner: chemical_property
+  name: chemically_significant
+  xml_name: ChemicallySignificant
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty ChemicallySignificant>
+  default: false
+- id: dtd.chemicalproperty.chemical_property_is_active
+  owner: chemical_property
+  name: chemical_property_is_active
+  xml_name: ChemicalPropertyIsActive
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty ChemicalPropertyIsActive>
+  - source: sdk_page_chemicalproperty
+    locator: table[1]/row[17]
+  cdx_id: 2994
+  cdx_constant: kCDXProp_ChemicalPropertyIsActive
+  default: false
+- id: dtd.chemicalproperty.chemical_property_display_id
+  owner: chemical_property
+  name: chemical_property_display_id
+  xml_name: ChemicalPropertyDisplayID
+  datatype: object_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST chemicalproperty ChemicalPropertyDisplayID>
+  - source: sdk_page_chemicalproperty
+    locator: table[1]/row[14]
+  cdx_id: 2993
+  cdx_constant: kCDXProp_ChemicalPropertyDisplayID
+  reference: '*'
+  reference_many: false
+  cardinality: one
+- id: dtd.bioshape.pipe_width
+  owner: bio_shape
+  name: pipe_width
+  xml_name: PipeWidth
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape PipeWidth>
+- id: dtd.bioshape.neck_width
+  owner: bio_shape
+  name: neck_width
+  xml_name: NeckWidth
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape NeckWidth>
+- id: dtd.bioshape.neck_height
+  owner: bio_shape
+  name: neck_height
+  xml_name: NeckHeight
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape NeckHeight>
+- id: dtd.bioshape.membrane_start_angle
+  owner: bio_shape
+  name: membrane_start_angle
+  xml_name: MembraneStartAngle
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape MembraneStartAngle>
+- id: dtd.bioshape.membrane_minor_axis_size
+  owner: bio_shape
+  name: membrane_minor_axis_size
+  xml_name: MembraneMinorAxisSize
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape MembraneMinorAxisSize>
+- id: dtd.bioshape.membrane_major_axis_size
+  owner: bio_shape
+  name: membrane_major_axis_size
+  xml_name: MembraneMajorAxisSize
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape MembraneMajorAxisSize>
+- id: dtd.bioshape.membrane_end_angle
+  owner: bio_shape
+  name: membrane_end_angle
+  xml_name: MembraneEndAngle
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape MembraneEndAngle>
+- id: dtd.bioshape.membrane_element_size
+  owner: bio_shape
+  name: membrane_element_size
+  xml_name: MembraneElementSize
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape MembraneElementSize>
+- id: dtd.bioshape.immunoglobin_width
+  owner: bio_shape
+  name: immunoglobin_width
+  xml_name: ImmunoglobinWidth
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape ImmunoglobinWidth>
+- id: dtd.bioshape.immunoglobin_height
+  owner: bio_shape
+  name: immunoglobin_height
+  xml_name: ImmunoglobinHeight
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape ImmunoglobinHeight>
+- id: dtd.bioshape.helix_protein_extra
+  owner: bio_shape
+  name: helix_protein_extra
+  xml_name: HelixProteinExtra
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape HelixProteinExtra>
+- id: dtd.bioshape.golgi_width
+  owner: bio_shape
+  name: golgi_width
+  xml_name: GolgiWidth
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape GolgiWidth>
+- id: dtd.bioshape.golgi_length
+  owner: bio_shape
+  name: golgi_length
+  xml_name: GolgiLength
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape GolgiLength>
+- id: dtd.bioshape.golgi_height
+  owner: bio_shape
+  name: golgi_height
+  xml_name: GolgiHeight
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape GolgiHeight>
+- id: dtd.bioshape.gprotein_upper_height
+  owner: bio_shape
+  name: gprotein_upper_height
+  xml_name: GproteinUpperHeight
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape GproteinUpperHeight>
+- id: dtd.bioshape.gprotein_lower_height
+  owner: bio_shape
+  name: gprotein_lower_height
+  xml_name: GproteinLowerHeight
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape GproteinLowerHeight>
+- id: dtd.bioshape.enzyme_width
+  owner: bio_shape
+  name: enzyme_width
+  xml_name: EnzymeWidth
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape EnzymeWidth>
+- id: dtd.bioshape.enzyme_receptor_size
+  owner: bio_shape
+  name: enzyme_receptor_size
+  xml_name: EnzymeReceptorSize
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape EnzymeReceptorSize>
+- id: dtd.bioshape.enzyme_height
+  owner: bio_shape
+  name: enzyme_height
+  xml_name: EnzymeHeight
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape EnzymeHeight>
+- id: dtd.bioshape.dna_wave_width
+  owner: bio_shape
+  name: dna_wave_width
+  xml_name: DNAWaveWidth
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape DNAWaveWidth>
+- id: dtd.bioshape.dna_wave_offset
+  owner: bio_shape
+  name: dna_wave_offset
+  xml_name: DNAWaveOffset
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape DNAWaveOffset>
+- id: dtd.bioshape.dna_wave_length
+  owner: bio_shape
+  name: dna_wave_length
+  xml_name: DNAWaveLength
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape DNAWaveLength>
+- id: dtd.bioshape.dna_wave_height
+  owner: bio_shape
+  name: dna_wave_height
+  xml_name: DNAWaveHeight
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape DNAWaveHeight>
+- id: dtd.bioshape.cylinder_width
+  owner: bio_shape
+  name: cylinder_width
+  xml_name: CylinderWidth
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape CylinderWidth>
+- id: dtd.bioshape.cylinder_height
+  owner: bio_shape
+  name: cylinder_height
+  xml_name: CylinderHeight
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape CylinderHeight>
+- id: dtd.bioshape.cylinder_distance
+  owner: bio_shape
+  name: cylinder_distance
+  xml_name: CylinderDistance
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape CylinderDistance>
+- id: dtd.bioshape.bio_shape_type
+  owner: bio_shape
+  name: bio_shape_type
+  xml_name: BioShapeType
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST bioshape BioShapeType>
+  enum: dtd.bio_shape_type.5423fc35
+- id: dtd.annotation.content
+  owner: annotation
+  name: content
+  xml_name: Content
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST annotation Content>
+- id: dtd.annotation.keyword
+  owner: annotation
+  name: keyword
+  xml_name: Keyword
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST annotation Keyword>
+- id: dtd.rlogicitem.r_logic_rest_h
+  owner: rlogic_item
+  name: r_logic_rest_h
+  xml_name: RLogicRestH
+  datatype: boolean
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogicitem RLogicRestH>
+  default: false
+- id: dtd.rlogicitem.r_logic_occurrence
+  owner: rlogic_item
+  name: r_logic_occurrence
+  xml_name: RLogicOccurrence
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogicitem RLogicOccurrence>
+- id: dtd.rlogicitem.r_logic_if_then_group
+  owner: rlogic_item
+  name: r_logic_if_then_group
+  xml_name: RLogicIfThenGroup
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogicitem RLogicIfThenGroup>
+- id: dtd.rlogicitem.r_logic_group
+  owner: rlogic_item
+  name: r_logic_group
+  xml_name: RLogicGroup
+  datatype: string
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ATTLIST rlogicitem RLogicGroup>
+- id: spectrum.data
+  owner: spectrum
+  name: data
+  xml_name: data
+  storage: text
+  datatype: string
+  default: ''
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT spectrum (#PCDATA | objecttag | annotation)*>
+  - source: sdk_page_spectrum
+    locator: Spectrum data is represented as character data among objecttag and annotation children
+  - source: sdk_spectrum_data_point
+    locator: 'Spectrum_DataPoint is stored in CDXML #PCDATA; this model exposes the lexical text without
+      sample interpretation'
+- id: sdk.geometry.point_is_directed
+  owner: geometry
+  name: point_is_directed
+  xml_name: PointIsDirected
+  datatype: boolean
+  cdx_id: 2952
+  cdx_constant: kCDXProp_PointIsDirected
+  status: known
+  provenance:
+  - source: sdk_page_geometry
+    locator: 'table[2]/row[38]: PointIsDirected / kCDXProp_PointIsDirected / 0x0B88 (CDXBooleanImplied)'
+  - source: revvity_dtd
+    locator: Pinned DTD has no declared geometry@PointIsDirected attribute pair

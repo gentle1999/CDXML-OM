@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CDXML>
+<CDXML WindowIsZoomed="no" FractionalWidths="yes" LabelFont="3" LabelSize="10.0" LabelFace="96" CaptionFont="4" CaptionSize="12.0" HashSpacing="2.7" MarginWidth="2" LineWidth="1" BoldWidth="4" BondLength="30.0" BondSpacing="12" ChainAngle="120">
+  <colortable>
+<color r="1" g="1" b="1"/>
+<color r="0" g="0" b="0"/>
+<color r="1" g="0" b="0"/>
+<color r="1" g="1" b="0"/>
+<color r="0" g="1" b="0"/>
+<color r="0" g="1" b="1"/>
+<color r="0" g="0" b="1"/>
+<color r="1" g="0" b="1"/>
+</colortable>
+  <fonttable>
+<font id="3" charset="iso-8859-1" name="Arial"/>
+<font id="4" charset="iso-8859-1" name="Times New Roman"/>
+</fonttable>
+  <page id="1" BoundingBox="100.0 200.0 460.0 330.0" WidthPages="1" HeightPages="1">
+    <t p="120.0 230.0" Z="5" id="2">
+      <s font="3" size="16.0" face="1" color="3">UNKNOWN CONTENT RETENTION</s>
+    </t>
+    <fragment id="3">
+      <n Element="6" p="248.0 276.0" id="4">
+        <t p="245.0 270.0" id="5">
+          <s font="3" size="10.0" color="3">C</s>
+        </t>
+      </n>
+      <n Element="8" p="278.0 276.0" id="6" VendorNode="retained">
+        <t p="275.0 270.0" id="7">
+          <s font="3" size="10.0" color="3">O</s>
+        </t>
+      </n>
+      <b B="4" E="6" Order="1" id="8"/>
+      <ns0:note xmlns:ns0="urn:cdxml-om:render-samples:preservation" purpose="preservation-probe">Opaque extension; not a ChemDraw display claim</ns0:note>
+    </fragment>
+  </page>
+</CDXML>

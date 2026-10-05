@@ -1,0 +1,8 @@
+# Keep text sources consistent across platforms.
+* text=auto eol=lf
+
+# These inputs and sample payloads are hashed or byte-compared by tooling/tests;
+# do not normalize their contents on checkout or check-in.
+schema/** -text
+tests/fixtures/** -text
+examples/render_samples/*.cdxml -text

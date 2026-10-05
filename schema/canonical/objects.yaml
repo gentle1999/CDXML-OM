@@ -1,0 +1,2275 @@
+version: 1
+objects:
+- id: cdxml_root
+  python_name: CDXMLRoot
+  xml_tag: CDXML
+  cdx_id: 32768
+  cdx_constant: kCDXObj_Document
+  category: document_root
+  id_scope: none
+  allowed_parents: []
+  children:
+  - object_type: color_table
+    collection_name: color_tables
+    min_occurs: 0
+    max_occurs: 1
+  - object_type: font_table
+    collection_name: font_tables
+    min_occurs: 0
+    max_occurs: 1
+  - object_type: page
+    collection_name: pages
+    min_occurs: 1
+    max_occurs: null
+  - object_type: template_grid
+    collection_name: template_grids
+    min_occurs: 0
+    max_occurs: 1
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.CDXML.show_residue_id
+  - dtd.CDXML.rxn_autonumber_style
+  - dtd.CDXML.rxn_autonumber_start
+  - dtd.CDXML.rxn_autonumber_format
+  - dtd.CDXML.rxn_autonumber_conditions
+  - dtd.CDXML.residue_wrap_count
+  - dtd.CDXML.residue_block_count
+  - dtd.CDXML.chem_prop_p_ka
+  - dtd.CDXML.chem_prop_log_s
+  - dtd.CDXML.chem_prop_fragment_label
+  - dtd.CDXML.chem_prop_id
+  - dtd.CDXML.win_print_info
+  - dtd.CDXML.window_size
+  - dtd.CDXML.window_position
+  - dtd.CDXML.window_is_zoomed
+  - dtd.CDXML.show_terminal_carbon_labels
+  - dtd.CDXML.show_sequence_unlinked_branches
+  - dtd.CDXML.show_sequence_termini
+  - dtd.CDXML.show_sequence_bonds
+  - dtd.CDXML.show_non_terminal_carbon_labels
+  - dtd.CDXML.show_bond_stereo
+  - dtd.CDXML.show_bond_rxn
+  - dtd.CDXML.show_bond_query
+  - dtd.CDXML.show_atom_stereo
+  - dtd.CDXML.show_atom_query
+  - dtd.CDXML.show_atom_number
+  - dtd.CDXML.show_atom_enhanced_stereo
+  - dtd.CDXML.print_margins
+  - dtd.CDXML.name
+  - dtd.CDXML.modification_user_name
+  - dtd.CDXML.modification_program
+  - dtd.CDXML.modification_date
+  - dtd.CDXML.margin_width
+  - dtd.CDXML.magnification
+  - dtd.CDXML.mac_print_info
+  - dtd.CDXML.line_width
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_line_height
+  - dtd.CDXML.label_justification
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - dtd.CDXML.label_color
+  - dtd.CDXML.interpret_chemically
+  - dtd.CDXML.hide_implicit_hydrogens
+  - dtd.CDXML.hash_spacing
+  - dtd.CDXML.fractional_widths
+  - dtd.CDXML.fix_in_place_gap
+  - dtd.CDXML.fix_in_place_extent
+  - dtd.CDXML.creation_user_name
+  - dtd.CDXML.creation_program
+  - dtd.CDXML.creation_date
+  - dtd.CDXML.comment
+  - text_run.color
+  - dtd.CDXML.chem_propt_psa
+  - dtd.CDXML.chem_prop_name
+  - dtd.CDXML.chem_prop_mr
+  - dtd.CDXML.chem_prop_m_over_z
+  - dtd.CDXML.chem_prop_mol_wt
+  - dtd.CDXML.chem_prop_melting_pt
+  - dtd.CDXML.chem_prop_log_p
+  - dtd.CDXML.chem_prop_henry
+  - dtd.CDXML.chem_prop_gibbs
+  - dtd.CDXML.chem_prop_formula
+  - dtd.CDXML.chem_prop_exact_mass
+  - dtd.CDXML.chem_prop_e_form
+  - dtd.CDXML.chem_prop_crit_vol
+  - dtd.CDXML.chem_prop_crit_temp
+  - dtd.CDXML.chem_prop_crit_pres
+  - dtd.CDXML.chem_prop_cmr
+  - dtd.CDXML.chem_prop_c_log_p
+  - dtd.CDXML.chem_prop_boiling_pt
+  - dtd.CDXML.chem_prop_analysis
+  - dtd.CDXML.chain_angle
+  - dtd.CDXML.cartridge_data
+  - dtd.CDXML.caption_size
+  - dtd.CDXML.caption_line_height
+  - dtd.CDXML.caption_justification
+  - dtd.CDXML.caption_font
+  - dtd.CDXML.caption_face
+  - dtd.CDXML.caption_color
+  - geometry.bounding_box
+  - dtd.CDXML.bond_spacing_abs
+  - dtd.CDXML.bond_spacing
+  - dtd.CDXML.bond_length
+  - dtd.CDXML.bold_width
+  - dtd.CDXML.bgcolor
+  - dtd.CDXML.bgalpha
+  - dtd.CDXML.amino_acid_termini
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT CDXML> and declared attributes/children
+  - source: sdk_objects
+    locator: Document object (kCDXObj_Document)
+- id: color_table
+  python_name: ColorTable
+  xml_tag: colortable
+  cdx_id: null
+  cdx_constant: null
+  category: resource_table
+  id_scope: none
+  allowed_parents:
+  - cdxml_root
+  children:
+  - object_type: color
+    collection_name: colors
+    min_occurs: 1
+    max_occurs: null
+  properties:
+  - dtd.colortable.xml_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT colortable> and declared attributes/children
+- id: color
+  python_name: Color
+  xml_tag: color
+  cdx_id: null
+  cdx_constant: null
+  category: local_resource
+  id_scope: none
+  allowed_parents:
+  - color_table
+  children: []
+  properties:
+  - color.r
+  - color.b
+  - color.g
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT color> and declared attributes/children
+  - source: sdk_color
+    locator: Color RGB components are fractional values from 0 through 1
+- id: font_table
+  python_name: FontTable
+  xml_tag: fonttable
+  cdx_id: null
+  cdx_constant: null
+  category: resource_table
+  id_scope: none
+  allowed_parents:
+  - cdxml_root
+  children:
+  - object_type: font
+    collection_name: fonts
+    min_occurs: 1
+    max_occurs: null
+  properties:
+  - dtd.colortable.xml_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT fonttable> and declared attributes/children
+- id: font
+  python_name: Font
+  xml_tag: font
+  cdx_id: null
+  cdx_constant: null
+  category: local_resource
+  id_scope: local
+  allowed_parents:
+  - font_table
+  children: []
+  properties:
+  - font.charset
+  - font.name
+  - font.id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT font> and declared attributes/children
+  - source: sdk_font
+    locator: Font properties and table-local identifier
+- id: page
+  python_name: Page
+  xml_tag: page
+  cdx_id: 32769
+  cdx_constant: kCDXObj_Page
+  category: drawing_space
+  id_scope: document
+  allowed_parents:
+  - cdxml_root
+  - table
+  children:
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  - object_type: fragment
+    collection_name: fragments
+    min_occurs: 0
+    max_occurs: null
+  - object_type: group
+    collection_name: groups
+    min_occurs: 0
+    max_occurs: null
+  - object_type: graphic
+    collection_name: graphics
+    min_occurs: 0
+    max_occurs: null
+  - object_type: alt_group
+    collection_name: altgroups
+    min_occurs: 0
+    max_occurs: null
+  - object_type: curve
+    collection_name: curves
+    min_occurs: 0
+    max_occurs: null
+  - object_type: reaction_step
+    collection_name: steps
+    min_occurs: 0
+    max_occurs: null
+  - object_type: reaction_scheme
+    collection_name: schemes
+    min_occurs: 0
+    max_occurs: null
+  - object_type: spectrum
+    collection_name: spectrums
+    min_occurs: 0
+    max_occurs: null
+  - object_type: embedded_object
+    collection_name: embeddedobjects
+    min_occurs: 0
+    max_occurs: null
+  - object_type: sequence
+    collection_name: sequences
+    min_occurs: 0
+    max_occurs: null
+  - object_type: cross_reference
+    collection_name: crossreferences
+    min_occurs: 0
+    max_occurs: null
+  - object_type: splitter
+    collection_name: splitters
+    min_occurs: 0
+    max_occurs: null
+  - object_type: table
+    collection_name: tables
+    min_occurs: 0
+    max_occurs: null
+  - object_type: bracketed_group
+    collection_name: bracketedgroups
+    min_occurs: 0
+    max_occurs: null
+  - object_type: border
+    collection_name: borders
+    min_occurs: 0
+    max_occurs: null
+  - object_type: geometry
+    collection_name: geometrys
+    min_occurs: 0
+    max_occurs: null
+  - object_type: constraint
+    collection_name: constraints
+    min_occurs: 0
+    max_occurs: null
+  - object_type: tlc_plate
+    collection_name: tlcplates
+    min_occurs: 0
+    max_occurs: null
+  - object_type: gep_plate
+    collection_name: gepplates
+    min_occurs: 0
+    max_occurs: null
+  - object_type: chemical_property
+    collection_name: chemicalpropertys
+    min_occurs: 0
+    max_occurs: null
+  - object_type: arrow
+    collection_name: arrows
+    min_occurs: 0
+    max_occurs: null
+  - object_type: bio_shape
+    collection_name: bioshapes
+    min_occurs: 0
+    max_occurs: null
+  - object_type: stoichiometry_grid
+    collection_name: stoichiometrygrids
+    min_occurs: 0
+    max_occurs: null
+  - object_type: plasmid_map
+    collection_name: plasmidmaps
+    min_occurs: 0
+    max_occurs: null
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: rlogic
+    collection_name: rlogics
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.page.width
+  - dtd.page.splitter_positions
+  - dtd.page.print_trim_marks
+  - dtd.page.page_overlap
+  - dtd.page.page_definition
+  - dtd.page.height_pages
+  - dtd.page.header_position
+  - dtd.page.header
+  - dtd.page.width_pages
+  - common.id
+  - dtd.page.height
+  - dtd.page.footer_position
+  - dtd.page.footer
+  - dtd.page.drawing_space
+  - text_run.color
+  - dtd.page.bounds_in_parent
+  - geometry.bounding_box
+  - dtd.CDXML.bgcolor
+  - dtd.CDXML.bgalpha
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT page> and declared attributes/children
+- id: group
+  python_name: Group
+  xml_tag: group
+  cdx_id: 32770
+  cdx_constant: kCDXObj_Group
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  - alt_group
+  children:
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  - object_type: fragment
+    collection_name: fragments
+    min_occurs: 0
+    max_occurs: null
+  - object_type: group
+    collection_name: groups
+    min_occurs: 0
+    max_occurs: null
+  - object_type: graphic
+    collection_name: graphics
+    min_occurs: 0
+    max_occurs: null
+  - object_type: alt_group
+    collection_name: altgroups
+    min_occurs: 0
+    max_occurs: null
+  - object_type: curve
+    collection_name: curves
+    min_occurs: 0
+    max_occurs: null
+  - object_type: reaction_step
+    collection_name: steps
+    min_occurs: 0
+    max_occurs: null
+  - object_type: reaction_scheme
+    collection_name: schemes
+    min_occurs: 0
+    max_occurs: null
+  - object_type: spectrum
+    collection_name: spectrums
+    min_occurs: 0
+    max_occurs: null
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: plasmid_map
+    collection_name: plasmidmaps
+    min_occurs: 0
+    max_occurs: null
+  - object_type: rlogic
+    collection_name: rlogics
+    min_occurs: 0
+    max_occurs: null
+  - object_type: arrow
+    collection_name: arrows
+    min_occurs: 0
+    max_occurs: null
+  - object_type: bio_shape
+    collection_name: bioshapes
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - geometry.bounding_box
+  - dtd.page.z
+  - group.integral
+  - common.id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT group> and declared attributes/children
+- id: fragment
+  python_name: Fragment
+  xml_tag: fragment
+  cdx_id: 32771
+  cdx_constant: kCDXObj_Fragment
+  category: chemical_structure
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  - node
+  - alt_group
+  children:
+  - object_type: node
+    collection_name: nodes
+    min_occurs: 0
+    max_occurs: null
+  - object_type: bond
+    collection_name: bonds
+    min_occurs: 0
+    max_occurs: null
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  - object_type: graphic
+    collection_name: graphics
+    min_occurs: 0
+    max_occurs: null
+  - object_type: curve
+    collection_name: curves
+    min_occurs: 0
+    max_occurs: null
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: registry_number
+    collection_name: regnums
+    min_occurs: 0
+    max_occurs: null
+  - object_type: colored_molecular_area
+    collection_name: coloredmolecularareas
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.fragment.absolute
+  - dtd.page.z
+  - dtd.fragment.weight
+  - dtd.fragment.sequence_type
+  - dtd.fragment.racemic
+  - dtd.fragment.relative
+  - common.id
+  - dtd.fragment.formula
+  - dtd.fragment.connection_order
+  - geometry.bounding_box
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT fragment> and declared attributes/children
+- id: text
+  python_name: Text
+  xml_tag: t
+  cdx_id: 32774
+  cdx_constant: kCDXObj_Text
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  - fragment
+  - node
+  - graphic
+  - alt_group
+  - object_tag
+  - sequence
+  - cross_reference
+  - gep_lane
+  - marker
+  - plasmid_map
+  - plasmid_marker
+  children:
+  - object_type: text_run
+    collection_name: runs
+    min_occurs: 0
+    max_occurs: null
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.t.word_wrap_width
+  - dtd.t.warning
+  - common.visible
+  - dtd.t.superseded_by
+  - dtd.t.rotation_angle
+  - node.position
+  - dtd.t.line_height
+  - dtd.t.line_starts
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_line_height
+  - dtd.CDXML.label_justification
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - dtd.CDXML.label_color
+  - dtd.t.label_alignment
+  - dtd.t.justification
+  - dtd.CDXML.interpret_chemically
+  - text.ignore_warnings
+  - common.id
+  - text_run.color
+  - dtd.CDXML.caption_size
+  - dtd.CDXML.caption_line_height
+  - dtd.CDXML.caption_justification
+  - dtd.CDXML.caption_font
+  - dtd.CDXML.caption_face
+  - dtd.CDXML.caption_color
+  - geometry.bounding_box
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT t> and declared attributes/children
+- id: text_run
+  python_name: TextRun
+  xml_tag: s
+  cdx_id: null
+  cdx_constant: null
+  category: text_run
+  id_scope: none
+  allowed_parents:
+  - text
+  - rlogic
+  children: []
+  properties:
+  - text_run.alpha
+  - text_run.size
+  - text_run.font_id
+  - text_run.face
+  - text_run.color
+  - text_run.content
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT s> and declared attributes/children
+- id: node
+  python_name: Node
+  xml_tag: n
+  cdx_id: 32772
+  cdx_constant: kCDXObj_Node
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - fragment
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  - object_type: fragment
+    collection_name: fragments
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.n.abnormal_valence
+  - dtd.page.z
+  - dtd.n.xyz
+  - dtd.t.warning
+  - common.visible
+  - dtd.n.unsaturated_bonds
+  - dtd.n.translation
+  - dtd.t.superseded_by
+  - dtd.n.substituents_up_to
+  - dtd.n.substituents_exactly
+  - dtd.CDXML.show_terminal_carbon_labels
+  - dtd.CDXML.show_non_terminal_carbon_labels
+  - dtd.CDXML.show_atom_stereo
+  - dtd.CDXML.show_atom_query
+  - dtd.CDXML.show_atom_number
+  - dtd.n.show_atom_id
+  - dtd.CDXML.show_atom_enhanced_stereo
+  - dtd.n.rxn_stereo
+  - dtd.n.rxn_change
+  - dtd.n.ring_bond_count
+  - dtd.n.radical
+  - node.position
+  - dtd.n.node_type
+  - dtd.n.num_hydrogens
+  - dtd.n.needs_clean
+  - dtd.CDXML.margin_width
+  - dtd.n.link_count_low
+  - dtd.n.link_count_high
+  - dtd.CDXML.line_width
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - dtd.n.label_display
+  - dtd.n.isotopic_abundance
+  - node.isotope
+  - dtd.n.implicit_hydrogens
+  - text.ignore_warnings
+  - common.id
+  - dtd.CDXML.hide_implicit_hydrogens
+  - dtd.n.h_dot
+  - dtd.n.h_dash
+  - dtd.n.generic_nickname
+  - dtd.n.generic_list
+  - dtd.n.geometry
+  - dtd.n.free_sites
+  - dtd.n.formula
+  - dtd.CDXML.alpha
+  - dtd.n.external_connection_num
+  - dtd.n.external_connection_type
+  - dtd.n.enhanced_stereo_type
+  - dtd.n.enhanced_stereo_group_num
+  - dtd.n.element_list
+  - node.element
+  - text_run.color
+  - node.charge
+  - dtd.n.bond_ordering
+  - dtd.n.attachments
+  - dtd.n.atom_number
+  - dtd.n.atom_id
+  - dtd.n.as_value
+  - dtd.n.alt_group_id
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT n> and declared attributes/children
+- id: bond
+  python_name: Bond
+  xml_tag: b
+  cdx_id: 32773
+  cdx_constant: kCDXObj_Bond
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - fragment
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.t.warning
+  - common.visible
+  - dtd.b.topology
+  - dtd.t.superseded_by
+  - dtd.CDXML.show_bond_stereo
+  - dtd.CDXML.show_bond_rxn
+  - dtd.CDXML.show_bond_query
+  - dtd.b.rxn_participation
+  - bond.order
+  - dtd.CDXML.margin_width
+  - dtd.CDXML.line_width
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - text.ignore_warnings
+  - common.id
+  - dtd.CDXML.hash_spacing
+  - dtd.b.end_external_num
+  - dtd.b.end_attach
+  - bond.end
+  - dtd.b.double_position
+  - dtd.b.display2
+  - bond.display
+  - dtd.b.crossing_bondss
+  - dtd.b.crossing_bonds
+  - dtd.b.connectivity
+  - text_run.color
+  - dtd.b.bs
+  - dtd.CDXML.bond_spacing_abs
+  - dtd.CDXML.bond_spacing
+  - dtd.CDXML.bond_length
+  - dtd.b.bond_circular_ordering
+  - dtd.CDXML.bold_width
+  - dtd.b.begin_external_num
+  - dtd.b.begin_attach
+  - bond.begin
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT b> and declared attributes/children
+- id: graphic
+  python_name: Graphic
+  xml_tag: graphic
+  cdx_id: 32775
+  cdx_constant: kCDXObj_Graphic
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  - fragment
+  - alt_group
+  - plasmid_map
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: represent
+    collection_name: represents
+    min_occurs: 0
+    max_occurs: null
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.t.warning
+  - common.visible
+  - arrow.tail_3d
+  - dtd.graphic.symbol_type
+  - dtd.t.superseded_by
+  - dtd.graphic.rectangle_type
+  - dtd.graphic.shadow_size
+  - dtd.graphic.polymer_repeat_pattern
+  - dtd.graphic.polymer_flip_type
+  - dtd.graphic.oval_type
+  - dtd.graphic.orbital_type
+  - dtd.arrow.minor_axis_end3_d
+  - dtd.arrow.major_axis_end3_d
+  - dtd.graphic.lip_size
+  - dtd.graphic.line_type
+  - dtd.CDXML.line_width
+  - text.ignore_warnings
+  - common.id
+  - arrow.head_size
+  - arrow.head_3d
+  - dtd.CDXML.hash_spacing
+  - graphic.graphic_type
+  - dtd.graphic.frame_type
+  - dtd.graphic.fade_percent
+  - dtd.graphic.corner_radius
+  - text_run.color
+  - dtd.plasmidregion.center3_d
+  - dtd.CDXML.caption_size
+  - dtd.CDXML.caption_font
+  - dtd.CDXML.caption_face
+  - dtd.graphic.bracket_usage
+  - dtd.graphic.bracket_type
+  - geometry.bounding_box
+  - dtd.CDXML.bold_width
+  - dtd.graphic.arrow_type
+  - dtd.graphic.angular_size
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT graphic> and declared attributes/children
+- id: arrow
+  python_name: Arrow
+  xml_tag: arrow
+  cdx_id: 32807
+  cdx_constant: kCDXObj_Arrow
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.t.warning
+  - common.visible
+  - arrow.tail_3d
+  - dtd.t.superseded_by
+  - dtd.arrow.no_go
+  - dtd.arrow.minor_axis_end3_d
+  - dtd.arrow.major_axis_end3_d
+  - dtd.CDXML.line_width
+  - dtd.graphic.line_type
+  - text.ignore_warnings
+  - common.id
+  - arrow.head_size
+  - arrow.head_3d
+  - dtd.CDXML.hash_spacing
+  - arrow.fill_type
+  - dtd.graphic.fade_percent
+  - dtd.arrow.dipole
+  - text_run.color
+  - dtd.plasmidregion.center3_d
+  - dtd.CDXML.caption_size
+  - dtd.CDXML.caption_font
+  - dtd.CDXML.caption_face
+  - geometry.bounding_box
+  - dtd.CDXML.bold_width
+  - dtd.arrow.arrow_target
+  - dtd.arrow.arrow_source
+  - dtd.arrow.arrow_shaft_spacing
+  - arrow.arrowhead_type
+  - arrow.arrowhead_tail
+  - dtd.plasmidregion.arrowhead_width
+  - arrow.arrowhead_head
+  - dtd.arrow.arrowhead_center_size
+  - dtd.arrow.arrow_equilibrium_ratio
+  - dtd.graphic.angular_size
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT arrow> and declared attributes/children
+- id: curve
+  python_name: Curve
+  xml_tag: curve
+  cdx_id: 32776
+  cdx_constant: kCDXObj_Curve
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  - fragment
+  - marker
+  - plasmid_marker
+  - bio_shape
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.t.warning
+  - common.visible
+  - dtd.t.superseded_by
+  - dtd.CDXML.line_width
+  - dtd.graphic.line_type
+  - text.ignore_warnings
+  - common.id
+  - dtd.curve.head_width
+  - arrow.head_size
+  - dtd.curve.head_center_size
+  - dtd.CDXML.hash_spacing
+  - arrow.fill_type
+  - dtd.graphic.fade_percent
+  - dtd.curve.curve_type
+  - dtd.curve.curve_spacing
+  - dtd.curve.curve_points3_d
+  - dtd.curve.curve_points
+  - dtd.curve.closed
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.CDXML.bold_width
+  - dtd.curve.arrowhead_type
+  - dtd.curve.arrowhead_tail
+  - dtd.curve.arrowhead_head
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT curve> and declared attributes/children
+- id: alt_group
+  python_name: AltGroup
+  xml_tag: altgroup
+  cdx_id: 32778
+  cdx_constant: kCDXObj_NamedAlternativeGroup
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  - object_type: fragment
+    collection_name: fragments
+    min_occurs: 0
+    max_occurs: null
+  - object_type: group
+    collection_name: groups
+    min_occurs: 0
+    max_occurs: null
+  - object_type: graphic
+    collection_name: graphics
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.t.warning
+  - common.visible
+  - dtd.altgroup.valence
+  - dtd.altgroup.text_frame
+  - dtd.t.superseded_by
+  - node.position
+  - text.ignore_warnings
+  - common.id
+  - dtd.altgroup.group_frame
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT altgroup> and declared attributes/children
+- id: reaction_step
+  python_name: ReactionStep
+  xml_tag: step
+  cdx_id: 32782
+  cdx_constant: kCDXObj_ReactionStep
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  - reaction_scheme
+  children: []
+  properties:
+  - common.id
+  - reaction_step.reactants
+  - reaction_step.products
+  - dtd.step.reaction_step_plusses
+  - dtd.step.reaction_step_objects_below_arrow
+  - dtd.step.reaction_step_objects_above_arrow
+  - dtd.step.reaction_step_atom_map_manual
+  - dtd.step.reaction_step_atom_map_auto
+  - dtd.step.reaction_step_atom_map
+  - reaction_step.arrows
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT step> and declared attributes/children
+- id: reaction_scheme
+  python_name: ReactionScheme
+  xml_tag: scheme
+  cdx_id: 32781
+  cdx_constant: kCDXObj_ReactionScheme
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  children:
+  - object_type: reaction_step
+    collection_name: steps
+    min_occurs: 1
+    max_occurs: null
+  properties:
+  - common.id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT scheme> and declared attributes/children
+- id: geometry
+  python_name: Geometry
+  xml_tag: geometry
+  cdx_id: 32801
+  cdx_constant: kCDXObj_Geometry
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.t.superseded_by
+  - dtd.geometry.relation_value
+  - dtd.CDXML.name
+  - dtd.CDXML.line_width
+  - common.id
+  - dtd.geometry.geometric_feature
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.geometry.basis_objects
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - dtd.CDXML.label_color
+  - dtd.CDXML.bond_length
+  - sdk.geometry.point_is_directed
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT geometry> and declared attributes/children
+- id: constraint
+  python_name: Constraint
+  xml_tag: constraint
+  cdx_id: 32802
+  cdx_constant: kCDXObj_Constraint
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.t.superseded_by
+  - dtd.constraint.point_is_directed
+  - dtd.CDXML.name
+  - dtd.CDXML.line_width
+  - dtd.constraint.ignore_unconnected_atoms
+  - common.id
+  - dtd.CDXML.hash_spacing
+  - dtd.constraint.dihedral_is_chiral
+  - dtd.constraint.constraint_type
+  - dtd.constraint.constraint_min
+  - dtd.constraint.constraint_max
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.geometry.basis_objects
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - dtd.CDXML.label_color
+  - dtd.CDXML.bond_length
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT constraint> and declared attributes/children
+- id: template_grid
+  python_name: TemplateGrid
+  xml_tag: templategrid
+  cdx_id: 32779
+  cdx_constant: kCDXObj_TemplateGrid
+  category: document_object
+  id_scope: none
+  allowed_parents:
+  - cdxml_root
+  children: []
+  properties:
+  - dtd.templategrid.extent
+  - dtd.templategrid.pane_height
+  - dtd.templategrid.num_rows
+  - dtd.templategrid.num_columns
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT templategrid> and declared attributes/children
+- id: spectrum
+  python_name: Spectrum
+  xml_tag: spectrum
+  cdx_id: 32784
+  cdx_constant: kCDXObj_Spectrum
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.t.warning
+  - common.visible
+  - dtd.spectrum.y_type
+  - dtd.spectrum.y_scale
+  - dtd.spectrum.y_low
+  - dtd.spectrum.y_axis_label
+  - dtd.spectrum.x_type
+  - dtd.spectrum.x_spacing
+  - dtd.spectrum.x_low
+  - dtd.spectrum.x_axis_label
+  - dtd.t.superseded_by
+  - dtd.CDXML.line_width
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - text.ignore_warnings
+  - common.id
+  - text_run.color
+  - dtd.spectrum.class_name
+  - geometry.bounding_box
+  - dtd.CDXML.bold_width
+  - spectrum.data
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT spectrum> and declared attributes/children
+- id: embedded_object
+  python_name: EmbeddedObject
+  xml_tag: embeddedobject
+  cdx_id: 32777
+  cdx_constant: kCDXObj_EmbeddedObject
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - tlc_spot
+  - gep_band
+  - sg_datum
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.embeddedobject.windows_metafile
+  - dtd.embeddedobject.uncompressed_windows_metafile_size
+  - dtd.embeddedobject.uncompressed_ole_object_size
+  - dtd.embeddedobject.uncompressed_enhanced_metafile_size
+  - dtd.embeddedobject.tiff
+  - dtd.t.superseded_by
+  - dtd.t.rotation_angle
+  - dtd.embeddedobject.png
+  - dtd.embeddedobject.pdf
+  - dtd.embeddedobject.ole_object
+  - dtd.embeddedobject.mac_pict
+  - dtd.embeddedobject.jpeg
+  - common.id
+  - dtd.embeddedobject.gif
+  - dtd.embeddedobject.enhanced_metafile
+  - dtd.embeddedobject.edition_alias
+  - dtd.embeddedobject.edition
+  - dtd.embeddedobject.compressed_windows_metafile
+  - dtd.embeddedobject.compressed_ole_object
+  - dtd.embeddedobject.compressed_enhanced_metafile
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.embeddedobject.bmp
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT embeddedobject> and declared attributes/children
+- id: represent
+  python_name: Represent
+  xml_tag: represent
+  cdx_id: null
+  cdx_constant: null
+  category: property_element
+  id_scope: none
+  allowed_parents:
+  - graphic
+  children: []
+  properties:
+  - dtd.represent.attribute_id
+  - dtd.represent.object_reference
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT represent> and declared attributes/children
+- id: object_tag
+  python_name: ObjectTag
+  xml_tag: objecttag
+  cdx_id: 32785
+  cdx_constant: kCDXObj_ObjectTag
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  - fragment
+  - text
+  - node
+  - bond
+  - graphic
+  - arrow
+  - curve
+  - alt_group
+  - geometry
+  - constraint
+  - spectrum
+  - embedded_object
+  - table
+  - tlc_plate
+  - tlc_lane
+  - tlc_spot
+  - stoichiometry_grid
+  - sg_component
+  - sg_datum
+  - plasmid_map
+  - plasmid_region
+  - plasmid_marker
+  - bio_shape
+  children:
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.objecttag.display_name
+  - common.visible
+  - dtd.objecttag.value
+  - dtd.objecttag.tracking
+  - dtd.objecttag.tag_type
+  - dtd.objecttag.positioning_type
+  - dtd.objecttag.positioning_offset
+  - dtd.objecttag.positioning_angle
+  - dtd.objecttag.persistent
+  - dtd.objecttag.name
+  - common.id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT objecttag> and declared attributes/children
+- id: sequence
+  python_name: Sequence
+  xml_tag: sequence
+  cdx_id: 32787
+  cdx_constant: kCDXObj_Sequence
+  category: document_object
+  id_scope: none
+  allowed_parents:
+  - page
+  children:
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.sequence.sequence_identifier
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT sequence> and declared attributes/children
+- id: cross_reference
+  python_name: CrossReference
+  xml_tag: crossreference
+  cdx_id: 32788
+  cdx_constant: kCDXObj_CrossReference
+  category: document_object
+  id_scope: none
+  allowed_parents:
+  - page
+  children:
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.crossreference.cross_reference_container
+  - dtd.crossreference.cross_reference_sequence
+  - dtd.crossreference.cross_reference_identifier
+  - dtd.crossreference.cross_reference_document
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT crossreference> and declared attributes/children
+- id: registry_number
+  python_name: RegistryNumber
+  xml_tag: regnum
+  cdx_id: 32780
+  cdx_constant: kCDXObj_RegistryNumber
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - fragment
+  children: []
+  properties:
+  - common.id
+  - dtd.regnum.registry_number
+  - dtd.regnum.registry_authority
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT regnum> and declared attributes/children
+- id: splitter
+  python_name: Splitter
+  xml_tag: splitter
+  cdx_id: 32789
+  cdx_constant: kCDXObj_Splitter
+  category: document_object
+  id_scope: none
+  allowed_parents:
+  - page
+  children: []
+  properties:
+  - node.position
+  - dtd.page.page_definition
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT splitter> and declared attributes/children
+- id: table
+  python_name: Table
+  xml_tag: table
+  cdx_id: 32790
+  cdx_constant: kCDXObj_Table
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  children:
+  - object_type: page
+    collection_name: pages
+    min_occurs: 0
+    max_occurs: null
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - common.visible
+  - dtd.t.superseded_by
+  - dtd.CDXML.margin_width
+  - dtd.CDXML.line_width
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - common.id
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.CDXML.bold_width
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT table> and declared attributes/children
+- id: tlc_plate
+  python_name: TLCPlate
+  xml_tag: tlcplate
+  cdx_id: 32803
+  cdx_constant: kCDXObj_TLCPlate
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: tlc_lane
+    collection_name: tlclanes
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - common.visible
+  - dtd.tlcplate.transparent
+  - dtd.tlcplate.top_right
+  - dtd.tlcplate.top_left
+  - dtd.t.superseded_by
+  - dtd.tlcplate.solvent_front_fraction
+  - dtd.tlcplate.show_solvent_front
+  - dtd.tlcplate.show_side_ticks
+  - dtd.tlcplate.show_origin
+  - dtd.tlcplate.show_borders
+  - dtd.tlcplate.origin_fraction
+  - dtd.CDXML.margin_width
+  - dtd.CDXML.line_width
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - common.id
+  - dtd.CDXML.hash_spacing
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.tlcplate.bottom_right
+  - dtd.tlcplate.bottom_left
+  - dtd.CDXML.bold_width
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT tlcplate> and declared attributes/children
+- id: tlc_lane
+  python_name: TLCLane
+  xml_tag: tlclane
+  cdx_id: 32804
+  cdx_constant: kCDXObj_TLCLane
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - tlc_plate
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: tlc_spot
+    collection_name: tlcspots
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - common.id
+  - common.visible
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT tlclane> and declared attributes/children
+- id: tlc_spot
+  python_name: TLCSpot
+  xml_tag: tlcspot
+  cdx_id: 32805
+  cdx_constant: kCDXObj_TLCSpot
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - tlc_lane
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: embedded_object
+    collection_name: embeddedobjects
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.page.width
+  - common.visible
+  - dtd.tlcspot.tail_value
+  - dtd.tlcspot.show_rf
+  - dtd.tlcspot.rf
+  - common.id
+  - dtd.page.height
+  - dtd.curve.curve_type
+  - text_run.color
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT tlcspot> and declared attributes/children
+- id: gep_plate
+  python_name: GEPPlate
+  xml_tag: gepplate
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  children:
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: gep_lane
+    collection_name: geplanes
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.gepplate.axis_width
+  - dtd.page.z
+  - common.visible
+  - dtd.gepplate.unit_id
+  - dtd.tlcplate.transparent
+  - dtd.tlcplate.top_right
+  - dtd.tlcplate.top_left
+  - dtd.t.superseded_by
+  - dtd.gepplate.start_range
+  - dtd.gepplate.show_scale
+  - dtd.tlcplate.show_borders
+  - dtd.CDXML.margin_width
+  - dtd.CDXML.line_width
+  - dtd.gepplate.label_text
+  - dtd.CDXML.label_size
+  - dtd.gepplate.labels_angle
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - common.id
+  - dtd.CDXML.hash_spacing
+  - dtd.gepplate.end_range
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.tlcplate.bottom_right
+  - dtd.tlcplate.bottom_left
+  - dtd.CDXML.bold_width
+  - dtd.CDXML.alpha
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT gepplate> and declared attributes/children
+- id: gep_lane
+  python_name: GEPLane
+  xml_tag: geplane
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - gep_plate
+  children:
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: gep_band
+    collection_name: gepbands
+    min_occurs: 0
+    max_occurs: null
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - common.id
+  - common.visible
+  - dtd.gepplate.label_text
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT geplane> and declared attributes/children
+- id: gep_band
+  python_name: GEPBand
+  xml_tag: gepband
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - gep_lane
+  children:
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: embedded_object
+    collection_name: embeddedobjects
+    min_occurs: 0
+    max_occurs: null
+  - object_type: marker
+    collection_name: markers
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.page.width
+  - common.visible
+  - dtd.gepband.show_value
+  - common.id
+  - dtd.page.height
+  - dtd.curve.curve_type
+  - text_run.color
+  - dtd.gepband.band_value
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT gepband> and declared attributes/children
+- id: marker
+  python_name: Marker
+  xml_tag: marker
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - gep_band
+  children:
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  - object_type: curve
+    collection_name: curves
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.caption_justification
+  - dtd.objecttag.value
+  - dtd.objecttag.tag_type
+  - dtd.objecttag.persistent
+  - dtd.objecttag.name
+  - dtd.marker.marker_offset
+  - dtd.marker.marker_angle
+  - common.id
+  - dtd.objecttag.display_name
+  - text_run.color
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT marker> and declared attributes/children
+- id: stoichiometry_grid
+  python_name: StoichiometryGrid
+  xml_tag: stoichiometrygrid
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: sg_component
+    collection_name: sgcomponents
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - common.visible
+  - dtd.t.superseded_by
+  - node.position
+  - dtd.CDXML.margin_width
+  - dtd.CDXML.line_width
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - common.id
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.CDXML.bold_width
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT stoichiometrygrid> and declared attributes/children
+- id: sg_component
+  python_name: SGComponent
+  xml_tag: sgcomponent
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - stoichiometry_grid
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: sg_datum
+    collection_name: sgdatums
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.sgcomponent.component_is_header
+  - dtd.page.width
+  - common.visible
+  - common.id
+  - dtd.sgcomponent.component_reference_id
+  - dtd.sgcomponent.component_is_reactant
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT sgcomponent> and declared attributes/children
+- id: sg_datum
+  python_name: SGDatum
+  xml_tag: sgdatum
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - sg_component
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: embedded_object
+    collection_name: embeddedobjects
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - common.id
+  - common.visible
+  - dtd.sgdatum.sg_property_type
+  - dtd.sgdatum.sg_data_value
+  - dtd.sgdatum.sg_data_type
+  - dtd.sgdatum.is_read_only
+  - dtd.sgdatum.is_hidden
+  - dtd.sgdatum.is_edited
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT sgdatum> and declared attributes/children
+- id: plasmid_map
+  python_name: PlasmidMap
+  xml_tag: plasmidmap
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: plasmid_region
+    collection_name: plasmidregions
+    min_occurs: 0
+    max_occurs: null
+  - object_type: plasmid_marker
+    collection_name: plasmidmarkers
+    min_occurs: 0
+    max_occurs: null
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  - object_type: graphic
+    collection_name: graphics
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - common.visible
+  - dtd.t.superseded_by
+  - dtd.plasmidmap.ring_radius
+  - node.position
+  - dtd.plasmidmap.number_base_pairs
+  - dtd.CDXML.margin_width
+  - dtd.CDXML.line_width
+  - dtd.CDXML.label_size
+  - dtd.CDXML.label_font
+  - dtd.CDXML.label_face
+  - common.id
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.CDXML.bold_width
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT plasmidmap> and declared attributes/children
+- id: plasmid_region
+  python_name: PlasmidRegion
+  xml_tag: plasmidregion
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - plasmid_map
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: plasmid_marker
+    collection_name: plasmidmarkers
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - arrow.tail_3d
+  - dtd.plasmidregion.region_start
+  - dtd.plasmidregion.region_offset
+  - dtd.plasmidregion.region_end
+  - dtd.arrow.minor_axis_end3_d
+  - dtd.arrow.major_axis_end3_d
+  - dtd.graphic.line_type
+  - common.id
+  - arrow.head_size
+  - arrow.head_3d
+  - arrow.fill_type
+  - dtd.graphic.fade_percent
+  - text_run.color
+  - dtd.plasmidregion.center3_d
+  - geometry.bounding_box
+  - dtd.arrow.arrow_shaft_spacing
+  - dtd.plasmidregion.arrowhead_width
+  - arrow.arrowhead_type
+  - arrow.arrowhead_tail
+  - arrow.arrowhead_head
+  - dtd.arrow.arrowhead_center_size
+  - dtd.graphic.angular_size
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT plasmidregion> and declared attributes/children
+- id: plasmid_marker
+  python_name: PlasmidMarker
+  xml_tag: plasmidmarker
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - plasmid_map
+  - plasmid_region
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: text
+    collection_name: texts
+    min_occurs: 0
+    max_occurs: null
+  - object_type: curve
+    collection_name: curves
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.caption_justification
+  - dtd.objecttag.value
+  - dtd.objecttag.tag_type
+  - dtd.objecttag.persistent
+  - dtd.objecttag.name
+  - dtd.marker.marker_offset
+  - dtd.marker.marker_angle
+  - common.id
+  - dtd.objecttag.display_name
+  - text_run.color
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT plasmidmarker> and declared attributes/children
+- id: bracketed_group
+  python_name: BracketedGroup
+  xml_tag: bracketedgroup
+  cdx_id: 32791
+  cdx_constant: kCDXObj_BracketedGroup
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - bracketed_group
+  children:
+  - object_type: bracket_attachment
+    collection_name: bracketattachments
+    min_occurs: 1
+    max_occurs: null
+  - object_type: bracketed_group
+    collection_name: bracketedgroups
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.bracketedgroup.bracketed_object_i_ds
+  - dtd.bracketedgroup.sru_label
+  - dtd.bracketedgroup.repeat_count
+  - dtd.graphic.polymer_repeat_pattern
+  - dtd.graphic.polymer_flip_type
+  - common.id
+  - dtd.bracketedgroup.component_order
+  - dtd.graphic.bracket_usage
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT bracketedgroup> and declared attributes/children
+- id: bracket_attachment
+  python_name: BracketAttachment
+  xml_tag: bracketattachment
+  cdx_id: 32792
+  cdx_constant: kCDXObj_BracketAttachment
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - bracketed_group
+  children:
+  - object_type: crossing_bond
+    collection_name: crossingbonds
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.bracketattachment.graphic_id
+  - common.id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT bracketattachment> and declared attributes/children
+- id: crossing_bond
+  python_name: CrossingBond
+  xml_tag: crossingbond
+  cdx_id: 32793
+  cdx_constant: kCDXObj_CrossingBond
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - bracket_attachment
+  children: []
+  properties:
+  - dtd.crossingbond.bond_id
+  - dtd.crossingbond.inner_atom_id
+  - common.id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT crossingbond> and declared attributes/children
+- id: border
+  python_name: Border
+  xml_tag: border
+  cdx_id: 32800
+  cdx_constant: kCDXObj_Border
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  children: []
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.border.side
+  - dtd.CDXML.line_width
+  - dtd.graphic.line_type
+  - common.id
+  - text_run.color
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT border> and declared attributes/children
+- id: chemical_property
+  python_name: ChemicalProperty
+  xml_tag: chemicalproperty
+  cdx_id: 32806
+  cdx_constant: kCDXObj_ChemicalProperty
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  children: []
+  properties:
+  - dtd.geometry.basis_objects
+  - dtd.chemicalproperty.external_bonds
+  - dtd.objecttag.positioning_type
+  - dtd.objecttag.positioning_offset
+  - dtd.objecttag.positioning_angle
+  - dtd.CDXML.name
+  - common.id
+  - dtd.chemicalproperty.chemical_property_type
+  - dtd.chemicalproperty.chemically_significant
+  - dtd.chemicalproperty.chemical_property_is_active
+  - dtd.chemicalproperty.chemical_property_display_id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT chemicalproperty> and declared attributes/children
+- id: bio_shape
+  python_name: BioShape
+  xml_tag: bioshape
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  children:
+  - object_type: object_tag
+    collection_name: objecttags
+    min_occurs: 0
+    max_occurs: null
+  - object_type: annotation
+    collection_name: annotations
+    min_occurs: 0
+    max_occurs: null
+  - object_type: curve
+    collection_name: curves
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - dtd.n.xyz
+  - common.visible
+  - dtd.t.superseded_by
+  - dtd.bioshape.pipe_width
+  - dtd.bioshape.neck_width
+  - dtd.bioshape.neck_height
+  - dtd.arrow.minor_axis_end3_d
+  - dtd.bioshape.membrane_start_angle
+  - dtd.bioshape.membrane_minor_axis_size
+  - dtd.bioshape.membrane_major_axis_size
+  - dtd.bioshape.membrane_end_angle
+  - dtd.bioshape.membrane_element_size
+  - dtd.arrow.major_axis_end3_d
+  - dtd.CDXML.line_width
+  - dtd.graphic.line_type
+  - dtd.bioshape.immunoglobin_width
+  - dtd.bioshape.immunoglobin_height
+  - common.id
+  - dtd.bioshape.helix_protein_extra
+  - dtd.CDXML.hash_spacing
+  - dtd.bioshape.golgi_width
+  - dtd.bioshape.golgi_length
+  - dtd.bioshape.golgi_height
+  - dtd.bioshape.gprotein_upper_height
+  - dtd.bioshape.gprotein_lower_height
+  - arrow.fill_type
+  - dtd.graphic.fade_percent
+  - dtd.bioshape.enzyme_width
+  - dtd.bioshape.enzyme_receptor_size
+  - dtd.bioshape.enzyme_height
+  - dtd.bioshape.dna_wave_width
+  - dtd.bioshape.dna_wave_offset
+  - dtd.bioshape.dna_wave_length
+  - dtd.bioshape.dna_wave_height
+  - dtd.bioshape.cylinder_width
+  - dtd.bioshape.cylinder_height
+  - dtd.bioshape.cylinder_distance
+  - text_run.color
+  - geometry.bounding_box
+  - dtd.CDXML.bold_width
+  - dtd.bioshape.bio_shape_type
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT bioshape> and declared attributes/children
+- id: annotation
+  python_name: Annotation
+  xml_tag: annotation
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  - fragment
+  - text
+  - node
+  - bond
+  - graphic
+  - arrow
+  - curve
+  - alt_group
+  - geometry
+  - constraint
+  - spectrum
+  - embedded_object
+  - table
+  - tlc_plate
+  - tlc_lane
+  - tlc_spot
+  - gep_plate
+  - gep_lane
+  - gep_band
+  - marker
+  - stoichiometry_grid
+  - plasmid_map
+  - plasmid_region
+  - plasmid_marker
+  - bio_shape
+  children: []
+  properties:
+  - dtd.annotation.content
+  - dtd.annotation.keyword
+  - common.id
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT annotation> and declared attributes/children
+- id: rlogic_item
+  python_name: RLogicItem
+  xml_tag: rlogicitem
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - rlogic
+  children: []
+  properties:
+  - common.id
+  - dtd.rlogicitem.r_logic_rest_h
+  - dtd.rlogicitem.r_logic_occurrence
+  - dtd.rlogicitem.r_logic_if_then_group
+  - dtd.rlogicitem.r_logic_group
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT rlogicitem> and declared attributes/children
+- id: rlogic
+  python_name: RLogic
+  xml_tag: rlogic
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - page
+  - group
+  children:
+  - object_type: text_run
+    collection_name: runs
+    min_occurs: 0
+    max_occurs: null
+  - object_type: rlogic_item
+    collection_name: rlogicitems
+    min_occurs: 0
+    max_occurs: null
+  properties:
+  - dtd.CDXML.alpha
+  - dtd.page.z
+  - node.position
+  - dtd.t.line_height
+  - common.id
+  - text_run.color
+  - geometry.bounding_box
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT rlogic> and declared attributes/children
+- id: colored_molecular_area
+  python_name: ColoredMolecularArea
+  xml_tag: coloredmoleculararea
+  cdx_id: null
+  cdx_constant: null
+  category: document_object
+  id_scope: document
+  allowed_parents:
+  - fragment
+  children: []
+  properties:
+  - common.id
+  - dtd.geometry.basis_objects
+  - dtd.CDXML.bgcolor
+  status: known
+  provenance:
+  - source: revvity_dtd
+    locator: <!ELEMENT coloredmoleculararea> and declared attributes/children
+exceptions:
+- id: alias_document_and_object_tag_name_dtd_cdxml_name
+  rule: duplicate_property_cdx_id
+  target: property:dtd.CDXML.name
+  rationale: Both SDK pages document CDXString kCDXProp_Name (0x0008), while the DTD makes CDXML@Name
+    optional and objecttag@Name required. Keep owner-specific XML constraints instead of merging the distinct
+    requiredness contracts.
+  provenance: &id001
+  - source: sdk_document
+    locator: 'table[2]/row[20]: Name / CDXString / 0x0008'
+  - source: sdk_page_objecttag
+    locator: 'table[2]/row[5]: Name / CDXString / 0x0008'
+  - source: revvity_dtd
+    locator: '<!ATTLIST CDXML Name> and <!ATTLIST objecttag Name #REQUIRED>'
+- id: alias_document_and_object_tag_name_dtd_objecttag_name
+  rule: duplicate_property_cdx_id
+  target: property:dtd.objecttag.name
+  rationale: Both SDK pages document CDXString kCDXProp_Name (0x0008), while the DTD makes CDXML@Name
+    optional and objecttag@Name required. Keep owner-specific XML constraints instead of merging the distinct
+    requiredness contracts.
+  provenance: *id001

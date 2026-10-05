@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CDXML>
+<CDXML WindowIsZoomed="no" FractionalWidths="yes" LabelFont="3" LabelSize="10.0" LabelFace="96" CaptionFont="4" CaptionSize="12.0" HashSpacing="2.7" MarginWidth="2" LineWidth="1" BoldWidth="4" BondLength="30.0" BondSpacing="12" ChainAngle="120">
+  <colortable>
+<color r="1" g="1" b="1"/>
+<color r="0" g="0" b="0"/>
+<color r="1" g="0" b="0"/>
+<color r="1" g="1" b="0"/>
+<color r="0" g="1" b="0"/>
+<color r="0" g="1" b="1"/>
+<color r="0" g="0" b="1"/>
+<color r="1" g="0" b="1"/>
+</colortable>
+  <fonttable>
+<font id="3" charset="iso-8859-1" name="Arial"/>
+<font id="4" charset="iso-8859-1" name="Times New Roman"/>
+</fonttable>
+  <page id="1" BoundingBox="100.0 190.0 560.0 360.0" WidthPages="1" HeightPages="1">
+    <t p="120.0 220.0" Z="5" id="2">
+      <s font="3" size="16.0" face="1" color="3">Spectrum lexical payload differential</s>
+    </t>
+    <spectrum Class="Unknown" XType="Other" YType="Other" XLow="0.0" YLow="0.0" YScale="1.0" BoundingBox="160.0 250.0 500.0 315.0" XSpacing="1.0" id="3">400 0.2 500 0.5<annotation Content="Same unverified lexical payload in both probes" id="4"/></spectrum>
+  </page>
+</CDXML>

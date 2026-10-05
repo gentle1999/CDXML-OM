@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdxml-om.invalid/schema/coverage/test-run.schema.json",
+  "title": "CDXML-OM pytest-time feature evidence",
+  "type": "object",
+  "required": ["format", "format_version", "dtd_sha256", "fingerprints", "junit_sha256", "cases"],
+  "properties": {
+    "format": { "const": "cdxml-om-feature-test-run" },
+    "format_version": { "const": 2 },
+    "dtd_sha256": { "$ref": "#/$defs/sha256" },
+    "junit_sha256": { "$ref": "#/$defs/sha256" },
+    "fingerprints": { "$ref": "#/$defs/fingerprints" },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["test_id", "status"],
+        "properties": {
+          "test_id": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["passed", "failed", "skipped", "not_run"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "fingerprints": {
+      "type": "object",
+      "required": ["dtd_sha256", "schema_hash", "schema_lock_sha256", "feature_case_catalog_sha256", "sdk_extension_case_catalog_sha256", "files", "fingerprint_sha256"],
+      "properties": {
+        "dtd_sha256": { "$ref": "#/$defs/sha256" },
+        "schema_hash": { "$ref": "#/$defs/sha256" },
+        "schema_lock_sha256": { "$ref": "#/$defs/sha256" },
+        "feature_case_catalog_sha256": { "$ref": "#/$defs/sha256" },
+        "sdk_extension_case_catalog_sha256": { "$ref": "#/$defs/sha256" },
+        "fingerprint_sha256": { "$ref": "#/$defs/sha256" },
+        "files": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/sha256" }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,1086 @@
+{
+  "facts": [
+    {
+      "binary_type": "INT16",
+      "cdx_constant": "kCDXProp_Bond_Order",
+      "cdx_property_id": 1536,
+      "id": "bond_order_bit_values",
+      "interpretation": "Keep the SDK's bit-encoded binary values and CDXML Name tokens distinct; this is not an ordinal enum. The pinned DTD declares Order as CDATA.",
+      "kind": "documented_xml_values_and_binary_bitmask",
+      "owner_xml_names": [
+        "b"
+      ],
+      "pinned_dtd": {
+        "declared_type": "cdata",
+        "default_kind": "implied",
+        "default_value": null,
+        "enum_values": [],
+        "required": false
+      },
+      "source_refs": [
+        {
+          "locator": "Bond_Order property value table and description",
+          "source_id": "sdk_bond_order"
+        },
+        {
+          "locator": "<!ATTLIST b Order>",
+          "source_id": "revvity_dtd"
+        },
+        {
+          "locator": "Properties table: Order / kCDXProp_Bond_Order / INT16",
+          "source_id": "sdk_page_b"
+        }
+      ],
+      "source_statement": {
+        "absent_property_semantics": "single bond",
+        "chem_draw_documentation": "Ionic, hydrogen, and three-center bonds are documented as defined for future compatibility, not currently supported by ChemDraw.",
+        "chem_draw_runtime_tested_here": false,
+        "unspecified_binary_value": "0xFFFF",
+        "unspecified_binary_value_xml_representation": "omitted entirely",
+        "values_may_be_combined": true
+      },
+      "source_values": [
+        {
+          "binary_value": "0xFFFF",
+          "xml_token": null
+        },
+        {
+          "binary_value": "0x0001",
+          "xml_token": "1"
+        },
+        {
+          "binary_value": "0x0002",
+          "xml_token": "2"
+        },
+        {
+          "binary_value": "0x0004",
+          "xml_token": "3"
+        },
+        {
+          "binary_value": "0x0008",
+          "xml_token": "4"
+        },
+        {
+          "binary_value": "0x0010",
+          "xml_token": "5"
+        },
+        {
+          "binary_value": "0x0020",
+          "xml_token": "6"
+        },
+        {
+          "binary_value": "0x0040",
+          "xml_token": "0.5"
+        },
+        {
+          "binary_value": "0x0080",
+          "xml_token": "1.5"
+        },
+        {
+          "binary_value": "0x0100",
+          "xml_token": "2.5"
+        },
+        {
+          "binary_value": "0x0200",
+          "xml_token": "3.5"
+        },
+        {
+          "binary_value": "0x0400",
+          "xml_token": "4.5"
+        },
+        {
+          "binary_value": "0x0800",
+          "xml_token": "5.5"
+        },
+        {
+          "binary_value": "0x1000",
+          "xml_token": "dative"
+        },
+        {
+          "binary_value": "0x2000",
+          "xml_token": "ionic"
+        },
+        {
+          "binary_value": "0x4000",
+          "xml_token": "hydrogen"
+        },
+        {
+          "binary_value": "0x8000",
+          "xml_token": "threecenter"
+        }
+      ],
+      "xml_name": "Order"
+    },
+    {
+      "id": "font_size_encodings",
+      "kind": "separate_default_size_and_text_style_run_evidence",
+      "properties": [
+        {
+          "binary_type": "INT16",
+          "cdx_constant": "kCDXProp_LabelStyleSize",
+          "cdx_property_id": 2076,
+          "source": {
+            "locator": "LabelStyleSize property summary",
+            "source_id": "sdk_label_style_size"
+          },
+          "xml_name": "LabelSize"
+        },
+        {
+          "binary_type": "INT16",
+          "cdx_constant": "kCDXProp_CaptionStyleSize",
+          "cdx_property_id": 2077,
+          "source": {
+            "locator": "CaptionStyleSize property summary",
+            "source_id": "sdk_caption_style_size"
+          },
+          "xml_name": "CaptionSize"
+        }
+      ],
+      "scope_note": "The captured LabelSize/CaptionSize property pages state binary INT16 and that these properties are font-size defaults. The CDXString source defines 20ths-of-a-point units for font style runs. It does not explicitly state that the separate LabelSize/CaptionSize property values use that same scale.",
+      "source_refs": [
+        {
+          "locator": "LabelStyleSize summary and description",
+          "source_id": "sdk_label_style_size"
+        },
+        {
+          "locator": "CaptionStyleSize summary and description",
+          "source_id": "sdk_caption_style_size"
+        },
+        {
+          "locator": "CDXString XML examples and Font style run table",
+          "source_id": "sdk_cdx_string"
+        }
+      ],
+      "text_style_run": {
+        "cdx_string_font_size_type": "UINT16",
+        "cdx_string_font_size_unit": "twentieths of a point",
+        "example_point_size": 12,
+        "minimum_binary_resolution_points": 0.05,
+        "source": {
+          "locator": "CDXString Font style run and examples",
+          "source_id": "sdk_cdx_string"
+        },
+        "xml_attribute": "size",
+        "xml_element": "s"
+      }
+    },
+    {
+      "binary_encoding": {
+        "component_meaning": "character set of this font",
+        "component_type": "UINT16",
+        "datatype": "CDXFontTable"
+      },
+      "id": "font_table_charset_encodings",
+      "kind": "xml_lexical_value_vs_binary_integer",
+      "scope_note": "The binary font-table structure stores a UINT16 character-set code, while the SDK's CDXML example uses the lexical token 'iso-8859-1'. Preserve the XML attribute as text; the source does not provide an XML-to-binary code map.",
+      "source_refs": [
+        {
+          "locator": "CDXFontTable charset field and CDXML fonttable example",
+          "source_id": "sdk_cdx_font_table"
+        },
+        {
+          "locator": "<!ATTLIST font charset CDATA #IMPLIED>",
+          "source_id": "revvity_dtd"
+        }
+      ],
+      "xml_property": {
+        "dtd_declared_type": "cdata",
+        "example_value": "iso-8859-1",
+        "owner_xml_name": "font",
+        "source": {
+          "locator": "<!ATTLIST font charset CDATA #IMPLIED>",
+          "source_id": "revvity_dtd"
+        },
+        "xml_name": "charset"
+      }
+    },
+    {
+      "cdxml_component_order": [
+        "x",
+        "y",
+        "z"
+      ],
+      "cdxml_components": "three numeric coordinate values",
+      "coordinate_unit": "points",
+      "decimal_values_allowed": true,
+      "example": "72 144 216",
+      "id": "point3d_lexical_contract",
+      "kind": "xml_point3d_numeric_triple",
+      "sdk_datatype": "CDXPoint3D",
+      "source_caveat": "The page's CDXPoint3D paragraph calls the XML form CDXPoint2D in one sentence, but immediately gives three x/y/z values. The three-value lexical example is recorded without relying on that apparent copy error.",
+      "source_refs": [
+        {
+          "locator": "CDXPoint3D section and three-component example",
+          "source_id": "sdk_coordinates"
+        }
+      ]
+    },
+    {
+      "dtd_attributes": [
+        {
+          "declared_type": "cdata",
+          "owners": [
+            "graphic",
+            "arrow",
+            "plasmidregion"
+          ],
+          "source_refs": [
+            {
+              "locator": "<!ATTLIST graphic Center3D>",
+              "source_id": "revvity_dtd"
+            },
+            {
+              "locator": "<!ATTLIST arrow Center3D>",
+              "source_id": "revvity_dtd"
+            },
+            {
+              "locator": "<!ATTLIST plasmidregion Center3D>",
+              "source_id": "revvity_dtd"
+            }
+          ],
+          "xml_name": "Center3D"
+        },
+        {
+          "declared_type": "cdata",
+          "owners": [
+            "graphic",
+            "arrow",
+            "plasmidregion",
+            "bioshape"
+          ],
+          "source_refs": [
+            {
+              "locator": "<!ATTLIST graphic MajorAxisEnd3D>",
+              "source_id": "revvity_dtd"
+            },
+            {
+              "locator": "<!ATTLIST arrow MajorAxisEnd3D>",
+              "source_id": "revvity_dtd"
+            },
+            {
+              "locator": "<!ATTLIST plasmidregion MajorAxisEnd3D>",
+              "source_id": "revvity_dtd"
+            },
+            {
+              "locator": "<!ATTLIST bioshape MajorAxisEnd3D>",
+              "source_id": "revvity_dtd"
+            }
+          ],
+          "xml_name": "MajorAxisEnd3D"
+        },
+        {
+          "declared_type": "cdata",
+          "owners": [
+            "graphic",
+            "arrow",
+            "plasmidregion",
+            "bioshape"
+          ],
+          "source_refs": [
+            {
+              "locator": "<!ATTLIST graphic MinorAxisEnd3D>",
+              "source_id": "revvity_dtd"
+            },
+            {
+              "locator": "<!ATTLIST arrow MinorAxisEnd3D>",
+              "source_id": "revvity_dtd"
+            },
+            {
+              "locator": "<!ATTLIST plasmidregion MinorAxisEnd3D>",
+              "source_id": "revvity_dtd"
+            },
+            {
+              "locator": "<!ATTLIST bioshape MinorAxisEnd3D>",
+              "source_id": "revvity_dtd"
+            }
+          ],
+          "xml_name": "MinorAxisEnd3D"
+        }
+      ],
+      "id": "axis_point3d_property_name_reconciliation",
+      "kind": "unresolved_sdk_property_name_mismatch",
+      "resolution": null,
+      "scope_note": "The global SDK property table types all three records as CDXPoint3D, but gives all three the CDXML Name Center3D and lists no owning XML object. DTD Center3D has an exact lexical-name match; MajorAxisEnd3D and MinorAxisEnd3D do not. Do not infer owner-to-CDX-ID associations or silently correct the SDK name.",
+      "sdk_property_rows": [
+        {
+          "cdx_constant": "kCDXProp_3DCenter",
+          "cdx_id": 525,
+          "locator": "table[0]/row[91]",
+          "sdk_type": "CDXPoint3D",
+          "sdk_xml_name": "Center3D"
+        },
+        {
+          "cdx_constant": "kCDXProp_3DMajorAxisEnd",
+          "cdx_id": 526,
+          "locator": "table[0]/row[94]",
+          "sdk_type": "CDXPoint3D",
+          "sdk_xml_name": "Center3D"
+        },
+        {
+          "cdx_constant": "kCDXProp_3DMinorAxisEnd",
+          "cdx_id": 527,
+          "locator": "table[0]/row[97]",
+          "sdk_type": "CDXPoint3D",
+          "sdk_xml_name": "Center3D"
+        }
+      ],
+      "source_refs": [
+        {
+          "locator": "Properties table: rows for the three 3D properties",
+          "source_id": "sdk_geometry_properties"
+        },
+        {
+          "locator": "CDXPoint3D section and three-component example",
+          "source_id": "sdk_coordinates"
+        }
+      ]
+    },
+    {
+      "absent_property_semantics": "zero degrees / not rotated",
+      "binary_type": "INT32",
+      "cdx_constant": "kCDXProp_RotationAngle",
+      "cdx_property_id": 517,
+      "encoding": "degrees multiplied by 65536",
+      "id": "rotation_angle",
+      "kind": "fixed_point_angle",
+      "source_refs": [
+        {
+          "locator": "RotationAngle property description and absent clause",
+          "source_id": "sdk_rotation_angle"
+        },
+        {
+          "locator": "Text property table: RotationAngle / INT32",
+          "source_id": "sdk_page_t"
+        }
+      ],
+      "xml_name": "RotationAngle"
+    },
+    {
+      "binary_encoding": {
+        "component_type": "INT16",
+        "components": [
+          "year",
+          "month",
+          "day",
+          "hour",
+          "minute",
+          "second",
+          "milliseconds"
+        ],
+        "length_bytes": 14,
+        "timezone": "UTC"
+      },
+      "cdxml_lexical_format": null,
+      "id": "cdx_date",
+      "interpretation": "Do not infer a CDXML date string parser from the binary 14-byte type page; the cited type page does not define a CDXML lexical form.",
+      "kind": "binary_datetime_no_xml_lexical_contract",
+      "sdk_datatype": "CDXDate",
+      "source_refs": [
+        {
+          "locator": "CDX Date and Time Data Type description",
+          "source_id": "sdk_date_and_time"
+        },
+        {
+          "locator": "Properties table: CreationDate / ModificationDate / CDXDate",
+          "source_id": "sdk_document"
+        }
+      ]
+    },
+    {
+      "binary_type": "CDXObjectIDArrayWithCounts",
+      "cdx_constant": "kCDXProp_Node_Attachments",
+      "cdx_encoding": {
+        "count_prefix": "UINT16 before the series of IDs",
+        "items": "UINT32 object IDs"
+      },
+      "cdx_property_id": 1074,
+      "cdxml_encoding": {
+        "count_prefix": false,
+        "example": "1 2 3 4",
+        "same_as": "CDXObjectIDArray"
+      },
+      "id": "attachments_array_with_counts",
+      "kind": "typed_object_id_array",
+      "owner_xml_name": "n",
+      "property_description": "IDs of nodes which are multiply or variably attached to this node",
+      "reference_target_xml_name": "n",
+      "source_refs": [
+        {
+          "locator": "Node_Attachments property type and description",
+          "source_id": "sdk_node_attachments"
+        },
+        {
+          "locator": "CDXObjectIDArrayWithCounts CDX and CDXML descriptions",
+          "source_id": "sdk_object_id"
+        },
+        {
+          "locator": "Properties table: Attachments / CDXObjectIDArrayWithCounts",
+          "source_id": "sdk_page_n"
+        }
+      ],
+      "xml_name": "Attachments"
+    },
+    {
+      "binary_type": "INT16ListWithCounts",
+      "cdx_constant": "kCDXProp_LineStarts",
+      "cdx_encoding": {
+        "count_prefix": "UINT16 before the series of values",
+        "items": "UINT16 values"
+      },
+      "cdx_property_id": 1796,
+      "cdxml_encoding": {
+        "count_prefix": false,
+        "example": "1 2 3 4"
+      },
+      "id": "line_starts_counted_list",
+      "kind": "typed_integer_list",
+      "owner_xml_name": "t",
+      "source_refs": [
+        {
+          "locator": "Properties table: LineStarts / INT16ListWithCounts",
+          "source_id": "sdk_page_t"
+        },
+        {
+          "locator": "INT16 List With Counts Data Type",
+          "source_id": "sdk_int16_list_with_counts"
+        }
+      ],
+      "xml_name": "LineStarts"
+    },
+    {
+      "cdxml_count_prefix": false,
+      "id": "curve_point_arrays",
+      "kind": "typed_numeric_point_arrays",
+      "properties": [
+        {
+          "binary_type": "CDXCurvePoints",
+          "cdx_constant": "kCDXProp_Curve_Points",
+          "cdx_count_prefix": "UINT16 point count",
+          "cdx_property_id": 2595,
+          "cdxml_example": "1 2 3 4",
+          "dimensions": 2,
+          "owner_xml_name": "curve",
+          "source_refs": [
+            {
+              "locator": "Properties table: CurvePoints",
+              "source_id": "sdk_page_curve"
+            },
+            {
+              "locator": "CDX Curve Points Data Type",
+              "source_id": "sdk_curve_points"
+            }
+          ],
+          "xml_name": "CurvePoints"
+        },
+        {
+          "binary_type": "CDXCurvePoints3D",
+          "cdx_constant": "kCDXProp_Curve_Points3D",
+          "cdx_count_prefix": "UINT16 point count",
+          "cdx_property_id": 2606,
+          "cdxml_example": "1 2 3 4 5 6",
+          "dimensions": 3,
+          "owner_xml_name": "curve",
+          "source_refs": [
+            {
+              "locator": "Curve_Points3D property summary",
+              "source_id": "sdk_curve_points_3d_property"
+            },
+            {
+              "locator": "Properties table: CurvePoints3D",
+              "source_id": "sdk_page_curve"
+            },
+            {
+              "locator": "CDX Curve Points 3D Data Type",
+              "source_id": "sdk_curve_points_3d"
+            }
+          ],
+          "xml_name": "CurvePoints3D"
+        }
+      ]
+    },
+    {
+      "caution": "Do not assign formula chemistry semantics or parse an undefined CDXFormula type.",
+      "datatypes": [
+        {
+          "binary_count_prefix": "signed INT16 count; negative means NOT list",
+          "binary_item_type": "UINT16 atomic-number values",
+          "cdxml_not_prefix": "NOT",
+          "example": "NOT 9 17 35",
+          "name": "CDXElementList",
+          "source": {
+            "locator": "CDX Element List Data Type",
+            "source_id": "sdk_element_list"
+          }
+        },
+        {
+          "binary_count_prefix": "signed INT16 count; negative means NOT list",
+          "binary_item_type": "CDXString values",
+          "cdxml_not_prefix": "NOT",
+          "example": "NOT R X A",
+          "name": "CDXGenericList",
+          "source": {
+            "locator": "CDX Generic List Data Type",
+            "source_id": "sdk_generic_list"
+          }
+        },
+        {
+          "binary_encoding": null,
+          "chem_draw_reads_or_writes": false,
+          "meaning": "undefined; declared for future expansion",
+          "name": "CDXFormula",
+          "source": {
+            "locator": "CDX Formula Data Type statement",
+            "source_id": "sdk_formula"
+          }
+        }
+      ],
+      "id": "element_generic_and_formula_lists",
+      "kind": "typed_list_family",
+      "source_refs": [
+        {
+          "locator": "Properties table: ElementList and GenericList",
+          "source_id": "sdk_page_n"
+        },
+        {
+          "locator": "Properties table: Formula",
+          "source_id": "sdk_page_fragment"
+        }
+      ]
+    },
+    {
+      "absent_tag_type_semantics": "Undefined",
+      "absent_value_property_semantics": "zero",
+      "binary_type": "varies",
+      "caution": "The source specifies omission semantics for the property, not the meaning of an explicitly present empty Value attribute. Do not hex-decode arbitrary printable unformatted values based only on byte-oriented cases.",
+      "cdx_constant": "kCDXProp_ObjectTag_Value",
+      "cdx_property_id": 3333,
+      "empty_xml_value_semantics": null,
+      "id": "object_tag_value_by_tag_type",
+      "kind": "context_dependent_binary_union",
+      "owner_xml_name": "objecttag",
+      "source_refs": [
+        {
+          "locator": "ObjectTag_Type enumeration and absent clause",
+          "source_id": "sdk_object_tag_type"
+        },
+        {
+          "locator": "ObjectTag_Value type-dependent description and absent clause",
+          "source_id": "sdk_object_tag_value"
+        },
+        {
+          "locator": "CDX Unformatted Data Type XML representation",
+          "source_id": "sdk_unformatted"
+        },
+        {
+          "locator": "ObjectTag properties table",
+          "source_id": "sdk_page_objecttag"
+        }
+      ],
+      "tag_type_cases": [
+        {
+          "binary_value_type": null,
+          "value": 0,
+          "xml_token": "Unknown"
+        },
+        {
+          "binary_value_type": "FLOAT64",
+          "value": 1,
+          "xml_token": "Double"
+        },
+        {
+          "binary_value_type": "INT32",
+          "value": 2,
+          "xml_token": "Long"
+        },
+        {
+          "binary_value_type": "Unformatted",
+          "value": 3,
+          "xml_token": "String"
+        }
+      ],
+      "xml_name": "Value"
+    },
+    {
+      "binary_type": "FLOAT64 array",
+      "cdx_constant": "kCDXProp_Spectrum_DataPoint",
+      "cdx_property_id": 2694,
+      "cdxml_representation": "data stored directly within spectrum object as #PCDATA",
+      "id": "spectrum_data_is_pcdata",
+      "kind": "cdx_property_to_xml_character_data",
+      "literal_xml_attribute_or_element_name": false,
+      "owner_xml_name": "spectrum",
+      "properties_page_says_used_explicitly_only_for_cdx": true,
+      "sdk_property_page_xml_name": "temp_SpectrumDataPoint",
+      "source_refs": [
+        {
+          "locator": "Spectrum_DataPoint property description",
+          "source_id": "sdk_spectrum_data_point"
+        },
+        {
+          "locator": "Properties table: DataPoint shown as not used",
+          "source_id": "sdk_page_spectrum"
+        }
+      ]
+    },
+    {
+      "binary_type": "FLOAT64",
+      "cdx_constant": "kCDXProp_Spectrum_YLow",
+      "cdx_property_id": 2696,
+      "chem_draw_reads_or_writes": false,
+      "description_context": "defined for future compatibility; omission has no consequence",
+      "first_written_read": false,
+      "id": "spectrum_y_low_compatibility",
+      "kind": "documented_nonimplemented_compatibility_property",
+      "owner_xml_name": "spectrum",
+      "source_refs": [
+        {
+          "locator": "Spectrum_YLow absent clause",
+          "source_id": "sdk_spectrum_y_low"
+        },
+        {
+          "locator": "Properties table: YLow",
+          "source_id": "sdk_page_spectrum"
+        }
+      ],
+      "xml_name": "YLow"
+    },
+    {
+      "document_source": {
+        "locator": "Document subobject table",
+        "source_id": "sdk_document"
+      },
+      "id": "xml_child_table_properties",
+      "inventory_source": {
+        "locator": "AllCDXObjects rows for fonttable/colortable/color/font/s",
+        "source_id": "sdk_objects"
+      },
+      "kind": "cdx_property_saved_as_cdxml_child_object",
+      "properties": [
+        {
+          "cdx_constant": "kCDXProp_FontTable",
+          "cdx_property_id": 256,
+          "cdx_type": "CDXFontTable",
+          "cdxml_saved_as": "Font Table object",
+          "source": {
+            "locator": "FontTable property CDX/CDXML distinction",
+            "source_id": "sdk_font_table_property"
+          },
+          "xml_tag": "fonttable"
+        },
+        {
+          "cdx_constant": "kCDXProp_ColorTable",
+          "cdx_property_id": 768,
+          "cdx_type": "CDXColorTable",
+          "cdxml_saved_as": "Color Table object",
+          "source": {
+            "locator": "ColorTable property CDX/CDXML distinction",
+            "source_id": "sdk_color_table_property"
+          },
+          "xml_tag": "colortable"
+        }
+      ],
+      "xml_only_inventory_names": [
+        "color",
+        "font",
+        "s"
+      ]
+    }
+  ],
+  "format": "cdxml-om-focused-sdk-evidence",
+  "format_version": 1,
+  "generated_at": "2026-10-05T06:41:54Z",
+  "limitations": [
+    "Historical SDK documentation is not a live ChemDraw runtime verification.",
+    "SDK binary types and CDXML lexical representations remain separately scoped.",
+    "A source page's CDXML Name is not assumed to be a literal XML attribute when the page says otherwise.",
+    "No semantic implementation or enum ordinal is inferred solely from a binary numeric type."
+  ],
+  "method": "Explicit development-time fetch of exact Internet Archive Memento URLs; only factual extractions and SHA-256 provenance are retained, not HTML.",
+  "sources": [
+    {
+      "bytes": 28821,
+      "captured_at": null,
+      "id": "revvity_dtd",
+      "original_url": "https://static.chemistry.revvitycloud.com/cdxml/CDXML.dtd",
+      "redistribution": "source is checked in at schema/sources/revvity-CDXML.dtd",
+      "retrieved_at": "2026-10-04",
+      "sha256": "5311978e514ffe154108540c3634c314dc66031a4f3c877a681fc6dca8e128c2",
+      "snapshot_kind": "checked-in primary DTD snapshot; internal header revision 48",
+      "snapshot_url": null
+    },
+    {
+      "bytes": 20157,
+      "captured_at": "Mon, 03 May 2010 17:43:17 GMT",
+      "id": "sdk_document",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Document.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:24Z",
+      "sha256": "5d7e6c28582a3555d7bf6e7a28f66373b8ad609d8972ef4ec501b342c6351f20",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174317id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Document.htm"
+    },
+    {
+      "bytes": 2216,
+      "captured_at": "Mon, 03 May 2010 09:41:52 GMT",
+      "id": "sdk_object_id",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXObjectID.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:46Z",
+      "sha256": "6cca81c42c64609e3f8a93c2fb5ab90555e280323ec54c3c876a4a4fe091792c",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503094152id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXObjectID.htm"
+    },
+    {
+      "bytes": 11725,
+      "captured_at": "Sun, 02 May 2010 02:33:12 GMT",
+      "id": "sdk_objects",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/AllCDXObjects.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:20Z",
+      "sha256": "a99f09eb33f6885a3f3741252dd732d1cfccff834b17d276b161156cd9dd8082",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100502023312id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/AllCDXObjects.htm"
+    },
+    {
+      "bytes": 13526,
+      "captured_at": "Mon, 03 May 2010 17:45:25 GMT",
+      "id": "sdk_page_b",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Bond.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:23Z",
+      "sha256": "d8810f0ca28292c0aa9a8c7ebeba0ab87710414509d8fc5f9dd6c7af4f7f46c4",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174525id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Bond.htm"
+    },
+    {
+      "bytes": 9084,
+      "captured_at": "Mon, 03 May 2010 17:42:39 GMT",
+      "id": "sdk_page_curve",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Curve.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:33Z",
+      "sha256": "96bb0d5e72c5fa2e5348b05453310446533c317bac7ebc1be1f8ca1ef3fc0e5f",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174239id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Curve.htm"
+    },
+    {
+      "bytes": 5958,
+      "captured_at": "Mon, 03 May 2010 17:46:30 GMT",
+      "id": "sdk_page_fragment",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Fragment.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:24Z",
+      "sha256": "50295f43da80557d621dcd69918a39b17490e55697a70ccf3410174128bc34b7",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174630id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Fragment.htm"
+    },
+    {
+      "bytes": 23498,
+      "captured_at": "Fri, 07 May 2010 03:31:04 GMT",
+      "id": "sdk_page_n",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Node.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:27Z",
+      "sha256": "a837ad38d0f0c55eba04a3570c075d7814e32e07f9be8cd27afb33e61123d969",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100507033104id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Node.htm"
+    },
+    {
+      "bytes": 7470,
+      "captured_at": "Tue, 12 Jan 2010 14:23:33 GMT",
+      "id": "sdk_page_objecttag",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/ObjectTag.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:37Z",
+      "sha256": "7974df451eb431cb90f650531b2eade478e81a864a8cf98e9650d8a5d252e5d9",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "http://web.archive.org/web/20100112142333id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/ObjectTag.htm"
+    },
+    {
+      "bytes": 10355,
+      "captured_at": "Mon, 03 May 2010 17:43:47 GMT",
+      "id": "sdk_page_spectrum",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Spectrum.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:35Z",
+      "sha256": "ee5c6bc469d2feae366a074542032330a8f9081ac54e79d04c03f425d6f1d924",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "http://web.archive.org/web/20100503174347id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Spectrum.htm"
+    },
+    {
+      "bytes": 12780,
+      "captured_at": "Mon, 03 May 2010 17:43:58 GMT",
+      "id": "sdk_page_t",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Text.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T04:59:27Z",
+      "sha256": "c84b1d7dd325c5df1bd81fc4037ad0d9fb1ad15e86b5f1386fe1a9bc42c01160",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174358id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/Text.htm"
+    },
+    {
+      "bytes": 4673,
+      "captured_at": "Tue, 13 Sep 2016 17:41:34 GMT",
+      "id": "sdk_bond_order",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/Bond_Order.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:33Z",
+      "sha256": "831c05e52bb84b26dc56d6045a35aab7c927299067587d041a8e979577fb455a",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20160913174134id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/Bond_Order.htm"
+    },
+    {
+      "bytes": 2599,
+      "captured_at": "Tue, 26 Mar 2019 23:26:57 GMT",
+      "id": "sdk_label_style_size",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/LabelStyleSize.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:33Z",
+      "sha256": "86c6dc7dbcb422d2c2ba3208c5ebbdd9bcd2674594c2d111bd0d2c3264d1d4fe",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20190326232657id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/LabelStyleSize.htm"
+    },
+    {
+      "bytes": 1914,
+      "captured_at": "Tue, 26 Mar 2019 23:27:25 GMT",
+      "id": "sdk_caption_style_size",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/CaptionStyleSize.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:32Z",
+      "sha256": "929403c6fb075a075e4d61289bcb3c3ce15e37ae7af65466af078e68ed04eaa5",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20190326232725id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/CaptionStyleSize.htm"
+    },
+    {
+      "bytes": 1739,
+      "captured_at": "Mon, 21 Jan 2019 16:03:37 GMT",
+      "id": "sdk_rotation_angle",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/RotationAngle.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:34Z",
+      "sha256": "7e7ba81b442a6dbf45babcf65c4d36ae924397d6215b3c603ecc39bd8131ffc5",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20190121160337id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/RotationAngle.htm"
+    },
+    {
+      "bytes": 749,
+      "captured_at": "Mon, 03 May 2010 17:46:08 GMT",
+      "id": "sdk_date_and_time",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/DateAndTime.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:36Z",
+      "sha256": "6ad7b51c859ac63e050d8e23e5f4da6d30c3a492ef1d55fefe4fabac06ebd366",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174608id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/DateAndTime.htm"
+    },
+    {
+      "bytes": 989,
+      "captured_at": "Mon, 03 May 2010 14:22:23 GMT",
+      "id": "sdk_int16_list_with_counts",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/INT16ListWithCounts.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:35Z",
+      "sha256": "c5134dc57ab3002df5445ed63c1899936d42ba2c1f511a124560a8275b0edb21",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503142223id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/INT16ListWithCounts.htm"
+    },
+    {
+      "bytes": 1610,
+      "captured_at": "Mon, 03 May 2010 17:43:07 GMT",
+      "id": "sdk_generic_list",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXGenericList.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:38Z",
+      "sha256": "5222e9ac0c84a53013b7b177ee905686fb75d9d29cb9469299ff4dccfc5942a3",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174307id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/CDXGenericList.htm"
+    },
+    {
+      "bytes": 1562,
+      "captured_at": "Mon, 03 May 2010 17:42:56 GMT",
+      "id": "sdk_element_list",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXElementList.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:36Z",
+      "sha256": "9fd0e9cc9eaf2bd5838c4459173cd9b258dde9bf5e632fcc7885d27b15d6119a",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174256id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/CDXElementList.htm"
+    },
+    {
+      "bytes": 662,
+      "captured_at": "Mon, 03 May 2010 17:45:58 GMT",
+      "id": "sdk_formula",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXFormula.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:38Z",
+      "sha256": "5b202b2926c6799eac811eb51d5ffd22afd9abfdf0af0e07fac8764821964f28",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174558id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/CDXFormula.htm"
+    },
+    {
+      "bytes": 1005,
+      "captured_at": "Mon, 03 May 2010 17:42:45 GMT",
+      "id": "sdk_curve_points",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXCurvePoints.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:40Z",
+      "sha256": "0507a1ed1c34e4769e4f45adb1a967cd8887312e6d076d502061df39e5f32ce5",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174245id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/CDXCurvePoints.htm"
+    },
+    {
+      "bytes": 1041,
+      "captured_at": "Mon, 03 May 2010 17:42:50 GMT",
+      "id": "sdk_curve_points_3d",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXCurvePoints3D.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:39Z",
+      "sha256": "86e0abd1c36f37fd80b038a65f19fbbcf7d496536713baf4a67a248eadb69e3a",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174250id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/CDXCurvePoints3D.htm"
+    },
+    {
+      "bytes": 1314,
+      "captured_at": "Tue, 26 Mar 2019 23:06:13 GMT",
+      "id": "sdk_curve_points_3d_property",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/Curve_Points3D.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:40Z",
+      "sha256": "1dd7fd4728810b269d7c24fcdaf8032519b8a3cdd6a4953f11e9bb1612bdd0a8",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20190326230613id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/Curve_Points3D.htm"
+    },
+    {
+      "bytes": 1455,
+      "captured_at": "Wed, 27 Mar 2019 22:15:55 GMT",
+      "id": "sdk_node_attachments",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/Node_Attachments.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:40Z",
+      "sha256": "c28a54f9ac0ca46ec0208949f591cd8a0f24509f5a23a7dff26240f65fdb9bab",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20190327221555id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/Node_Attachments.htm"
+    },
+    {
+      "bytes": 1384,
+      "captured_at": "Tue, 26 Mar 2019 23:21:19 GMT",
+      "id": "sdk_object_tag_value",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/ObjectTag_Value.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:41Z",
+      "sha256": "e0a69199f7137bec04f575ff022ce56b77c217f0da51dc332e1938c30ec1bce3",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20190326232119id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/ObjectTag_Value.htm"
+    },
+    {
+      "bytes": 2524,
+      "captured_at": "Wed, 27 Mar 2019 00:00:22 GMT",
+      "id": "sdk_object_tag_type",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/ObjectTag_Type.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:44Z",
+      "sha256": "2a7519a9992b276684299ed14a856536fc9e18cd6e2b39d2c20648de8b595388",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20190327000022id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/ObjectTag_Type.htm"
+    },
+    {
+      "bytes": 1071,
+      "captured_at": "Mon, 03 May 2010 17:43:12 GMT",
+      "id": "sdk_unformatted",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/Unformatted.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:42Z",
+      "sha256": "930032ad291270ca32cc0126cf79b531ad13e0a7301f95b01aa21d1542965922",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174312id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/Unformatted.htm"
+    },
+    {
+      "bytes": 1906,
+      "captured_at": "Tue, 13 Sep 2016 17:41:12 GMT",
+      "id": "sdk_spectrum_data_point",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/Spectrum_DataPoint.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:43Z",
+      "sha256": "14c088b3d53b0c08e3fa34dafb05b2003bd5a65cbe3b025a844569b62f70f114",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20160913174112id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/Spectrum_DataPoint.htm"
+    },
+    {
+      "bytes": 1479,
+      "captured_at": "Mon, 12 Sep 2016 17:02:37 GMT",
+      "id": "sdk_spectrum_y_low",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/Spectrum_YLow.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:43Z",
+      "sha256": "3b6a423f32c68baf68b145c6b97123a2e8f32d6962d37e2fc1db7c8a0b5cfc11",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20160912170237id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/Spectrum_YLow.htm"
+    },
+    {
+      "bytes": 5046,
+      "captured_at": "Sun, 02 May 2010 02:33:22 GMT",
+      "id": "sdk_cdx_string",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXString.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:48Z",
+      "sha256": "acddc8bb80e01fa80acad9c0cb2741580211ccf07c725b1fb25a5200dc271e14",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100502023322id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/CDXString.htm"
+    },
+    {
+      "bytes": 2799,
+      "captured_at": "Mon, 03 May 2010 17:43:01 GMT",
+      "id": "sdk_cdx_font_table",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXFontTable.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:46Z",
+      "sha256": "8e0ac792d0451768d78202307b7bfc4fecab692c907826a88417c5b82cb123ec",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503174301id_/http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXFontTable.htm"
+    },
+    {
+      "bytes": 1426,
+      "captured_at": "Sun, 11 Sep 2016 22:38:57 GMT",
+      "id": "sdk_font_table_property",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/FontTable.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:46Z",
+      "sha256": "b80b40b6693f31666be4369f52cd06a776873df2032b015769aaef2815b73cb0",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20160911223857id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/FontTable.htm"
+    },
+    {
+      "bytes": 1950,
+      "captured_at": "Tue, 26 Mar 2019 23:10:30 GMT",
+      "id": "sdk_color_table_property",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/properties/ColorTable.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:49Z",
+      "sha256": "d9955d18696ef94f735e5a6466728337c44c086136f3176bc6f300837d97112d",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20190326231030id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/properties/ColorTable.htm"
+    },
+    {
+      "bytes": 3617,
+      "captured_at": "Mon, 03 May 2010 09:41:42 GMT",
+      "id": "sdk_coordinates",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/DataType/CDXCoordinates.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:48Z",
+      "sha256": "49a8550c46232135a6206b8fa7fd1222a20e3288933c96ffffdcb1ab7b84ee44",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503094142id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/DataType/CDXCoordinates.htm"
+    },
+    {
+      "bytes": 94481,
+      "captured_at": "Mon, 03 May 2010 09:42:03 GMT",
+      "id": "sdk_geometry_properties",
+      "original_url": "http://www.cambridgesoft.com/services/documentation/sdk/chemdraw/cdx/TableOfProperties.htm",
+      "redistribution": "facts extracted; HTML snapshot not redistributed",
+      "retrieved_at": "2026-10-05T06:41:54Z",
+      "sha256": "f9f16b8a0725f0b701bda8d6c21dcc0f4dde9b4500a863b935683fd493fd280c",
+      "snapshot_kind": "Internet Archive memento, original HTML bytes",
+      "snapshot_url": "https://web.archive.org/web/20100503094203id_/http://www.cambridgesoft.com:80/services/documentation/sdk/chemdraw/cdx/TableOfProperties.htm"
+    }
+  ]
+}
